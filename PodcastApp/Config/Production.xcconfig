@@ -1,0 +1,13 @@
+//
+//  Production.xcconfig
+//  PodcastApp
+//
+//  Created by Temiloluwa on 08/11/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// Production.xcconfig
+APP_BUNDLE_IDENTIFIER = Temi.PodcastApp
+APP_NAME = PodcastApp
+APP_ICON_NAME = AppIcon

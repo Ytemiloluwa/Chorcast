@@ -1,0 +1,13 @@
+//
+//  Staging.xcconfig
+//  PodcastApp
+//
+//  Created by Temiloluwa on 08/11/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// Staging.xcconfig
+APP_BUNDLE_IDENTIFIER = Temi.Podcast.staging
+APP_NAME = Podcast Staging
+APP_ICON_NAME = AppIcon.staging
