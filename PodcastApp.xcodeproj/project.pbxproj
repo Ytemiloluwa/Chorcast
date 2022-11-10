@@ -27,7 +27,6 @@
 		A7DA2D8D291ADADA002D7EA1 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A7DA2D8C291ADADA002D7EA1 /* Production.xcconfig */; };
 		A7DA2D8E291ADADA002D7EA1 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A7DA2D8C291ADADA002D7EA1 /* Production.xcconfig */; };
 		A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49A291D2AC400A7815F /* Genre.swift */; };
-		A7E7C49E291D2E0100A7815F /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49D291D2E0100A7815F /* GenreViewModel.swift */; };
 		A7E7C4A0291D366E00A7815F /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		A7DA2D89291ADAB6002D7EA1 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		A7DA2D8C291ADADA002D7EA1 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		A7E7C49A291D2AC400A7815F /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
-		A7E7C49D291D2E0100A7815F /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenreViewModel.swift; path = "watchOS Watch App/GenreViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,7 +164,6 @@
 		A7E7C49C291D2CB900A7815F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				A7E7C49D291D2E0100A7815F /* GenreViewModel.swift */,
 				A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -292,7 +289,6 @@
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
-				A7E7C49E291D2E0100A7815F /* GenreViewModel.swift in Sources */,
 				A7E7C4A0291D366E00A7815F /* EpisodeViewModel.swift in Sources */,
 				A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */,
 			);
