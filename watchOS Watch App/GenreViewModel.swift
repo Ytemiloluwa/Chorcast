@@ -11,7 +11,6 @@ struct GenreViewModel: Identifiable, Hashable {
     
     var id: Int
     var name: String
-    
     static let placeHolder = createPlaceholder(id: 1)
     
     static var listPlaceHolders: [GenreViewModel] {
