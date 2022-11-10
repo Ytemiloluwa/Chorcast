@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
+		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */; };
 		A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
 		A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D57291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld */; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +59,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74A304E291CA8B4002204B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7DA2D47291AD2FA002D7EA1 = {
 			isa = PBXGroup;
 			children = (
 				A7DA2D52291AD2FA002D7EA1 /* PodcastApp */,
 				A7DA2D6C291AD44D002D7EA1 /* watchOS Watch App */,
 				A7DA2D51291AD2FA002D7EA1 /* Products */,
+				A74A304E291CA8B4002204B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +160,9 @@
 			dependencies = (
 			);
 			name = PodcastApp;
+			packageProductDependencies = (
+				A74A304C291CA7E6002204B1 /* FeedKit */,
+			);
 			productName = PodcastApp;
 			productReference = A7DA2D50291AD2FA002D7EA1 /* PodcastApp.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +180,9 @@
 			dependencies = (
 			);
 			name = "watchOS Watch App";
+			packageProductDependencies = (
+				A74A304F291CA8C7002204B1 /* FeedKit */,
+			);
 			productName = "watchOS Watch App";
 			productReference = A7DA2D6B291AD44D002D7EA1 /* watchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +214,9 @@
 				Base,
 			);
 			mainGroup = A7DA2D47291AD2FA002D7EA1;
+			packageReferences = (
+				A74A304B291CA7E6002204B1 /* XCRemoteSwiftPackageReference "FeedKit" */,
+			);
 			productRefGroup = A7DA2D51291AD2FA002D7EA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1062,6 +1083,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A74A304B291CA7E6002204B1 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A74A304C291CA7E6002204B1 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A74A304B291CA7E6002204B1 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+		A74A304F291CA8C7002204B1 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A74A304B291CA7E6002204B1 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A7DA2D57291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld */ = {
