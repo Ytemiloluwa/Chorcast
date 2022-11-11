@@ -10,6 +10,7 @@
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFA1D5291D0261007A1393 /* Podcast.swift */; };
+		A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */; };
 		A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */; };
 		A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
 		A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D57291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		A7AFA1D5291D0261007A1393 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
 		A7DA2D50291AD2FA002D7EA1 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAppApp.swift; sourceTree = "<group>"; };
 		A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */,
+				A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */,
 				A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */,
 			);
 			path = ViewModels;
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */,
+				A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,

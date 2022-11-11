@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GenreViewModel: Identifiable, Hashable {
+struct GenreViewModel: Identifiable {
     
     var id: Int
     var name: String
