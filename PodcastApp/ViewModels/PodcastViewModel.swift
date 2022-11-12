@@ -34,7 +34,7 @@ struct PodcastViewModel: Identifiable, Equatable {
     var country: String
     var genres: [String] = []
     var episodes: [EpisodeViewModel] = []
-    var nextEpiosdePubDate: Date
+    var nextEpisodePubDate: Date
     var feedUrl: String
     var isBookmarked = false
     static var placeHolder: PodcastViewModel {
@@ -53,7 +53,31 @@ struct PodcastViewModel: Identifiable, Equatable {
     
     private static func createPlaceholder(id: Int) -> PodcastViewModel {
         
-        PodcastViewModel(id: id, title: "Lorem ipsum", imageUrl: "", totalEpisodes: 23, explicitContent: "NO", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", country: "NG", nextEpiosdePubDate: Date(), feedUrl: "")
+        PodcastViewModel(id: id, title: "Lorem ipsum", imageUrl: "", totalEpisodes: 23, explicitContent: "NO", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", country: "NG", nextEpisodePubDate: Date(), feedUrl: "")
+
+        
+    }
+    internal init(id: Int, title: String, publisher: String? = nil, imageUrl: String, thumbnailUrl: String? = nil, image: Data? = nil, thumbnail: Data? = nil,  author: String? = nil, totalEpisodes: Int, explicitContent: String, description: String, date: String? = nil, language: String? = nil, country: String, genres: [String]? = nil, episodes: [EpisodeViewModel]? = nil, nextEpisodePubDate: Date, feedUrl: String, isBookmarked: Bool = false) {
+        
+        self.id = id
+        self.title = title
+        self.publisher = publisher ?? ""
+        self.imageUrl = imageUrl
+        self.thumbnailUrl = thumbnailUrl ?? ""
+        self.image = image ?? Data()
+        self.thumbnail = thumbnail ?? Data()
+        self.author = author ?? ""
+        self.totalEpisodes = totalEpisodes
+        self.explicitContent = explicitContent
+        self.description = description
+        self.date = date ?? ""
+        self.language = language
+        self.country = country
+        self.genres = genres ?? []
+        self.episodes = episodes ?? []
+        self.nextEpisodePubDate = nextEpisodePubDate
+        self.feedUrl = feedUrl
+        self.isBookmarked = isBookmarked
     }
     
 }
