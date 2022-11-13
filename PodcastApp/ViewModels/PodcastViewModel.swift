@@ -101,4 +101,41 @@ struct PodcastViewModel: Identifiable, Equatable {
         
     }
     
+    init(_ feed: RSSFeed, existingPodcast: PodcastViewModel? = nil) {
+        
+        self.id = existingPodcast?.id ?? 0
+        self.title = existingPodcast?.title ?? ""
+        self.imageUrl = existingPodcast?.imageUrl ?? ""
+        self.author = existingPodcast?.author ?? ""
+        self.thumbnailUrl = existingPodcast?.thumbnailUrl ?? ""
+        self.image = existingPodcast?.image ?? Data()
+        self.thumbnail = existingPodcast?.thumbnail ?? Data()
+        self.totalEpisodes = existingPodcast?.episodes.count ?? 0
+        self.country = existingPodcast?.country ?? ""
+        self.genres = existingPodcast?.genres ?? []
+        self.feedUrl = existingPodcast?.feedUrl ?? ""
+        self.isBookmarked = existingPodcast?.isBookmarked ?? false
+        self.publisher = feed.managingEditor ?? ""
+        self.explicitContent = feed.iTunes?.iTunesExplicit ?? ""
+        self.description = feed.description ?? "No description"
+        self.language = feed.language ?? ""
+        self.nextEpisodePubDate = Date()
+        
+        self.episodes = feed.items?.compactMap({ item in
+            
+            EpisodeViewModel(feedItem: item, podcast: self)
+        }) ?? []
+        
+        self.date = feed.pubDate.map { $0.format()} ?? ""
+        
+        if imageUrl.isEmpty {
+            
+            if let imgUrl = feed.iTunes?.iTunesImage?.attributes?.href {
+                
+                self.imageUrl = imgUrl
+            }
+        }
+        
+    }
+    
 }
