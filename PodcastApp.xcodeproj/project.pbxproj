@@ -30,6 +30,8 @@
 		A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49A291D2AC400A7815F /* Genre.swift */; };
 		A7E7C4A0291D366E00A7815F /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */; };
 		A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */; };
+		A7FFA6A02920C42900279C24 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA69F2920C42900279C24 /* Date+.swift */; };
+		A7FFA6A22920C48400279C24 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA6A12920C48400279C24 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		A7E7C49A291D2AC400A7815F /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewModel.swift; sourceTree = "<group>"; };
+		A7FFA69F2920C42900279C24 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		A7FFA6A12920C48400279C24 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		A7DA2D52291AD2FA002D7EA1 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7FFA69E2920C41500279C24 /* Extension */,
 				A7E7C49C291D2CB900A7815F /* ViewModels */,
 				A7AFA1D4291D023E007A1393 /* Models */,
 				A7DA2D85291AD97D002D7EA1 /* Config */,
@@ -173,6 +178,15 @@
 				A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7FFA69E2920C41500279C24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7FFA69F2920C42900279C24 /* Date+.swift */,
+				A7FFA6A12920C48400279C24 /* String+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +311,8 @@
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
 				A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
+				A7FFA6A22920C48400279C24 /* String+.swift in Sources */,
+				A7FFA6A02920C42900279C24 /* Date+.swift in Sources */,
 				A7E7C4A0291D366E00A7815F /* EpisodeViewModel.swift in Sources */,
 				A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */,
 			);

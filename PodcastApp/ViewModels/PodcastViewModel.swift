@@ -80,4 +80,25 @@ struct PodcastViewModel: Identifiable, Equatable {
         self.isBookmarked = isBookmarked
     }
     
+    init(podcast: Podcast) {
+        
+        self.id = podcast.collectionID
+        self.title = podcast.collectionName ?? ""
+        self.publisher = ""
+        self.imageUrl = podcast.artworkUrl600 ?? ""
+        self.thumbnailUrl = podcast.artworkUrl100 ?? ""
+        self.author = podcast.artistName ?? ""
+        self.totalEpisodes = podcast.trackCount ?? 0
+        self.explicitContent = podcast.collectionExplicitness ?? ""
+        self.description = podcast.description ?? ""
+        self.date = podcast.releaseDate?.formatDate() ?? ""
+        self.language = nil
+        self.country = podcast.country ?? ""
+        self.genres = podcast.genres ?? []
+        self.episodes = []
+        self.nextEpisodePubDate = Date()
+        self.feedUrl = podcast.feedURL ?? ""
+        
+    }
+    
 }
