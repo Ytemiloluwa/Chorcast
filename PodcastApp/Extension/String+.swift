@@ -30,4 +30,15 @@ extension String {
 
     }
     
+    func toDate() -> Date {
+        
+        let formatter = createFormatter()
+        if let date = formatter.date(from: self) {
+            
+            return date
+        }
+        
+        return Date()
+    }
+    
 }
