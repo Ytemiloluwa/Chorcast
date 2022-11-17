@@ -25,5 +25,7 @@ class InternetMonitor: ObservableObject {
             
             }
         }
+        
+        monitor.start(queue: queue)
     }
 }
