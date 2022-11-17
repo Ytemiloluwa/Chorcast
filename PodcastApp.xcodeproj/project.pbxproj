@@ -30,6 +30,7 @@
 		A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49A291D2AC400A7815F /* Genre.swift */; };
 		A7E7C4A0291D366E00A7815F /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */; };
 		A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */; };
+		A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC12DC2926235B0084042B /* InternetMonitoring.swift */; };
 		A7FFA6A02920C42900279C24 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA69F2920C42900279C24 /* Date+.swift */; };
 		A7FFA6A22920C48400279C24 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA6A12920C48400279C24 /* String+.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		A7E7C49A291D2AC400A7815F /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		A7E7C49F291D366E00A7815F /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewModel.swift; sourceTree = "<group>"; };
+		A7EC12DC2926235B0084042B /* InternetMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitoring.swift; sourceTree = "<group>"; };
 		A7FFA69F2920C42900279C24 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		A7FFA6A12920C48400279C24 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 		A7DA2D52291AD2FA002D7EA1 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7EC12DB292623070084042B /* Networking */,
 				A7FFA69E2920C41500279C24 /* Extension */,
 				A7E7C49C291D2CB900A7815F /* ViewModels */,
 				A7AFA1D4291D023E007A1393 /* Models */,
@@ -178,6 +181,14 @@
 				A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7EC12DB292623070084042B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A7EC12DC2926235B0084042B /* InternetMonitoring.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		A7FFA69E2920C41500279C24 /* Extension */ = {
@@ -306,6 +317,7 @@
 			files = (
 				A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */,
 				A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */,
+				A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
