@@ -7,7 +7,14 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
 // Development.xcconfig
+
+BASE_URL = https:/$()/itunes.apple.com/search
+
 APP_BUNDLE_IDENTIFIER = Temi.PodcastApp.development
+
 APP_NAME = PodcastApp Development
+
 APP_ICON_NAME = AppIcon.development
+

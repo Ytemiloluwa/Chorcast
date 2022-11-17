@@ -11,3 +11,5 @@
 APP_BUNDLE_IDENTIFIER = Temi.Podcast.staging
 APP_NAME = Podcast Staging
 APP_ICON_NAME = AppIcon.staging
+
+BASE_URL = https:/$()/itunes.apple.com/search

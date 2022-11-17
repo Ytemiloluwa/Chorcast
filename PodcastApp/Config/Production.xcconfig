@@ -11,3 +11,5 @@
 APP_BUNDLE_IDENTIFIER = Temi.PodcastApp
 APP_NAME = PodcastApp
 APP_ICON_NAME = AppIcon
+
+BASE_URL = https:/$()/itunes.apple.com/search
