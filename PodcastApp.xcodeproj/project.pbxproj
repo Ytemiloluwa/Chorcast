@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B702928088200779CB6 /* APIServiceProtocol.swift */; };
+		A7008B732928119900779CB6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B722928119900779CB6 /* ApiService.swift */; };
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A768141B29268FF500B23F55 /* default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768141A29268FF500B23F55 /* default.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A7008B702928088200779CB6 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		A7008B722928119900779CB6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		A768141A29268FF500B23F55 /* default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = default.swift; sourceTree = "<group>"; };
 		A7AFA1D5291D0261007A1393 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		A7C521BC2926F37700A6C5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A7EC12DC2926235B0084042B /* InternetMonitoring.swift */,
+				A7008B722928119900779CB6 /* ApiService.swift */,
 				A7008B702928088200779CB6 /* APIServiceProtocol.swift */,
 			);
 			path = Networking;
@@ -332,6 +335,7 @@
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
+				A7008B732928119900779CB6 /* ApiService.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
 				A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
