@@ -28,15 +28,34 @@ public class APIService: ApiServiceProtocol {
         
         var components = URLComponents(url: ConfigParser.baseUrl, resolvingAgainstBaseURL: false)
         
-        components?.queryItems = queryItems    
+        components?.queryItems = queryItems
+        
+        return components?.url
     }
     
     public func remotePublisher(term: String, limit: Int) -> AnyPublisher<Data, URLError> {
-        <#code#>
+        guard let url = buildUrl(term: term, limit: limit) else {
+            
+            return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+            
+        }
+        
+        return session
+            .dataTaskPublisher(for: url)
+            .retry(3)
+            .map(\.data)
+            .eraseToAnyPublisher()
     }
     
     public func localPublisher(filename: String) -> AnyPublisher<Data, URLError> {
-        <#code#>
+        
+        guard let url = Bundle.main.url(forResource: filename, withExtension: "json"),
+              let data = try? Data(contentsOf: url) else {
+            
+            return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+        }
+        
+        return CurrentValueSubject<Data, URLError>(data).eraseToAnyPublisher()
     }
     
 }
