@@ -1,0 +1,438 @@
+{
+    "genres": [
+        {
+            "id": 144,
+            "name": "Finance",
+        },
+        {
+            "id": 146,
+            "name": "LGBTQ",
+        },
+        {
+            "id": 197,
+            "name": "Pets & Animals",
+        },
+        {
+            "id": 138,
+            "name": "Movie",
+        },
+        {
+            "id": 157,
+            "name": "Startup",
+        },
+        {
+            "id": 158,
+            "name": "NFL",
+        },
+        {
+            "id": 166,
+            "name": "YouTube",
+        },
+        {
+            "id": 80,
+            "name": "College & High School",
+        },
+        {
+            "id": 90,
+            "name": "Self-Help",
+        },
+        {
+            "id": 109,
+            "name": "Medicine",
+        },
+        {
+            "id": 136,
+            "name": "Crypto & Blockchain",
+        },
+        {
+            "id": 148,
+            "name": "American History",
+        },
+        {
+            "id": 123,
+            "name": "Places & Travel",
+        },
+        {
+            "id": 106,
+            "name": "Fashion & Beauty",
+        },
+        {
+            "id": 175,
+            "name": "Comedy Interviews",
+        },
+        {
+            "id": 137,
+            "name": "NBA",
+        },
+        {
+            "id": 167,
+            "name": "Audio Drama",
+        },
+        {
+            "id": 164,
+            "name": "Apple",
+        },
+        {
+            "id": 238,
+            "name": "Life Sciences",
+        },
+        {
+            "id": 102,
+            "name": "Food",
+        },
+        {
+            "id": 116,
+            "name": "Language Learning",
+        },
+        {
+            "id": 181,
+            "name": "Self-Improvement",
+        },
+        {
+            "id": 198,
+            "name": "Stories for Kids",
+        },
+        {
+            "id": 200,
+            "name": "Animation & Manga",
+        },
+        {
+            "id": 95,
+            "name": "Business News",
+        },
+        {
+            "id": 210,
+            "name": "Music Interviews",
+        },
+        {
+            "id": 213,
+            "name": "Daily News",
+        },
+        {
+            "id": 214,
+            "name": "Entertainment News",
+        },
+        {
+            "id": 255,
+            "name": "Running",
+        },
+        {
+            "id": 215,
+            "name": "News Commentary",
+        },
+        {
+            "id": 69,
+            "name": "Religion & Spirituality",
+        },
+        {
+            "id": 107,
+            "name": "Science",
+        },
+        {
+            "id": 256,
+            "name": "Soccer",
+        },
+        {
+            "id": 108,
+            "name": "Social Sciences",
+        },
+        {
+            "id": 126,
+            "name": "Philosophy",
+        },
+        {
+            "id": 247,
+            "name": "Baseball",
+        },
+        {
+            "id": 250,
+            "name": "Fantasy Sports",
+        },
+        {
+            "id": 251,
+            "name": "Football",
+        },
+        {
+            "id": 112,
+            "name": "Educational Technology",
+        },
+        {
+            "id": 73,
+            "name": "Judaism",
+        },
+        {
+            "id": 263,
+            "name": "Film History",
+        },
+        {
+            "id": 265,
+            "name": "Film Reviews",
+        },
+        {
+            "id": 127,
+            "name": "Technology",
+        },
+        {
+            "id": 93,
+            "name": "Business",
+        },
+        {
+            "id": 219,
+            "name": "Religion",
+        },
+        {
+            "id": 221,
+            "name": "Astronomy",
+        },
+        {
+            "id": 171,
+            "name": "Entrepreneurship",
+        },
+        {
+            "id": 98,
+            "name": "Investing",
+        },
+        {
+            "id": 97,
+            "name": "Management",
+        },
+        {
+            "id": 184,
+            "name": "Drama",
+        },
+        {
+            "id": 185,
+            "name": "Science Fiction",
+        },
+        {
+            "id": 88,
+            "name": "Health & Fitness",
+        },
+        {
+            "id": 91,
+            "name": "Alternative Health",
+        },
+        {
+            "id": 190,
+            "name": "Medicine",
+        },
+        {
+            "id": 191,
+            "name": "Mental Health",
+        },
+        {
+            "id": 192,
+            "name": "Nutrition",
+        },
+        {
+            "id": 141,
+            "name": "Golf",
+        },
+        {
+            "id": 113,
+            "name": "Higher Education",
+        },
+        
+        {
+            "id": 111,
+            "name": "Education",
+        },
+        {
+            "id": 71,
+            "name": "Islam",
+        },
+        {
+            "id": 92,
+            "name": "Sexuality",
+        },
+        {
+            "id": 125,
+            "name": "History",
+        },
+        {
+            "id": 132,
+            "name": "Kids & Family",
+        },
+        {
+            "id": 217,
+            "name": "Sports News",
+        },
+        {
+            "id": 195,
+            "name": "Education for Kids",
+        },
+        {
+            "id": 145,
+            "name": "Parenting",
+        },
+        {
+            "id": 168,
+            "name": "Fiction",
+             
+        },
+        {
+            "id": 206,
+            "name": "Home & Garden",
+        },
+        {
+            "id": 85,
+            "name": "Video Games",
+        },
+        {
+            "id": 208,
+            "name": "Music Commentary",
+        },
+        {
+            "id": 209,
+            "name": "Music History",
+        },
+        {
+            "id": 131,
+            "name": "Tech News",
+        },
+        {
+            "id": 110,
+            "name": "Natural Sciences",
+        },
+        {
+            "id": 253,
+            "name": "Hockey",
+        },
+        {
+            "id": 260,
+            "name": "Wilderness",
+        },
+        {
+            "id": 68,
+            "name": "TV & Film",
+        },
+        {
+            "id": 262,
+            "name": "After Shows",
+        },
+        {
+            "id": 103,
+            "name": "Visual Arts",
+        },
+        {
+            "id": 100,
+            "name": "Arts",
+        },
+        {
+            "id": 173,
+            "name": "Marketing",
+        },
+        {
+            "id": 104,
+            "name": "Books",
+        },
+        {
+            "id": 105,
+            "name": "Design",
+        },
+        {
+            "id": 133,
+            "name": "Comedy",
+             
+        },
+        {
+            "id": 134,
+            "name": "Music",
+        },
+        {
+            "id": 96,
+            "name": "Shopping",
+          
+        },
+        {
+            "id": 87,
+            "name": "Aviation",
+          
+        },
+        {
+            "id": 99,
+            "name": "News",
+          
+        },
+        {
+            "id": 216,
+            "name": "Politics",
+          
+        },
+        {
+            "id": 72,
+            "name": "Buddhism",
+         
+        },
+        {
+            "id": 239,
+            "name": "Mathematics",
+         
+        },
+        {
+            "id": 241,
+            "name": "Nature",
+        
+        },
+        {
+            "id": 242,
+            "name": "Physics",
+    
+        },
+        {
+            "id": 245,
+            "name": "Relationships",
+    
+        },
+        {
+            "id": 77,
+            "name": "Sports",
+        },
+        {
+            "id": 248,
+            "name": "Basketball",
+        },
+        {
+            "id": 249,
+            "name": "Cricket",
+        },
+        {
+            "id": 254,
+            "name": "Rugby",
+        },
+        {
+            "id": 258,
+            "name": "Tennis",
+        },
+        {
+            "id": 259,
+            "name": "Volleyball",
+             
+        },
+        {
+            "id": 261,
+            "name": "Wrestling",
+        },
+        {
+            "id": 266,
+            "name": "TV Reviews",
+        },
+        {
+            "id": 128,
+            "name": "How To",
+        },
+        {
+            "id": 117,
+            "name": "Government",
+        },
+        {
+            "id": 82,
+            "name": "Leisure",
+        },
+        {
+            "id": 204,
+            "name": "Games",
+        }
+    ]
+}
+
