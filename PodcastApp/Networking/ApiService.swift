@@ -20,6 +20,17 @@ public class APIService: ApiServiceProtocol {
         return URLSession(configuration: config, delegate: nil, delegateQueue: nil)
     }
     
+    private func buildUrl(term: String, limit: Int) -> URL? {
+        
+        let queryItems = [URLQueryItem(name: "entity", value: "podcast"),
+        URLQueryItem(name: "term", value: term),
+        URLQueryItem(name: "limit", value: "\(limit)")]
+        
+        var components = URLComponents(url: ConfigParser.baseUrl, resolvingAgainstBaseURL: false)
+        
+        components?.queryItems = queryItems    
+    }
+    
     public func remotePublisher(term: String, limit: Int) -> AnyPublisher<Data, URLError> {
         <#code#>
     }
