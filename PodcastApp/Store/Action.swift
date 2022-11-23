@@ -15,5 +15,6 @@ enum Action {
         case fetchGenres(_filename : String)
     }
     
-    
+    case api(_ action: Api)
+
 }
