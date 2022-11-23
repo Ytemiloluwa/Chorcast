@@ -46,7 +46,7 @@ enum AppState {
     struct Api {
         
         var preferredPodcast: [String: Result<[PodcastViewModel]>] = [:]
-       // var allGenres : Result<[GenreViewModel]> = .loading
+        var allGenres : Result<[GenreViewModel]> = .loading
     }
     
 }
