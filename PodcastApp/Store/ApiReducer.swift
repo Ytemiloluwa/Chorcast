@@ -63,6 +63,19 @@ enum ApiReducer {
         
     }
     
+    
+    private static func setAllGenres(state: AppState.Api, result: GenreList?, completion: @escaping StateCompletion) {
+        
+        var copyState = state
+        
+        guard let genreList = result else { return copyState.allGenres = .failure }
+    
+        copyState.allGenres = .success(genreList.genre.map { GenreViewModel($0)})
+        
+        completion(copyState)
+        
+    }
+    
  
     
     private static func setPreferredPodcasts() {
