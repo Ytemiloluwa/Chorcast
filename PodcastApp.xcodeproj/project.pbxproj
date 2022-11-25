@@ -10,6 +10,7 @@
 		A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B702928088200779CB6 /* APIServiceProtocol.swift */; };
 		A7008B732928119900779CB6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B722928119900779CB6 /* ApiService.swift */; };
 		A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65A29301EFC00C40B1F /* AppEnviroment.swift */; };
+		A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65C293021AB00C40B1F /* ApiReducer.swift */; };
 		A71CED4A292E9DB60013A999 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71CED49292E9DB60013A999 /* Action.swift */; };
 		A71CED4C292EC2220013A999 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71CED4B292EC2220013A999 /* AppState.swift */; };
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
@@ -48,6 +49,7 @@
 		A7008B702928088200779CB6 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		A7008B722928119900779CB6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		A700A65A29301EFC00C40B1F /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
+		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A71CED4B292EC2220013A999 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A768141A29268FF500B23F55 /* default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = default.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				A71CED49292E9DB60013A999 /* Action.swift */,
 				A71CED4B292EC2220013A999 /* AppState.swift */,
 				A700A65A29301EFC00C40B1F /* AppEnviroment.swift */,
+				A700A65C293021AB00C40B1F /* ApiReducer.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */,
 				A71CED4A292E9DB60013A999 /* Action.swift in Sources */,
 				A71CED4C292EC2220013A999 /* AppState.swift in Sources */,
+				A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */,
 				A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */,
 				A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
