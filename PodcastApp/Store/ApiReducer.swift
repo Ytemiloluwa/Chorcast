@@ -22,7 +22,7 @@ enum ApiReducer {
             
             return suscribe(to: publisher, type: PodcastList.self, enviroment: enviroment) { result, _ in
                 
-               
+                
             }
             
             
@@ -32,8 +32,6 @@ enum ApiReducer {
             
             
             return suscribe(to: publisher, type: GenreList.self, enviroment: enviroment) { result, _ in
-                
-                
                 
             }
             
@@ -69,17 +67,22 @@ enum ApiReducer {
         var copyState = state
         
         guard let genreList = result else { return copyState.allGenres = .failure }
-    
+        
         copyState.allGenres = .success(genreList.genre.map { GenreViewModel($0)})
         
         completion(copyState)
         
     }
     
- 
-    
-    private static func setPreferredPodcasts() {
+    private static func setPreferredPodcasts(state: AppState.Api, term: String, result: PodcastList?, completion: @escaping StateCompletion){
         
+        var copyState = state
         
+        guard let PodcastList = result else { return copyState.preferredPodcast[term] = .failure }
+        
+        copyState.preferredPodcast[term] = .success(PodcastList.result
+            .map { PodcastViewModel(podcast: $0)}
+            .filter { !$0.feedUrl.isEmpty && $0.totalEpisodes > 0})
     }
+    
 }
