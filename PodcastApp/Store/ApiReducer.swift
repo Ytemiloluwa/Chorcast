@@ -22,22 +22,19 @@ enum ApiReducer {
             
             return suscribe(to: publisher, type: PodcastList.self, enviroment: enviroment) { result, _ in
                 
-                
+                setPreferredPodcasts(state: state, term: term, result: result, completion: completion)
             }
-            
-            
-            
+        
         case.fetchGenres(let filename):
             let publisher = enviroment.api.localPublisher(filename: filename)
             
             
             return suscribe(to: publisher, type: GenreList.self, enviroment: enviroment) { result, _ in
-                
+                setAllGenres(state: state, result: result, completion: completion)
             }
             
         }
-        
-        
+
     }
     
     private static func suscribe<T: Codable>(to publisher: AnyPublisher<Data, URLError>, type: T.Type, enviroment: AppEnviroment, completion: @escaping (T?, Error?) -> Void) -> AnyCancellable {
