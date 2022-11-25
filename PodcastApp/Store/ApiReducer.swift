@@ -83,6 +83,8 @@ enum ApiReducer {
         copyState.preferredPodcast[term] = .success(PodcastList.result
             .map { PodcastViewModel(podcast: $0)}
             .filter { !$0.feedUrl.isEmpty && $0.totalEpisodes > 0})
+        
+        completion(copyState)
     }
     
 }
