@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Store: ObservableObject {
+    
+    @Published private(set) var apiState = AppState.Api()
+    
+}
