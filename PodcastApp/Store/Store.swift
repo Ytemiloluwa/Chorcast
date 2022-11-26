@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Combine
 
 class Store: ObservableObject {
     
     @Published private(set) var apiState = AppState.Api()
+    
+    private var subscription = Set<AnyCancellable>()
     
 }
