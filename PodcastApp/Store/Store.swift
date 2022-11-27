@@ -14,4 +14,12 @@ class Store: ObservableObject {
     
     private var subscription = Set<AnyCancellable>()
     
+    private let enviroment: AppEnviroment
+    
+    init(enviroment: AppEnviroment = AppEnviroment()) {
+        
+        self.enviroment = enviroment
+    }
+    
 }
+ 
