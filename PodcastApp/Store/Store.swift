@@ -14,9 +14,9 @@ class Store: ObservableObject {
     
     private var subscription = Set<AnyCancellable>()
     
-    private let enviroment: AppEnviroment
+    private let enviroment: AppEnvironment
     
-    init(enviroment: AppEnviroment = AppEnviroment()) {
+    init(enviroment: AppEnvironment = AppEnvironment()) {
         
         self.enviroment = enviroment
     }
@@ -27,7 +27,7 @@ class Store: ObservableObject {
             
         case.api(let action):
             // calling appropriate reducer based on the action emmited by views
-            ApiReducer.execute(action: action, state: apiState, enviroment: enviroment) { [weak self] state in
+            ApiReducer.execute(action: action, state: apiState, environment: enviroment) { [weak self] state in
                 
                 self?.apiState = state
             }.store(in: &subscription)

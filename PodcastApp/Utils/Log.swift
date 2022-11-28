@@ -8,15 +8,6 @@
 import Foundation
 import SwiftUI
 
-extension Date {
-    
-    func toString() -> String {
-        
-        return Log.dateFormatter.string(from: self as Date )
-        
-    }
-}
-
 enum LogEvent: String {
     
     case error = "💥💥💥"
@@ -27,7 +18,6 @@ enum LogEvent: String {
     case severe = "🔥🔥🔥"
     
 }
-
 struct Log {
     
     static private var dateFormat = "yyyy-MM-dd hh:mm"

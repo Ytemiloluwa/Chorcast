@@ -23,7 +23,7 @@ extension String {
         let formatter = createFormatter()
         if let date = formatter.date(from: self) {
             
-            return date.formatted()
+            return date.format()
         }
         
         return ""

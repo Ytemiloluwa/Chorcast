@@ -53,7 +53,7 @@ struct EpisodeViewModel: Identifiable {
 
         self.title = feedItem.title ?? ""
         self.description = feedItem.description ?? ""
-        self.date = feedItem.pubDate.map { $0.formatted() } ?? ""
+        self.date = feedItem.pubDate.map { $0.format() } ?? ""
         self.audioUrl = feedItem.enclosure?.attributes?.url ?? ""
         self.audioLength = feedItem.iTunes?.iTunesDuration ?? 0
         self.audioSize = feedItem.enclosure?.attributes?.length.map { "\($0 / 1000000)MB" } ?? "0 mb"

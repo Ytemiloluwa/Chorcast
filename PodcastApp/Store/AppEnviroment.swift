@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppEnviroment {
+struct AppEnvironment {
     
     let decoder: JSONDecoder
     let api: ApiServiceProtocol

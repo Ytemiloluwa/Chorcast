@@ -9,6 +9,11 @@ import Foundation
 
 extension Date {
     
+    func toString() -> String {
+        
+        return Log.dateFormatter.string(from: self as Date)
+    }
+    
     func format(_ format: String = "d MM yyyy") -> String {
         
         let formatter = DateFormatter()

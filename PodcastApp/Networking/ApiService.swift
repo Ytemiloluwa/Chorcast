@@ -17,12 +17,13 @@ public class APIService: ApiServiceProtocol {
         config.urlCache = URLCache.shared
         config.waitsForConnectivity = true
         config.requestCachePolicy = .reloadRevalidatingCacheData
-        return URLSession(configuration: config, delegate: nil, delegateQueue: nil)
+        return URLSession(configuration: config)
     }
     
     private func buildUrl(term: String, limit: Int) -> URL? {
         
-        let queryItems = [URLQueryItem(name: "entity", value: "podcast"),
+        let queryItems = [
+        URLQueryItem(name: "entity", value: "podcast"),
         URLQueryItem(name: "term", value: term),
         URLQueryItem(name: "limit", value: "\(limit)")]
         
@@ -55,7 +56,7 @@ public class APIService: ApiServiceProtocol {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
         
-        return CurrentValueSubject<Data, URLError>(data).eraseToAnyPublisher()
+        return CurrentValueSubject(data).eraseToAnyPublisher()
     }
     
 }
