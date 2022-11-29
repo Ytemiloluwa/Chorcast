@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B702928088200779CB6 /* APIServiceProtocol.swift */; };
 		A7008B732928119900779CB6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7008B722928119900779CB6 /* ApiService.swift */; };
+		A7009DA1293649E600BD329C /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7009DA0293649E600BD329C /* Color+.swift */; };
 		A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65A29301EFC00C40B1F /* AppEnviroment.swift */; };
 		A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65C293021AB00C40B1F /* ApiReducer.swift */; };
 		A70578F629324A7F0091E38F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70578F529324A7F0091E38F /* Store.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		A7008B702928088200779CB6 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		A7008B722928119900779CB6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A7009DA0293649E600BD329C /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		A700A65A29301EFC00C40B1F /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
 		A70578F529324A7F0091E38F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			children = (
 				A7FFA69F2920C42900279C24 /* Date+.swift */,
 				A7FFA6A12920C48400279C24 /* String+.swift */,
+				A7009DA0293649E600BD329C /* Color+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */,
+				A7009DA1293649E600BD329C /* Color+.swift in Sources */,
 				A71CED4A292E9DB60013A999 /* Action.swift in Sources */,
 				A71CED4C292EC2220013A999 /* AppState.swift in Sources */,
 				A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */,
