@@ -18,6 +18,7 @@
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A768141B29268FF500B23F55 /* default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768141A29268FF500B23F55 /* default.swift */; };
 		A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFA1D5291D0261007A1393 /* Podcast.swift */; };
+		A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */; };
 		A7C521BE2926F3FE00A6C5B5 /* ConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */; };
 		A7CF45FD292AEBFC00A31DDE /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CF45FC292AEBFC00A31DDE /* genres.json */; };
 		A7CF4600292AED1900A31DDE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF45FF292AED1900A31DDE /* Log.swift */; };
@@ -56,6 +57,7 @@
 		A71CED4B292EC2220013A999 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A768141A29268FF500B23F55 /* default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = default.swift; sourceTree = "<group>"; };
 		A7AFA1D5291D0261007A1393 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonStyle.swift; sourceTree = "<group>"; };
 		A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParser.swift; sourceTree = "<group>"; };
 		A7CF45FC292AEBFC00A31DDE /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
 		A7CF45FF292AED1900A31DDE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		A7B6E42A2935EF91002F01D9 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
+				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
 				A7008B732928119900779CB6 /* ApiService.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
