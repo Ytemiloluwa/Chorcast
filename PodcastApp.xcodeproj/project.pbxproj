@@ -18,6 +18,7 @@
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A768141B29268FF500B23F55 /* default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768141A29268FF500B23F55 /* default.swift */; };
+		A794C8B329378F6100DD76B7 /* ButtonToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */; };
 		A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFA1D5291D0261007A1393 /* Podcast.swift */; };
 		A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */; };
 		A7C521BE2926F3FE00A6C5B5 /* ConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */; };
@@ -58,6 +59,7 @@
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A71CED4B292EC2220013A999 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A768141A29268FF500B23F55 /* default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = default.swift; sourceTree = "<group>"; };
+		A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonToggleStyle.swift; sourceTree = "<group>"; };
 		A7AFA1D5291D0261007A1393 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonStyle.swift; sourceTree = "<group>"; };
 		A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParser.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */,
+				A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */,
 				A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */,
 				A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */,
+				A794C8B329378F6100DD76B7 /* ButtonToggleStyle.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
