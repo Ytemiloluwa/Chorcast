@@ -14,12 +14,14 @@ struct GetStartedButton: View {
         Button(action: action, label: {
             
             Text("Get started")
-        })
+        }).buttonStyle(AccentButtonStyle(verticalPadding: 15))
     }
 }
 
 struct GetStartedButton_Previews: PreviewProvider {
     static var previews: some View {
+    
         GetStartedButton()
+
     }
 }
