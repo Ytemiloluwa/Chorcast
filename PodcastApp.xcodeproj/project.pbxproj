@@ -131,6 +131,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A794C8B62937A27500DD76B7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A794C8B72937A27F00DD76B7 /* GenreSelection */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A794C8B72937A27F00DD76B7 /* GenreSelection */ = {
+			isa = PBXGroup;
+			children = (
+				A7B6E42C2935EFAF002F01D9 /* Components */,
+				A7B6E42B2935EF9B002F01D9 /* Elements */,
+				A7B6E42A2935EF91002F01D9 /* Styles */,
+			);
+			path = GenreSelection;
+			sourceTree = "<group>";
+		};
 		A7AFA1D4291D023E007A1393 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,10 +219,8 @@
 		A7DA2D52291AD2FA002D7EA1 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A794C8B62937A27500DD76B7 /* Screens */,
 				A7B6E42D2935EFCA002F01D9 /* Modifiers */,
-				A7B6E42C2935EFAF002F01D9 /* Components */,
-				A7B6E42B2935EF9B002F01D9 /* Elements */,
-				A7B6E42A2935EF91002F01D9 /* Styles */,
 				A71CED48292E9D990013A999 /* Store */,
 				A7CF45FE292AECFF00A31DDE /* Utils */,
 				A7F0DBEB292AE8B200713D01 /* Static */,
