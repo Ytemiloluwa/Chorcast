@@ -18,8 +18,8 @@ struct AccentButtonStyle: ButtonStyle {
         return configuration.label
             .padding(.horizontal, horizontalPadding)
             .padding(.vertical, verticalPadding)
-            .foregroundColor(Color.backgroundColor)
-            .background(Color.accentColor)
+            .foregroundColor(Color.gray)
+            .background(Color.backgroundColor.opacity(0.3))
             .cornerRadius(15)
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
         

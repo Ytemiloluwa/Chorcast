@@ -12,7 +12,7 @@ struct GenreSelectionCollection: View {
     var genres: [GenreViewModel]
     @Binding var selectedGenres: [String : GenreViewModel]
     
-    private let gridItems = Array(repeating: GridItem.init(.adaptive(minimum: 40)), count: 1)
+    private let gridItems = Array(repeating: GridItem.init(.adaptive(minimum: 40), spacing: 20), count: 1)
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             
