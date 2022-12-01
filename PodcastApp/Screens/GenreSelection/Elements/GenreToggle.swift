@@ -18,12 +18,16 @@ struct GenreToggle: View {
             
             Text(genre.name)
         }).toggleStyle(ButtonToggleStyle(cornerradius: 30))
+            .onChange(of: isAvtive, perform: { isActive in
+                
+                onToggle(isActive)
+                
+        })
     }
 }
-
 struct GenreToggle_Previews: PreviewProvider {
     static var previews: some View {
         GenreToggle(genre: GenreViewModel.placeHolder)
-            .previewLayout(.sizeThatFits)
+          .previewLayout(.sizeThatFits)
     }
 }
