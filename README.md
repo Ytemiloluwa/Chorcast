@@ -8,10 +8,10 @@ PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Developm
 <table>
   <tr>
     <td>Placeholder view loading Genres</td>
-    <td>Genre selection screen successfully loaded Genres</td>
+    <td>GenreSelectionScreen successfully loaded Genres</td>
   </tr>
   <tr>
-    <td><img width="329" alt="Screenshot 2022-12-01 at 13 57 08" src="https://user-images.githubusercontent.com/91268094/205089161-8c520825-2983-4810-85ea-528dbc69cf86.png"></td>
+    <td><img width="330" alt="Screenshot 2022-12-01 at 13 57 08" src="https://user-images.githubusercontent.com/91268094/205089161-8c520825-2983-4810-85ea-528dbc69cf86.png"></td>
     <td><img width="330" alt="Screenshot 2022-12-01 at 14 01 35" src="https://user-images.githubusercontent.com/91268094/205089174-a97452ff-64f2-40ae-b4fc-b10919162e7f.png"></td>
   </tr>
  </table>
