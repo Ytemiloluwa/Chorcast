@@ -14,7 +14,7 @@ struct GenreSelectionHeader: View {
                 .font(.largeTitle)
                 .bold()
             
-            BodyText(value: "To get started please choose at least 3 categories that interest you so that we provide you with what like from the start. Go ahead!")
+            BodyText(value: "To get started please choose at least 3 categories that interests you so that we can provide you with what you like from the start. Go ahead!")
             
         }.padding()
     }
