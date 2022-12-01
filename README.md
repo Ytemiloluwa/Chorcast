@@ -1,7 +1,7 @@
 # PodcastApp (iOS, iPadOS, macOS & watchOS)
 PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Development)
 
-## Latest Developement of PodcastApp as of 01/12/2022
+## Latest Development of PodcastApp as of 01/12/2022
 
 ## Simulated on iPhone 14 Pro Max iOS 16.1
 
