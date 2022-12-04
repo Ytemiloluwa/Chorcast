@@ -53,6 +53,7 @@
 		A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */; };
 		A7EBBEE2293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBBEE0293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift */; };
 		A7EBBEE3293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBBEE1293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift */; };
+		A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */; };
 		A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC12DC2926235B0084042B /* InternetMonitoring.swift */; };
 		A7FFA6A02920C42900279C24 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA69F2920C42900279C24 /* Date+.swift */; };
 		A7FFA6A22920C48400279C24 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA6A12920C48400279C24 /* String+.swift */; };
@@ -103,6 +104,7 @@
 		A7E7C4A1291D3A5200A7815F /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewModel.swift; sourceTree = "<group>"; };
 		A7EBBEE0293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenreManagedObject+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A7EBBEE1293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenreManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
 		A7EC12DC2926235B0084042B /* InternetMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitoring.swift; sourceTree = "<group>"; };
 		A7FFA69F2920C42900279C24 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		A7FFA6A12920C48400279C24 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				A7EBBEE1293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift */,
 				A7EBBEE0293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift */,
+				A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				A794C8BB293801EB00DD76B7 /* GenreToggle.swift in Sources */,
 				A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */,
 				A7EBBEE2293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift in Sources */,
+				A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
 				A768141B29268FF500B23F55 /* default.swift in Sources */,
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
