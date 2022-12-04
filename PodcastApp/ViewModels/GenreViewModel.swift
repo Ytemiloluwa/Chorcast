@@ -32,5 +32,12 @@ struct GenreViewModel: Identifiable, Equatable {
         self.id = genre.id
         self.name = genre.name
     }
+    
+    init(genre managedObject: GenreManagedObject) {
+        
+        self.id = Int(managedObject.id)
+        self.name = managedObject.name ?? ""
+        
+    }
 
 }
