@@ -18,6 +18,7 @@
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A75297BE293DCE1700CB3B9A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75297BD293DCE1700CB3B9A /* CoreDataService.swift */; };
+		A75297C0293E9D5900CB3B9A /* CoreDataReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75297BF293E9D5900CB3B9A /* CoreDataReducer.swift */; };
 		A7635D5229387F62005A0278 /* GenreSelectionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7635D5129387F62005A0278 /* GenreSelectionCollection.swift */; };
 		A7635D54293899B6005A0278 /* GenreSelectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7635D53293899B6005A0278 /* GenreSelectionHeader.swift */; };
 		A7635D5629389EB7005A0278 /* GenreSelectionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7635D5529389EB7005A0278 /* GenreSelectionContent.swift */; };
@@ -70,6 +71,7 @@
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A71CED4B292EC2220013A999 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A75297BD293DCE1700CB3B9A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		A75297BF293E9D5900CB3B9A /* CoreDataReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataReducer.swift; sourceTree = "<group>"; };
 		A7635D5129387F62005A0278 /* GenreSelectionCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionCollection.swift; sourceTree = "<group>"; };
 		A7635D53293899B6005A0278 /* GenreSelectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionHeader.swift; sourceTree = "<group>"; };
 		A7635D5529389EB7005A0278 /* GenreSelectionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionContent.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				A71CED4B292EC2220013A999 /* AppState.swift */,
 				A700A65A29301EFC00C40B1F /* AppEnviroment.swift */,
 				A700A65C293021AB00C40B1F /* ApiReducer.swift */,
+				A75297BF293E9D5900CB3B9A /* CoreDataReducer.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
 				A794C8B92937A60200DD76B7 /* GetStartedButton.swift in Sources */,
 				A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */,
+				A75297C0293E9D5900CB3B9A /* CoreDataReducer.swift in Sources */,
 				A7635D5629389EB7005A0278 /* GenreSelectionContent.swift in Sources */,
 				A7FFA6A22920C48400279C24 /* String+.swift in Sources */,
 				A70578F629324A7F0091E38F /* Store.swift in Sources */,

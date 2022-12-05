@@ -31,6 +31,8 @@ class Store: ObservableObject {
                 
                 self?.apiState = state
             }.store(in: &subscription)
+        case .coreData(let action):
+            break
         }
     }
     
