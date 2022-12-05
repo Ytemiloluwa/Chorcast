@@ -10,6 +10,11 @@ import CoreData
 
 class CoreDataService: CoreDataserviceProtocol {
     
+    private var content: NSManagedObjectContext {
+        
+        return PersistenceController.shared.container.viewContext
+    }
+    
     func saveGenres(_ genres: [GenreViewModel]) -> Bool {
         return false
     }
