@@ -49,4 +49,9 @@ enum AppState {
         var allGenres : Result<[GenreViewModel]> = .loading
     }
     
+    struct CoreData {
+        
+        var savedGenres: [GenreViewModel] = []
+    }
+    
 }
