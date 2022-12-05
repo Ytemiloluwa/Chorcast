@@ -15,6 +15,13 @@ enum Action {
         case fetchGenres(_filename : String)
     }
     
+    enum CoreData {
+        
+        case fetchGenres
+        case saveGenres(_ genres: [GenreViewModel])
+    }
+    
     case api(_ action: Api)
+    case coreData(_ action: CoreData)
 
 }
