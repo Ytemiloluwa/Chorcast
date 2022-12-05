@@ -10,16 +10,35 @@ import CoreData
 
 class CoreDataService: CoreDataserviceProtocol {
     
-    private var content: NSManagedObjectContext {
+    private var context: NSManagedObjectContext {
         
         return PersistenceController.shared.container.viewContext
     }
     
     func saveGenres(_ genres: [GenreViewModel]) -> Bool {
+        
+        genres.forEach {
+            
+            let newGenres = GenreManagedObject(context: context)
+            newGenres.id = Int64($0.id)
+            newGenres.name = $0.name
+        }
         return false
     }
     
     func fetchGenres() -> [GenreViewModel] {
-        return []
+        
+        let request: NSFetchRequest<GenreManagedObject> = GenreManagedObject.fetchRequest()
+        
+        do {
+            
+            let result = try context.fetch(request)
+            return result.map { GenreViewModel(genre: $0)}
+        } catch let error {
+            Log.error(error)
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            
+        }
     }
 }
