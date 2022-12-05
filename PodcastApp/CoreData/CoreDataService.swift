@@ -6,4 +6,15 @@
 //
 
 import Foundation
+import CoreData
 
+class CoreDataService: CoreDataserviceProtocol {
+    
+    func saveGenres(_ genres: [GenreViewModel]) -> Bool {
+        return false
+    }
+    
+    func fetchGenres() -> [GenreViewModel] {
+        return []
+    }
+}
