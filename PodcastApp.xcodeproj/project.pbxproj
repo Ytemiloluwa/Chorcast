@@ -60,6 +60,8 @@
 		A7FF1CAC293F46E300E08793 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
 		A7FF1CAD293F6ECB00E08793 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7009DA0293649E600BD329C /* Color+.swift */; };
 		A7FF1CAF293F6F7100E08793 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF1CAE293F6F7100E08793 /* MenuItem.swift */; };
+		A7FF1CB5293F79C700E08793 /* MenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF1CB4293F79C700E08793 /* MenuLink.swift */; };
+		A7FF1CB7293F9D3D00E08793 /* HomeMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF1CB6293F9D3D00E08793 /* HomeMenuList.swift */; };
 		A7FFA6A02920C42900279C24 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA69F2920C42900279C24 /* Date+.swift */; };
 		A7FFA6A22920C48400279C24 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA6A12920C48400279C24 /* String+.swift */; };
 /* End PBXBuildFile section */
@@ -114,6 +116,8 @@
 		A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
 		A7EC12DC2926235B0084042B /* InternetMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitoring.swift; sourceTree = "<group>"; };
 		A7FF1CAE293F6F7100E08793 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		A7FF1CB4293F79C700E08793 /* MenuLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLink.swift; sourceTree = "<group>"; };
+		A7FF1CB6293F9D3D00E08793 /* HomeMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuList.swift; sourceTree = "<group>"; };
 		A7FFA69F2920C42900279C24 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		A7FFA6A12920C48400279C24 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +165,7 @@
 		A794C8B62937A27500DD76B7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A7FF1CB0293F796A00E08793 /* Home */,
 				A794C8B72937A27F00DD76B7 /* GenreSelection */,
 			);
 			path = Screens;
@@ -353,6 +358,39 @@
 			path = Static;
 			sourceTree = "<group>";
 		};
+		A7FF1CB0293F796A00E08793 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF1CB3293F799000E08793 /* Elements */,
+				A7FF1CB2293F798600E08793 /* Components */,
+				A7FF1CB1293F798000E08793 /* Styles */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A7FF1CB1293F798000E08793 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A7FF1CB2293F798600E08793 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF1CB6293F9D3D00E08793 /* HomeMenuList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A7FF1CB3293F799000E08793 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF1CB4293F79C700E08793 /* MenuLink.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		A7FFA69E2920C41500279C24 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +544,7 @@
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
 				A794C8B92937A60200DD76B7 /* GetStartedButton.swift in Sources */,
 				A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */,
+				A7FF1CB5293F79C700E08793 /* MenuLink.swift in Sources */,
 				A75297C0293E9D5900CB3B9A /* CoreDataReducer.swift in Sources */,
 				A7635D5629389EB7005A0278 /* GenreSelectionContent.swift in Sources */,
 				A7FFA6A22920C48400279C24 /* String+.swift in Sources */,
@@ -517,6 +556,7 @@
 				A7EBBEE3293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift in Sources */,
 				A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */,
 				A7FF1CAF293F6F7100E08793 /* MenuItem.swift in Sources */,
+				A7FF1CB7293F9D3D00E08793 /* HomeMenuList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
