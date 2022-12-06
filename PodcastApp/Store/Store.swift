@@ -11,6 +11,7 @@ import Combine
 class Store: ObservableObject {
     // notify views that will use it whenever it changes
     @Published private(set) var apiState = AppState.Api()
+    @Published private(set) var coreDataState = AppState.CoreData()
     
     private var subscription = Set<AnyCancellable>()
     
@@ -32,7 +33,7 @@ class Store: ObservableObject {
                 self?.apiState = state
             }.store(in: &subscription)
         case .coreData(let action):
-            break
+            CoreDataReducer.execute(action: action, state: &coreDataState, environment: enviroment)
         }
     }
     
