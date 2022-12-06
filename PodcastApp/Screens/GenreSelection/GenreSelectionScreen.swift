@@ -19,11 +19,13 @@ struct GenreSelectionScreen: View {
                 
                 store.dispatch(.api(.fetchGenres(_filename: "genres")))
             }).redacted(reason: .placeholder)
-        case.success(let data):
-            GenreSelectionContent(genres: data) { _ in
+        case.success(let genres):
+            
+            GenreSelectionContent(genres: genres, onContinue: { selectedGenres in
                 
-                
-            }
+                store.dispatch(.coreData(.saveGenres(selectedGenres)))
+            })
+         
         case.failure:
              Text("Failed to Load genres...")
         }
