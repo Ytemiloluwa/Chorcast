@@ -57,6 +57,7 @@
 		A7EBBEE3293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBBEE1293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift */; };
 		A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */; };
 		A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC12DC2926235B0084042B /* InternetMonitoring.swift */; };
+		A7FF1CAC293F46E300E08793 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
 		A7FFA6A02920C42900279C24 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA69F2920C42900279C24 /* Date+.swift */; };
 		A7FFA6A22920C48400279C24 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA6A12920C48400279C24 /* String+.swift */; };
 /* End PBXBuildFile section */
@@ -260,7 +261,6 @@
 				A7AFA1D4291D023E007A1393 /* Models */,
 				A7DA2D85291AD97D002D7EA1 /* Config */,
 				A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */,
-				A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */,
 				A7DA2D5A291AD2FA002D7EA1 /* ContentView.swift */,
 				A7DA2D5C291AD2FB002D7EA1 /* Assets.xcassets */,
 				A7DA2D5E291AD2FB002D7EA1 /* PodcastApp.entitlements */,
@@ -325,6 +325,7 @@
 				A7EBBEE1293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift */,
 				A7EBBEE0293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift */,
 				A7EBBEE5293D515A00E4C2FF /* CoreDataServiceProtocol.swift */,
+				A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */,
 				A75297BD293DCE1700CB3B9A /* CoreDataService.swift */,
 			);
 			path = CoreData;
@@ -518,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FF1CAC293F46E300E08793 /* Persistence.swift in Sources */,
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
 				A7DA2D6E291AD44D002D7EA1 /* watchOSApp.swift in Sources */,
 			);
