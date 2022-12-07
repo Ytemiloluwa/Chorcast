@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct SeeAllLink: View {
+struct SeeAllLink<Destination: View>: View {
+    private var destination: Destination
+    
+    init(@ViewBuilder destination: (() -> Destination)) {
+        
+        self.destination = destination()
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: destination) {
+            
+            Text("See All")
+        }
     }
 }
 
 struct SeeAllLink_Previews: PreviewProvider {
     static var previews: some View {
-        SeeAllLink()
+        SeeAllLink(destination: {
+            
+            Text("See All")
+        })
     }
 }
