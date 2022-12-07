@@ -1,6 +1,32 @@
 # PodcastApp (iOS, iPadOS, macOS & watchOS)
 PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Development)
 
+
+
+## Latest Development of PodcastApp as of 07/12/2022
+
+## Simulated on iPhone 14 Pro iOS 16.1
+
+<table>
+  <tr>
+    <td>HomeScreen in White mode</td>
+    <td>HomeScreen in Dark mode</td>
+  </tr>
+  <tr>
+    <td><img width="330" alt="PodcastApp white" src="https://user-images.githubusercontent.com/91268094/206254835-ebed4461-e073-4eab-a990-aaa55bf1dbaa.png"></td>
+    <td>
+<img width="330" alt="PodcastApp black" src="https://user-images.githubusercontent.com/91268094/206254865-a026bdb6-129d-4a6c-99c7-489ad4f0d71f.png"></td>
+  </tr>
+ </table>
+
+
+
+
+
+
+
+
+
 ## Latest Development of PodcastApp as of 01/12/2022
 
 ## Simulated on iPhone 14 Pro Max iOS 16.1
