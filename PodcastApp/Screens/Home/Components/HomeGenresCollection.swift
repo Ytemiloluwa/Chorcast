@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeGenresCollectionComponent: View {
+struct HomeGenresCollection: View {
     
     var genres: [GenreViewModel]
     
@@ -29,8 +29,8 @@ struct HomeGenresCollectionComponent: View {
     }
 }
 
-struct HomeGenresCollectionComponent_Previews: PreviewProvider {
+struct HomeGenresCollection_Previews: PreviewProvider {
     static var previews: some View {
-        HomeGenresCollectionComponent(genres: GenreViewModel.listPlaceHolders)
+        HomeGenresCollection(genres: GenreViewModel.listPlaceHolders)
     }
 }
