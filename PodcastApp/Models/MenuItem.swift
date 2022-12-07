@@ -19,6 +19,6 @@ struct MenuItem: Identifiable, Equatable {
     }
     static var all: [MenuItem] {
         
-        [MenuItem(name: "Profile", icon: "person.crop.cirlce.fill"), MenuItem(name: "Search", icon: "magniflyingglass.circle.fill"), MenuItem(name: "Downloaded", icon: "sqaure.and.arrow.down.fill"), MenuItem(name: "Bookmarked", icon: "bookmark.fill")]
+        [MenuItem(name: "Profile", icon: "person.crop.circle.fill"), MenuItem(name: "Search", icon: "magnifyingglass.circle.fill"), MenuItem(name: "Downloaded", icon: "square.and.arrow.down.fill"), MenuItem(name: "Bookmarked", icon: "bookmark.fill")]
     }
 }

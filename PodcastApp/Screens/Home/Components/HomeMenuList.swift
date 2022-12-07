@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeMenuList: View {
     var body: some View {
-        ScrollView {
+        ScrollView(.horizontal, showsIndicators: false){
             
             HStack(spacing: 15) {
                 
@@ -23,22 +23,14 @@ struct HomeMenuList: View {
                     }
                 }
             }
-        }
+        }.padding(.horizontal)
     }
 }
 
 struct HomeMenuList_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            HomeMenuList()
-                .frame(height: 100)
-                .previewLayout(.sizeThatFits)
-            
-            HomeMenuList()
-                .preferredColorScheme(.dark)
-                .frame(height: 100)
-                .previewLayout(.sizeThatFits)
-                
-        }
+        
+        HomeMenuList()
+            .frame(height: 100)
     }
 }

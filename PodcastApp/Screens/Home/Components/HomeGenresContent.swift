@@ -18,10 +18,10 @@ struct HomeGenresContent: View {
         case.loading:
             createContent(genres: GenreViewModel.listPlaceHolders)
                 .redacted(reason: .placeholder)
-                .onAppear {
+                .onAppear(perform: {
                     
                     store.dispatch(.api(.fetchGenres(_filename: "genres")))
-                }
+                })
             
         case.success(let genres):
             createContent(genres: genres)
@@ -29,6 +29,7 @@ struct HomeGenresContent: View {
         case.failure:
             Text("Failed to Load Genres")
         }
+        
     }
     
     private func createContent(genres: [GenreViewModel]) -> some View {
@@ -43,17 +44,9 @@ struct HomeGenresContent: View {
 
 struct HomeGenresContent_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            
-            HomeGenresContent()
-//                .background(Color.background)
-                .previewLayout(.sizeThatFits)
-//                .colorScheme(.dark)
-//            HomeGenresContent()
-//                .background(Color.background)
-//                .previewLayout(.sizeThatFits)
-//                .colorScheme(.light)
-            
-        }.environmentObject(Store())
+        
+        HomeGenresContent()
+            .environmentObject(Store())
+        
     }
 }
