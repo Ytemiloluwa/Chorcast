@@ -9,23 +9,14 @@ PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Developm
 
 <table>
   <tr>
+    <td>HomeScreen in Dark mode </td>
     <td>HomeScreen in White mode</td>
-    <td>HomeScreen in Dark mode</td>
   </tr>
   <tr>
-    <td><img width="330" alt="PodcastApp white" src="https://user-images.githubusercontent.com/91268094/206254835-ebed4461-e073-4eab-a990-aaa55bf1dbaa.png"></td>
-    <td>
-<img width="330" alt="PodcastApp black" src="https://user-images.githubusercontent.com/91268094/206254865-a026bdb6-129d-4a6c-99c7-489ad4f0d71f.png"></td>
+    <td><img width="330" height = "660" alt="Screenshot 2022-12-07 at 18 54 19" src="https://user-images.githubusercontent.com/91268094/206259933-819b203c-4c27-41e6-aaa7-4c6b9ed5a300.png"></td>
+    <td><img width="330" height = "660" alt="Screenshot 2022-12-07 at 18 55 49" src="https://user-images.githubusercontent.com/91268094/206259940-ecebc0ef-2a18-4233-9218-ea37ff246d90.png"></td>
   </tr>
  </table>
-
-
-
-
-
-
-
-
 
 ## Latest Development of PodcastApp as of 01/12/2022
 
