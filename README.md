@@ -20,6 +20,19 @@ PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Developm
 
 ## Latest Development of PodcastApp as of 01/12/2022
 
+## iPadOS 
+
+GenreSelectionScreen on iPad Pro 11th Gen ( Dark Mode )
+
+<img width="518" alt="Screenshot 2022-12-08 at 12 03 37" src="https://user-images.githubusercontent.com/91268094/206434947-504cfb69-505e-4f61-bedd-1268633a259c.png">
+
+GenreSelectionScreen on iPad Pro 11th Gen ( Light Mode )
+
+<img width="519" alt="Screenshot 2022-12-08 at 12 06 00" src="https://user-images.githubusercontent.com/91268094/206434973-d3d2b500-a174-4103-aece-d6647b341878.png">
+
+
+## iOS 
+
 ## Simulated on iPhone 14 Pro Max iOS 16.1
 
 <table>
