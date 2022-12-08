@@ -34,7 +34,7 @@ struct GenreSelectionContent: View {
                     })
                 }
             }.padding(.vertical, 40)
-        }.background(Color.white)
+        }
     }
 }
 
