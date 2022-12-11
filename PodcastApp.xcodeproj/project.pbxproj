@@ -14,6 +14,7 @@
 		A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65C293021AB00C40B1F /* ApiReducer.swift */; };
 		A703CF772945ABCA00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
 		A703CF7C2945B47E00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
+		A703CF7E2946266A00177512 /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A703CF7D2946266A00177512 /* podcasts.json */; };
 		A70578F629324A7F0091E38F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70578F529324A7F0091E38F /* Store.swift */; };
 		A71194F72942872200AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
 		A71194F8294288D000AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
@@ -88,6 +89,7 @@
 		A700A65A29301EFC00C40B1F /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
 		A703CF762945ABCA00177512 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		A703CF7D2946266A00177512 /* podcasts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
 		A70578F529324A7F0091E38F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A71194F62942872200AD0B97 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 		A7F0DBEB292AE8B200713D01 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				A703CF7D2946266A00177512 /* podcasts.json */,
 				A7CF45FC292AEBFC00A31DDE /* genres.json */,
 			);
 			path = Static;
@@ -570,6 +573,7 @@
 				A7CF45FD292AEBFC00A31DDE /* genres.json in Resources */,
 				A7DA2D8D291ADADA002D7EA1 /* Production.xcconfig in Resources */,
 				A7DA2D87291ADA97002D7EA1 /* Development.xcconfig in Resources */,
+				A703CF7E2946266A00177512 /* podcasts.json in Resources */,
 				A7DA2D61291AD2FB002D7EA1 /* Preview Assets.xcassets in Resources */,
 				A7DA2D5D291AD2FB002D7EA1 /* Assets.xcassets in Resources */,
 			);
