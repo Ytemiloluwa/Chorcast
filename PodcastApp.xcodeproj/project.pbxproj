@@ -12,6 +12,8 @@
 		A7009DA1293649E600BD329C /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7009DA0293649E600BD329C /* Color+.swift */; };
 		A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65A29301EFC00C40B1F /* AppEnviroment.swift */; };
 		A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65C293021AB00C40B1F /* ApiReducer.swift */; };
+		A703CF772945ABCA00177512 /* RenameImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RenameImage.swift */; };
+		A703CF7C2945B47E00177512 /* RenameImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RenameImage.swift */; };
 		A70578F629324A7F0091E38F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70578F529324A7F0091E38F /* Store.swift */; };
 		A71194F72942872200AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
 		A71194F8294288D000AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
@@ -85,6 +87,7 @@
 		A7009DA0293649E600BD329C /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		A700A65A29301EFC00C40B1F /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
+		A703CF762945ABCA00177512 /* RenameImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameImage.swift; sourceTree = "<group>"; };
 		A70578F529324A7F0091E38F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A71194F62942872200AD0B97 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -165,6 +168,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A703CF742945ABA400177512 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				A703CF7A2945AD3900177512 /* Modifiers */,
+				A703CF792945AD2300177512 /* Styles */,
+				A703CF782945AD1500177512 /* Elements */,
+				A703CF752945ABB100177512 /* Components */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		A703CF752945ABB100177512 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7FF1CB8293FF17500E08793 /* GenreView.swift */,
+				A703CF762945ABCA00177512 /* RenameImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A703CF782945AD1500177512 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A794C8B429379E9600DD76B7 /* BodyText.swift */,
+				A7ECB73B2940AE3300BA2EAD /* GenreLinkView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		A703CF792945AD2300177512 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */,
+				A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A703CF7A2945AD3900177512 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		A71CED48292E9D990013A999 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,8 +266,6 @@
 		A7B6E42A2935EF91002F01D9 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */,
-				A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -227,7 +273,6 @@
 		A7B6E42B2935EF9B002F01D9 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				A794C8B429379E9600DD76B7 /* BodyText.swift */,
 				A794C8B82937A60100DD76B7 /* GetStartedButton.swift */,
 				A794C8BA293801EB00DD76B7 /* GenreToggle.swift */,
 			);
@@ -240,8 +285,6 @@
 				A7635D5129387F62005A0278 /* GenreSelectionCollection.swift */,
 				A7635D53293899B6005A0278 /* GenreSelectionHeader.swift */,
 				A7635D5529389EB7005A0278 /* GenreSelectionContent.swift */,
-				A7FF1CB8293FF17500E08793 /* GenreView.swift */,
-				A7ECB73B2940AE3300BA2EAD /* GenreLinkView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -285,6 +328,7 @@
 		A7DA2D52291AD2FA002D7EA1 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A703CF742945ABA400177512 /* SharedUI */,
 				A7EBBEE4293CE2FC00E4C2FF /* CoreData */,
 				A794C8B62937A27500DD76B7 /* Screens */,
 				A7B6E42D2935EFCA002F01D9 /* Modifiers */,
@@ -408,9 +452,9 @@
 			children = (
 				A7FF1CB6293F9D3D00E08793 /* HomeMenuList.swift */,
 				A7ECB73D2940CB0900BA2EAD /* HomeSectionHeaderView.swift */,
+				A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */,
 				A7ECB73F2940D42E00BA2EAD /* HomeGenresCollection.swift */,
 				A7ECB7412940DFE600BA2EAD /* HomeGenresContent.swift */,
-				A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -571,6 +615,7 @@
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
 				A7FA8CB02943129300D2226A /* ImageCache.swift in Sources */,
 				A7008B732928119900779CB6 /* ApiService.swift in Sources */,
+				A703CF772945ABCA00177512 /* RenameImage.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
 				A7ECB7422940DFE600BA2EAD /* HomeGenresContent.swift in Sources */,
 				A75297BE293DCE1700CB3B9A /* CoreDataService.swift in Sources */,
@@ -614,6 +659,7 @@
 				A7FF1CAD293F6ECB00E08793 /* Color+.swift in Sources */,
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
 				A7DA2D6E291AD44D002D7EA1 /* watchOSApp.swift in Sources */,
+				A703CF7C2945B47E00177512 /* RenameImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
