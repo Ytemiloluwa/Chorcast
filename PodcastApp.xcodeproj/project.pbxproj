@@ -15,6 +15,8 @@
 		A703CF772945ABCA00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
 		A703CF7C2945B47E00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
 		A703CF7E2946266A00177512 /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A703CF7D2946266A00177512 /* podcasts.json */; };
+		A703CF80294685DB00177512 /* PreviewApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF7F294685DB00177512 /* PreviewApiService.swift */; };
+		A703CF812946864600177512 /* PreviewApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF7F294685DB00177512 /* PreviewApiService.swift */; };
 		A70578F629324A7F0091E38F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70578F529324A7F0091E38F /* Store.swift */; };
 		A71194F72942872200AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
 		A71194F8294288D000AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
@@ -90,6 +92,7 @@
 		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
 		A703CF762945ABCA00177512 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		A703CF7D2946266A00177512 /* podcasts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
+		A703CF7F294685DB00177512 /* PreviewApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewApiService.swift; sourceTree = "<group>"; };
 		A70578F529324A7F0091E38F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A71194F62942872200AD0B97 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A71CED49292E9DB60013A999 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -420,6 +423,7 @@
 				A7008B722928119900779CB6 /* ApiService.swift */,
 				A7008B702928088200779CB6 /* APIServiceProtocol.swift */,
 				A7FA8CB22943201100D2226A /* ImageDownloader.swift */,
+				A703CF7F294685DB00177512 /* PreviewApiService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -649,6 +653,7 @@
 				A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */,
 				A7FF1CAF293F6F7100E08793 /* MenuItem.swift in Sources */,
 				A7FF1CB7293F9D3D00E08793 /* HomeMenuList.swift in Sources */,
+				A703CF80294685DB00177512 /* PreviewApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +669,7 @@
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
 				A7DA2D6E291AD44D002D7EA1 /* watchOSApp.swift in Sources */,
 				A703CF7C2945B47E00177512 /* RemoteImage.swift in Sources */,
+				A703CF812946864600177512 /* PreviewApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
