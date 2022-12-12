@@ -18,10 +18,10 @@ struct HomeGenresContent: View {
         case.loading:
             createContent(genres: GenreViewModel.listPlaceHolders)
                 .redacted(reason: .placeholder)
-                .onAppear(perform: {
+                .onAppear{
                     
                     store.dispatch(.api(.fetchGenres(_filename: "genres")))
-                })
+                }
             
         case.success(let genres):
             createContent(genres: genres)
@@ -43,10 +43,23 @@ struct HomeGenresContent: View {
 }
 
 struct HomeGenresContent_Previews: PreviewProvider {
+    
+    static let store = Store(enviroment: AppEnvironment(api: previewApiService(), coredata: PreviewCoreDataService()))
     static var previews: some View {
         
-        HomeGenresContent()
-            .environmentObject(Store())
+        Group {
+            
+            HomeGenresContent()
+                .background(Color.backgroundColor)
+                .previewLayout(.sizeThatFits)
+                .colorScheme(.dark)
+            
+            HomeGenresContent()
+                .background(Color.backgroundColor)
+                .previewLayout(.sizeThatFits)
+                .colorScheme(.light)
+            
+        }  .environmentObject(store)
         
     }
 }

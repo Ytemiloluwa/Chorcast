@@ -23,10 +23,12 @@ struct HomeScreen: View {
     }
 }
 struct HomeScreen_Previews: PreviewProvider {
+    
+    static let store = Store(enviroment: AppEnvironment(api: previewApiService(), coredata: PreviewCoreDataService()))
     static var previews: some View {
         
         HomeScreen()
-            .environmentObject(Store())
+            .environmentObject(store)
         
     }
 }
