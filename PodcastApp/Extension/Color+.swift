@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Color {
     
-    static let pop = Color("pop")
+    static let pop = Color("Pop")
     static let backgroundColor = Color("backgroundColor")
     static let overlay = Color("overlay")
     static let text = Color("text")
