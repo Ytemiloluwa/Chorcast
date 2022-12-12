@@ -23,7 +23,7 @@ class CoreDataService: CoreDataserviceProtocol {
             newGenres.id = Int64($0.id)
             newGenres.name = $0.name
         }
-        return false
+        return saveContext()
     }
     
     func fetchGenres() -> [GenreViewModel] {
@@ -41,4 +41,23 @@ class CoreDataService: CoreDataserviceProtocol {
             
         }
     }
+    
+    private func saveContext() -> Bool {
+        
+        do {
+            
+            if context.hasChanges {
+                
+                try context.save()
+            }
+        } catch {
+            
+            let nsError = error as NSError
+            
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
+        
+        return true
+    }
+    
 }
