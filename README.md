@@ -1,5 +1,5 @@
 # PodcastApp (iOS, iPadOS, macOS & watchOS)
-PodcastApp with SwiftUI, Combine, CoreData &amp; CloudKit (Currently in Development)
+PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in Development)
 
 
 
