@@ -18,6 +18,7 @@
 		A703CF80294685DB00177512 /* PreviewApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF7F294685DB00177512 /* PreviewApiService.swift */; };
 		A703CF812946864600177512 /* PreviewApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF7F294685DB00177512 /* PreviewApiService.swift */; };
 		A703CF852946A80A00177512 /* previewCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF842946A80A00177512 /* previewCoreDataService.swift */; };
+		A703CF862946A8A600177512 /* previewCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF842946A80A00177512 /* previewCoreDataService.swift */; };
 		A70578F629324A7F0091E38F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70578F529324A7F0091E38F /* Store.swift */; };
 		A71194F72942872200AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
 		A71194F8294288D000AD0B97 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71194F62942872200AD0B97 /* Cache.swift */; };
@@ -668,6 +669,7 @@
 				A7FA8CB12943145A00D2226A /* ImageCache.swift in Sources */,
 				A7FF1CAC293F46E300E08793 /* Persistence.swift in Sources */,
 				A7FA8CB42943204900D2226A /* ImageDownloader.swift in Sources */,
+				A703CF862946A8A600177512 /* previewCoreDataService.swift in Sources */,
 				A71194F8294288D000AD0B97 /* Cache.swift in Sources */,
 				A7FF1CAD293F6ECB00E08793 /* Color+.swift in Sources */,
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
