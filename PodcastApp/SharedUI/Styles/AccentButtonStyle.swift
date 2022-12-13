@@ -10,6 +10,7 @@ import SwiftUI
 struct AccentButtonStyle: ButtonStyle {
     
     var verticalPadding: CGFloat
+    var isActive = false
 
     func makeBody(configuration: Self.Configuration) -> some View {
     
@@ -18,8 +19,8 @@ struct AccentButtonStyle: ButtonStyle {
         return configuration.label
             .padding(.horizontal, horizontalPadding)
             .padding(.vertical, verticalPadding)
-            .foregroundColor(Color.backgroundColor)
-            .background(Color.accentColor)
+            .foregroundColor(isActive ? Color.backgroundColor : .gray)
+            .background(isActive ? Color.accentColor : Color.overlay)
             .cornerRadius(15)
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
         
