@@ -43,6 +43,7 @@
 		A7A93D05294846990059460E /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A93D03294846210059460E /* View+.swift */; };
 		A7A93D07294859700059460E /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A93D06294859700059460E /* PodcastView.swift */; };
 		A7A93D08294859700059460E /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A93D06294859700059460E /* PodcastView.swift */; };
+		A7A93D0A2948BDC20059460E /* MyLibraryGenreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A93D092948BDC20059460E /* MyLibraryGenreList.swift */; };
 		A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFA1D5291D0261007A1393 /* Podcast.swift */; };
 		A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */; };
 		A7C521BE2926F3FE00A6C5B5 /* ConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */; };
@@ -121,6 +122,7 @@
 		A794C8BA293801EB00DD76B7 /* GenreToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreToggle.swift; sourceTree = "<group>"; };
 		A7A93D03294846210059460E /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		A7A93D06294859700059460E /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
+		A7A93D092948BDC20059460E /* MyLibraryGenreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryGenreList.swift; sourceTree = "<group>"; };
 		A7AFA1D5291D0261007A1393 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonStyle.swift; sourceTree = "<group>"; };
 		A7C521BD2926F3FE00A6C5B5 /* ConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigParser.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				A703CF762945ABCA00177512 /* RemoteImage.swift */,
 				A74EFBAA2947135300A6229C /* FailureView.swift */,
 				A7A93D06294859700059460E /* PodcastView.swift */,
+				A7A93D092948BDC20059460E /* MyLibraryGenreList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 				A7EBBEE2293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift in Sources */,
 				A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
+				A7A93D0A2948BDC20059460E /* MyLibraryGenreList.swift in Sources */,
 				A768141B29268FF500B23F55 /* default.swift in Sources */,
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
 				A794C8B92937A60200DD76B7 /* GetStartedButton.swift in Sources */,
