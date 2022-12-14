@@ -51,6 +51,7 @@
 		A7CF4600292AED1900A31DDE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF45FF292AED1900A31DDE /* Log.swift */; };
 		A7D314262949ED530019AA58 /* HomeMyLibrarySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D314252949ED530019AA58 /* HomeMyLibrarySectionHeader.swift */; };
 		A7D314282949F36E0019AA58 /* RedactedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D314272949F36E0019AA58 /* RedactedListView.swift */; };
+		A7D3142A2949FFB10019AA58 /* PodcastLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D314292949FFB10019AA58 /* PodcastLinkView.swift */; };
 		A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */; };
 		A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */; };
 		A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
@@ -132,6 +133,7 @@
 		A7CF45FF292AED1900A31DDE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		A7D314252949ED530019AA58 /* HomeMyLibrarySectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMyLibrarySectionHeader.swift; sourceTree = "<group>"; };
 		A7D314272949F36E0019AA58 /* RedactedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedListView.swift; sourceTree = "<group>"; };
+		A7D314292949FFB10019AA58 /* PodcastLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastLinkView.swift; sourceTree = "<group>"; };
 		A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
 		A7DA2D50291AD2FA002D7EA1 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAppApp.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				A794C8B429379E9600DD76B7 /* BodyText.swift */,
 				A7ECB73B2940AE3300BA2EAD /* GenreLinkView.swift */,
 				A74EFBBF2947D12B00A6229C /* SCImage.swift */,
+				A7D314292949FFB10019AA58 /* PodcastLinkView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				A75297BE293DCE1700CB3B9A /* CoreDataService.swift in Sources */,
 				A74EFBC02947D12B00A6229C /* SCImage.swift in Sources */,
 				A7CF4600292AED1900A31DDE /* Log.swift in Sources */,
+				A7D3142A2949FFB10019AA58 /* PodcastLinkView.swift in Sources */,
 				A794C8BB293801EB00DD76B7 /* GenreToggle.swift in Sources */,
 				A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */,
 				A7EBBEE2293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift in Sources */,
