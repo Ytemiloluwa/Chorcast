@@ -84,7 +84,7 @@ struct FailureView_Previews: PreviewProvider {
         
         Group {
             
-            FailureView(message: "Unable to fetch podcasts, please try again later", showIcon: true)
+            FailureView(message: "Unable to fetch podcasts, please try again later", showIcon: false)
                 .previewLayout(.fixed(width: 300, height: 200))
                 .preferredColorScheme(.dark)
             FailureView(message: "Unable to fetch podcasts, please try again later", showIcon: true)
