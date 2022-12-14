@@ -63,6 +63,7 @@ class ImageDownloader: ObservableObject {
             }, receiveValue: { [weak self] data in
                 guard let self = self else { return }
                 ImageCache.shared.set(data, for: self.StringUrl)
+                self.state = .success(data)
             })
         
     }
