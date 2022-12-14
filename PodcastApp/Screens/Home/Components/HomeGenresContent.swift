@@ -16,7 +16,7 @@ struct HomeGenresContent: View {
         switch store.apiState.allGenres {
             
         case.loading:
-            createContent(genres: GenreViewModel.listPlaceHolders)
+            createContent(genres: GenreViewModel.listPlaceHolder)
                 .redacted(reason: .placeholder)
                 .onAppear{
                     

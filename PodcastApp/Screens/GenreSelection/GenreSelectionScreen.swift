@@ -14,7 +14,7 @@ struct GenreSelectionScreen: View {
         switch store.apiState.allGenres {
             
         case.loading:
-            GenreSelectionContent(genres: GenreViewModel.listPlaceHolders) { _ in
+            GenreSelectionContent(genres: GenreViewModel.listPlaceHolder) { _ in
             }.onAppear(perform: {
                 
                 store.dispatch(.api(.fetchGenres(_filename: "genres")))

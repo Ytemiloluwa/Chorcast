@@ -13,7 +13,7 @@ struct GenreViewModel: Identifiable, Equatable {
     var name: String
     static let placeHolder = createPlaceholder(id: 1)
     
-    static var listPlaceHolders: [GenreViewModel] {
+    static var listPlaceHolder: [GenreViewModel] {
         
         (0..<15).map {
             

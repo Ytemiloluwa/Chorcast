@@ -41,7 +41,7 @@ struct GenreSelectionContent: View {
 struct GenreSelectionContent_Previews: PreviewProvider {
     static var previews: some View {
         
-        GenreSelectionContent(genres: GenreViewModel.listPlaceHolders)
+        GenreSelectionContent(genres: GenreViewModel.listPlaceHolder)
             .previewLayout(.sizeThatFits)
     }
 }

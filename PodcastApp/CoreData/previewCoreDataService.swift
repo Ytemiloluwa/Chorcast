@@ -15,6 +15,6 @@ class PreviewCoreDataService: CoreDataserviceProtocol {
     }
     
     func fetchGenres() -> [GenreViewModel] {
-        return GenreViewModel.listPlaceHolders
+        return GenreViewModel.listPlaceHolder
     }
 }

@@ -31,6 +31,6 @@ struct HomeGenresCollection: View {
 
 struct HomeGenresCollection_Previews: PreviewProvider {
     static var previews: some View {
-        HomeGenresCollection(genres: GenreViewModel.listPlaceHolders)
+        HomeGenresCollection(genres: GenreViewModel.listPlaceHolder)
     }
 }

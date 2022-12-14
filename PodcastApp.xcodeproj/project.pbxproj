@@ -50,6 +50,7 @@
 		A7CF45FD292AEBFC00A31DDE /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CF45FC292AEBFC00A31DDE /* genres.json */; };
 		A7CF4600292AED1900A31DDE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF45FF292AED1900A31DDE /* Log.swift */; };
 		A7D314262949ED530019AA58 /* HomeMyLibrarySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D314252949ED530019AA58 /* HomeMyLibrarySectionHeader.swift */; };
+		A7D314282949F36E0019AA58 /* RedactedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D314272949F36E0019AA58 /* RedactedListView.swift */; };
 		A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */; };
 		A7DA2D54291AD2FA002D7EA1 /* PodcastAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */; };
 		A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */; };
@@ -130,6 +131,7 @@
 		A7CF45FC292AEBFC00A31DDE /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
 		A7CF45FF292AED1900A31DDE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		A7D314252949ED530019AA58 /* HomeMyLibrarySectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMyLibrarySectionHeader.swift; sourceTree = "<group>"; };
+		A7D314272949F36E0019AA58 /* RedactedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedListView.swift; sourceTree = "<group>"; };
 		A7D5B32F291EBF9700526AE5 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
 		A7DA2D50291AD2FA002D7EA1 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DA2D53291AD2FA002D7EA1 /* PodcastAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAppApp.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				A7A93D06294859700059460E /* PodcastView.swift */,
 				A7A93D092948BDC20059460E /* MyLibraryGenreList.swift */,
 				A7D314252949ED530019AA58 /* HomeMyLibrarySectionHeader.swift */,
+				A7D314272949F36E0019AA58 /* RedactedListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
 				A7A93D0A2948BDC20059460E /* MyLibraryGenreList.swift in Sources */,
+				A7D314282949F36E0019AA58 /* RedactedListView.swift in Sources */,
 				A768141B29268FF500B23F55 /* default.swift in Sources */,
 				A7D314262949ED530019AA58 /* HomeMyLibrarySectionHeader.swift in Sources */,
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
