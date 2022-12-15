@@ -45,20 +45,21 @@ GenreSelectionScreen on iPad Pro 11th Gen ( Light Mode )
 <img width="519" alt="Screenshot 2022-12-08 at 12 06 00" src="https://user-images.githubusercontent.com/91268094/206434973-d3d2b500-a174-4103-aece-d6647b341878.png">
 
 
-## iOS 
+## iPadOS
 
-## Simulated on iPhone 14 Pro Max iOS 16.1
+## Simulated on iPad Pro 11 Generation.
 
 <table>
   <tr>
-    <td>Placeholder view loading Genres</td>
-    <td>GenreSelectionScreen successfully loaded Genres</td>
+    <td>HomeScreen in Dark Mode on iPadOS</td>
+    <td>HomeScreen in Light Mode on iPadOS</td>
   </tr>
   <tr>
-    <td><img width="330" alt="Screenshot 2022-12-01 at 13 57 08" src="https://user-images.githubusercontent.com/91268094/205089161-8c520825-2983-4810-85ea-528dbc69cf86.png"></td>
-    <td><img width="330" alt="Screenshot 2022-12-01 at 14 01 35" src="https://user-images.githubusercontent.com/91268094/205089174-a97452ff-64f2-40ae-b4fc-b10919162e7f.png"></td>
+    <td> <img width="700" alt="Screenshot 2022-12-15 at 13 10 05" src="https://user-images.githubusercontent.com/91268094/207856863-2ea46330-58e9-4801-bc33-93637e0bbe43.png"></td>
+    <td><img width="700" alt="Screenshot 2022-12-15 at 13 12 17" src="https://user-images.githubusercontent.com/91268094/207856916-97e67d43-0e5f-4d17-87be-b1bb0c25d5d3.png"></td>
   </tr>
  </table>
- 
+
+
 
 
