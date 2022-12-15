@@ -1,6 +1,35 @@
 # PodcastApp (iOS, iPadOS, macOS & watchOS)
 PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in Development)
 
+
+## Latest Development of PodcastApp as of 15/12/2022
+
+## Simulated on iPad Pro 11 Generation.
+
+## iPadOS 
+
+<table>
+  <tr>
+    <td>GenreScreen in Dark Mode on iPadOS</td>
+    <td>GenreScreen in Light Mode on iPadOS</td>
+  </tr>
+  <tr>
+    <td><img width="518" alt="Screenshot 2022-12-08 at 12 03 37" src="https://user-images.githubusercontent.com/91268094/206434947-504cfb69-505e-4f61-bedd-1268633a259c.png"></td>
+    <td><img width="518" alt="Screenshot 2022-12-08 at 12 06 00" src="https://user-images.githubusercontent.com/91268094/206434973-d3d2b500-a174-4103-aece-d6647b341878.png"></td>
+  </tr>
+ </table>
+ 
+<table>
+  <tr>
+    <td>HomeScreen in Dark Mode on iPadOS</td>
+    <td>HomeScreen in Light Mode on iPadOS</td>
+  </tr>
+  <tr>
+    <td> <img width="700" alt="Screenshot 2022-12-15 at 13 10 05" src="https://user-images.githubusercontent.com/91268094/207856863-2ea46330-58e9-4801-bc33-93637e0bbe43.png"></td>
+    <td><img width="700" alt="Screenshot 2022-12-15 at 13 12 17" src="https://user-images.githubusercontent.com/91268094/207856916-97e67d43-0e5f-4d17-87be-b1bb0c25d5d3.png"></td>
+  </tr>
+ </table>
+
 ## Latest Development of PodcastApp as of 12/12/2022
 
 ## Simulated on iPhone 14 Pro Max iOS 16.1
@@ -32,33 +61,6 @@ PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in D
   </tr>
  </table>
 
-## Latest Development of PodcastApp as of 01/12/2022
-
-## iPadOS 
-
-GenreSelectionScreen on iPad Pro 11th Gen ( Dark Mode )
-
-<img width="518" alt="Screenshot 2022-12-08 at 12 03 37" src="https://user-images.githubusercontent.com/91268094/206434947-504cfb69-505e-4f61-bedd-1268633a259c.png">
-
-GenreSelectionScreen on iPad Pro 11th Gen ( Light Mode )
-
-<img width="519" alt="Screenshot 2022-12-08 at 12 06 00" src="https://user-images.githubusercontent.com/91268094/206434973-d3d2b500-a174-4103-aece-d6647b341878.png">
-
-
-## iPadOS
-
-## Simulated on iPad Pro 11 Generation.
-
-<table>
-  <tr>
-    <td>HomeScreen in Dark Mode on iPadOS</td>
-    <td>HomeScreen in Light Mode on iPadOS</td>
-  </tr>
-  <tr>
-    <td> <img width="700" alt="Screenshot 2022-12-15 at 13 10 05" src="https://user-images.githubusercontent.com/91268094/207856863-2ea46330-58e9-4801-bc33-93637e0bbe43.png"></td>
-    <td><img width="700" alt="Screenshot 2022-12-15 at 13 12 17" src="https://user-images.githubusercontent.com/91268094/207856916-97e67d43-0e5f-4d17-87be-b1bb0c25d5d3.png"></td>
-  </tr>
- </table>
 
 
 
