@@ -6,41 +6,40 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
-    
-    //@StateObject private var internetMonitor = InternetMonitor()
-    @StateObject private var store = Store()
-    private let term = "sport"
+
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \GenreManagedObject.id, ascending: true)])private var genres: FetchedResults<GenreManagedObject>
     
     var body: some View {
-    
-        List {
-
-            switch store.apiState.preferredPodcasts[term] {
+        
+        if genres.isEmpty {
+            
+            GenreSelectionScreen()
+        }else {
+            
+            NavigationView {
                 
-            case .loading:
-                Text("Loading...")
-            case .success(let data):
-                ForEach(data) { podcast in
-                    
-                    Text(podcast.title)
-                }
-            case .failure:
-                Text("Failure")
-            case .none:
-                Text("Loading...")
-                
+                HomeScreen().navigationTitle("Home")
             }
         }
-        .onAppear {
-            
-            store.dispatch(.api(.fetchPodcasts(term, limit: 10)))
-        }
+
     }
 }
 struct ContentView_Previews: PreviewProvider {
+    
+    static let store = Store(enviroment: AppEnvironment(api: previewApiService(), coredata: PreviewCoreDataService()))
+                             
     static var previews: some View {
-        ContentView()
+        
+        Group {
+            
+            ContentView()
+                .preferredColorScheme(.dark)
+            
+            ContentView()
+            
+        }.environmentObject(store)
     }
 }
