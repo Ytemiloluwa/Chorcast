@@ -11,6 +11,11 @@
 
 ![PodcastAppDark](https://user-images.githubusercontent.com/91268094/207863341-ca920154-6541-4655-8888-8d6048951f03.png)
 
+## iOS ( Light Mode )
+
+![Podcastapp white](https://user-images.githubusercontent.com/91268094/207865085-a402e080-0f98-44dd-a275-bc7cb496b676.png)
+
+
 ## iPadOS 
 
 ## Simulated on iPad Pro 11 Generation.
