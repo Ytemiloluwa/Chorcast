@@ -14,8 +14,8 @@ PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in D
     <td>GenreScreen in Light Mode on iPadOS</td>
   </tr>
   <tr>
-    <td><img width="518" alt="Screenshot 2022-12-08 at 12 03 37" src="https://user-images.githubusercontent.com/91268094/206434947-504cfb69-505e-4f61-bedd-1268633a259c.png"></td>
-    <td><img width="518" alt="Screenshot 2022-12-08 at 12 06 00" src="https://user-images.githubusercontent.com/91268094/206434973-d3d2b500-a174-4103-aece-d6647b341878.png"></td>
+    <td><img width="698" alt="Screenshot 2022-12-15 at 13 31 12" src="https://user-images.githubusercontent.com/91268094/207860333-ff658659-f50c-4f85-aabb-8622478c9986.png"></td>
+    <td><img width="690" alt="Screenshot 2022-12-15 at 13 28 29" src="https://user-images.githubusercontent.com/91268094/207860354-5fdc520f-4a86-4fdc-b3bd-77ea59839215.png"></td>
   </tr>
  </table>
  
