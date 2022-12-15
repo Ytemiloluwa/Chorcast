@@ -12,11 +12,11 @@ struct HomeScreen: View {
         
         ScrollView {
             
-            LazyVStack(spacing: 20) {
+            VStack(spacing: 20) {
                 
                 HomeMenuList()
-                
                 HomeGenresContent()
+                HomeMyLibrarySection()
                 
             }
         }
@@ -27,8 +27,14 @@ struct HomeScreen_Previews: PreviewProvider {
     static let store = Store(enviroment: AppEnvironment(api: previewApiService(), coredata: PreviewCoreDataService()))
     static var previews: some View {
         
-        HomeScreen()
-            .environmentObject(store)
+        Group {
+            
+            HomeScreen()
+               
+              
+            HomeScreen()
+             
+        }.environmentObject(store)
         
     }
 }
