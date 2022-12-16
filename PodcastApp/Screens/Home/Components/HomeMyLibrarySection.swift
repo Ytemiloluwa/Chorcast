@@ -12,7 +12,7 @@ struct HomeMyLibrarySection: View {
     
     private var section : some View {
         
-        Section(header: HomeMyLibrarySectionHeader(seleted: $selectedGenre)) {
+        Section(header: HomeMyLibrarySectionHeader(selected: $selectedGenre)) {
             
             PodcastListContent(genre: selectedGenre)
         }
