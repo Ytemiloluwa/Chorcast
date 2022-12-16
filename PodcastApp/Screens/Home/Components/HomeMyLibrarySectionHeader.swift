@@ -9,15 +9,15 @@ import SwiftUI
 
 struct HomeMyLibrarySectionHeader: View {
     
-    @Binding var seleted: String
+    @Binding var selected: String
     var body: some View {
         
         HStack {
-            MyLibraryGenreList(selected: $seleted)
+            MyLibraryGenreList(selected: $selected)
             
             SeeAllLink(destination: {
                 
-                Text("My Library")
+              PodcastListScreen(genre: selected)
                 
             }).padding()
         }.padding(.vertical, 10)
@@ -32,11 +32,11 @@ struct HomeMyLibrarySectionHeader_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             
-            HomeMyLibrarySectionHeader(seleted: .constant(""))
+            HomeMyLibrarySectionHeader(selected: .constant(""))
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
             
-            HomeMyLibrarySectionHeader(seleted: .constant(""))
+            HomeMyLibrarySectionHeader(selected: .constant(""))
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }.environmentObject(store)
