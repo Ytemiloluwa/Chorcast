@@ -11,7 +11,7 @@ struct GenreLinkView: View {
     var genre: GenreViewModel
     var body: some View {
  
-        NavigationLink(destination: Text("To be implmented"), label: {
+        NavigationLink(destination: PodcastListScreen(genre: genre.name), label: {
             
             GenreView(genre: genre)
                 .frame(minWidth: 250, maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
