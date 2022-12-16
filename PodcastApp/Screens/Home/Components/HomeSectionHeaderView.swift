@@ -22,7 +22,8 @@ struct HomeSectionHeaderView: View {
             
             SeeAllLink(destination: {
                 
-                Text("To be implemented")
+                AllGenreScreen()
+                
             }).padding(.vertical, 7)
                 .cornerRadius(10)
                 .background(Color.clear)
