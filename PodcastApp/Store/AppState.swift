@@ -47,6 +47,7 @@ enum AppState {
         
         var preferredPodcasts: [String: Result<[PodcastViewModel]>] = [:]
         var allGenres : Result<[GenreViewModel]> = .loading
+        var podcast: Result<PodcastViewModel> = .loading
     }
     
     struct CoreData {
