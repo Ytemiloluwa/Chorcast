@@ -13,6 +13,7 @@ enum Action {
         
         case fetchPodcasts(_ term: String, limit: Int = 10)
         case fetchGenres(_filename : String)
+        case updatePodcasts(_ podcast: PodcastViewModel)
     }
     
     enum CoreData {
