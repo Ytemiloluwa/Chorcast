@@ -88,6 +88,7 @@
 		A7ECB7402940D42E00BA2EAD /* HomeGenresCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB73F2940D42E00BA2EAD /* HomeGenresCollection.swift */; };
 		A7ECB7422940DFE600BA2EAD /* HomeGenresContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB7412940DFE600BA2EAD /* HomeGenresContent.swift */; };
 		A7ECB7442940EC1400BA2EAD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */; };
+		A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */; };
 		A7FA8CB02943129300D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
 		A7FA8CB12943145A00D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
 		A7FA8CB32943201100D2226A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CB22943201100D2226A /* ImageDownloader.swift */; };
@@ -175,6 +176,7 @@
 		A7ECB73F2940D42E00BA2EAD /* HomeGenresCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGenresCollection.swift; sourceTree = "<group>"; };
 		A7ECB7412940DFE600BA2EAD /* HomeGenresContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGenresContent.swift; sourceTree = "<group>"; };
 		A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailsScreen.swift; sourceTree = "<group>"; };
 		A7FA8CAF2943129300D2226A /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A7FA8CB22943201100D2226A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A7FF1CAE293F6F7100E08793 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		A794C8B62937A27500DD76B7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A7F19A1B294EF2400086159D /* PodcastDetails */,
 				A76FF6F7294CB25F00E56D5C /* PodcastList */,
 				A72B7C9A294B947600DD821B /* AllGenres */,
 				A7FF1CB0293F796A00E08793 /* Home */,
@@ -498,6 +501,14 @@
 			path = Static;
 			sourceTree = "<group>";
 		};
+		A7F19A1B294EF2400086159D /* PodcastDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */,
+			);
+			path = PodcastDetails;
+			sourceTree = "<group>";
+		};
 		A7FF1CB0293F796A00E08793 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +695,7 @@
 				A7ECB7402940D42E00BA2EAD /* HomeGenresCollection.swift in Sources */,
 				A794C8B329378F6100DD76B7 /* ButtonToggleStyle.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
+				A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
 				A7635D582938D055005A0278 /* GenreSelectionScreen.swift in Sources */,
