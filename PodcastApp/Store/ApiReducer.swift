@@ -40,6 +40,8 @@ struct ApiReducer {
                     
                     copyState.podcast = .success(podcast)
                 }
+                
+                completion(copyState)
             }
         }
     }
