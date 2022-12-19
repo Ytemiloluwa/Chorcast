@@ -15,14 +15,14 @@ struct PodcastLinkView: View {
         
         VStack {
             
-            NavigationLink(destination: Text("To be Implemented")){
+            NavigationLink(destination: PodcastDetailsScreen(podcast: podcast)){
                 
                 PodcastView(podcast: podcast)
             }
             
             Divider()
         }
-    }
+    } 
 }
 
 struct PodcastLinkView_Previews: PreviewProvider {
