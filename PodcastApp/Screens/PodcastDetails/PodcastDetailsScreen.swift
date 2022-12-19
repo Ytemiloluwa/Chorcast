@@ -14,15 +14,23 @@ struct PodcastDetailsScreen: View {
     @State private var state: AppState.Result<PodcastViewModel> = .loading
     
     var body: some View {
-        
-        switch state {
+        ZStack {
+            switch state {
+                
+            case.loading:
+               // ProgressView("Loading...")
+                PodcastDetailContent(podcast: podcast)
+            case.success(let podcast):
+                PodcastDetailContent(podcast: podcast)
+            case.failure:
+                FailureView(message: "Unable to fetchPodcast", retryAction: checkState)
+            }
+        }.onAppear {
             
-        case.loading:
-            Text("Loading...")
-        case.success(let podcast):
-            Text(podcast.title)
-        case.failure:
-            FailureView(message: "Unable to fetchPodcast", retryAction: checkState)
+            checkState()
+        }.onChange(of: store.apiState.podcast) { _ in
+            
+            checkState()
         }
     }
     
