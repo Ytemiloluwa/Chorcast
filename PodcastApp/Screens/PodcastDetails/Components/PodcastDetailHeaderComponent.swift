@@ -31,13 +31,22 @@ struct PodcastDetailHeaderComponent: View {
       
         }
     }
-    
+    var genres: some View {
+        
+        VStack {
+            
+            Divider()
+            PodcastDetailGenreCollection(genres: podcast.genres)
+            Divider()
+        }
+    }
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10) {
             
             title
             details
+            genres
         }.frame(maxWidth: .infinity, alignment: .topLeading)
             .padding()
     }
