@@ -53,7 +53,17 @@ struct PodcastViewModel: Identifiable, Equatable {
     
     private static func createPlaceholder(id: Int) -> PodcastViewModel {
         
-        PodcastViewModel(id: id, title: "Lorem ipsum", imageUrl: "", author: "Lorem ipsum", totalEpisodes: 23, explicitContent: "NO", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", country: "NG", nextEpisodePubDate: Date(), feedUrl: "")
+        PodcastViewModel(id: id,
+                         title: "Lorem ipsum",
+                         imageUrl: "https://via.placeholder.com/150/2EB9F0/000000?Text=liquidcoder.com",
+                         author: "Lorem ipsum",
+                         totalEpisodes: 23,
+                         explicitContent: "NO",
+                         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                         country: "NG",
+                         genres: ["Technology", "NFL", "Comedy", "Politics", "Geography"],
+                         nextEpisodePubDate: Date(),
+                         feedUrl: "")
 
         
     }
