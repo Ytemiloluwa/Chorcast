@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct EpiosdeListScreen: View {
+struct EpisodeListScreen: View {
     
     var episodes: [EpisodeViewModel]
     
     enum ListScreen: String, CaseIterable {
         
         case downloaded = "Downloaded"
-        case allEpisodes = "all episodes"
+        case allEpisodes = "All episodes"
     }
     @State private var listSection: ListScreen = .allEpisodes
     
@@ -56,11 +56,11 @@ struct EpiosdeListScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             
-            EpiosdeListScreen(episodes: EpisodeViewModel.listPlaceholder)
+            EpisodeListScreen(episodes: EpisodeViewModel.listPlaceholder)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
             
-            EpiosdeListScreen(episodes: EpisodeViewModel.listPlaceholder)
+            EpisodeListScreen(episodes: EpisodeViewModel.listPlaceholder)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }
