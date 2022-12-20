@@ -26,6 +26,7 @@ struct EpisodeViewBody: View {
     private var description: some View {
         
         Text(episode.description)
+            .lineLimit(1)
             .font(.subheadline)
             .foregroundColor(Color.gray)
     }
