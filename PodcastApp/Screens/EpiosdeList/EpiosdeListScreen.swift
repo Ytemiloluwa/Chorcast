@@ -25,7 +25,7 @@ struct EpiosdeListScreen: View {
         Section(header: createSegmentedPicker()) {
             ForEach(episodes) { episode in
                 
-                
+                EpisodeView(episode: episode, play: {})
             }
         }
     }
@@ -34,7 +34,7 @@ struct EpiosdeListScreen: View {
         
         ScrollView {
             
-            LazyVGrid(columns: gridItems, content: {}).padding()
+            LazyVGrid(columns: gridItems, alignment: .leading, spacing: 20, content: {section}).padding()
         }
     }
     
