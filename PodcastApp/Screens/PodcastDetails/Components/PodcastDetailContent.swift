@@ -19,9 +19,9 @@ struct PodcastDetailContent: View {
     
     private var allEpiosdeLink: some View {
         
-        NavigationLink(destination: Text("to be Implemented")) {
+        NavigationLink(destination: EpisodeListScreen(episodes: podcast.episodes)) {
             
-            Label("See all \(podcast.episodes.count) episode", systemImage: "square.stack.3d.down.right.fill")
+            Label("See all \(podcast.episodes.count) episodes", systemImage: "square.stack.3d.down.right.fill")
         }.padding(.horizontal)
     }
     var body: some View {
