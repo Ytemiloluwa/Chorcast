@@ -22,7 +22,11 @@ struct ContentView: View {
             NavigationView {
                 
                 HomeScreen().navigationTitle("Home")
-            }
+            }.onAppear(perform: {
+                
+                DownloaderService().download(from: URL(string:  "https://elt.oup.com/elt/students/headway/downloads/headway_beginner_students_book_unit_01.zip?cc=gb&selLanguage=en")!)
+                
+            })
         }
 
     }
