@@ -13,6 +13,7 @@
 		A700A65B29301EFC00C40B1F /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65A29301EFC00C40B1F /* AppEnviroment.swift */; };
 		A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700A65C293021AB00C40B1F /* ApiReducer.swift */; };
 		A70304A32951F73400B57AFB /* DownloadServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70304A22951F73400B57AFB /* DownloadServiceProtocol.swift */; };
+		A70304A5295202E200B57AFB /* DownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70304A4295202E200B57AFB /* DownloaderService.swift */; };
 		A703CF772945ABCA00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
 		A703CF7C2945B47E00177512 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A703CF762945ABCA00177512 /* RemoteImage.swift */; };
 		A703CF7E2946266A00177512 /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A703CF7D2946266A00177512 /* podcasts.json */; };
@@ -120,6 +121,7 @@
 		A700A65A29301EFC00C40B1F /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		A700A65C293021AB00C40B1F /* ApiReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReducer.swift; sourceTree = "<group>"; };
 		A70304A22951F73400B57AFB /* DownloadServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadServiceProtocol.swift; sourceTree = "<group>"; };
+		A70304A4295202E200B57AFB /* DownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderService.swift; sourceTree = "<group>"; };
 		A703CF762945ABCA00177512 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		A703CF7D2946266A00177512 /* podcasts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
 		A703CF7F294685DB00177512 /* PreviewApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewApiService.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 				A7D3265D294D33C7005983CB /* RssServiceProtocol.swift */,
 				A7D32660294D3942005983CB /* RssService.swift */,
 				A70304A22951F73400B57AFB /* DownloadServiceProtocol.swift */,
+				A70304A4295202E200B57AFB /* DownloaderService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				A7D3142A2949FFB10019AA58 /* PodcastLinkView.swift in Sources */,
 				A794C8BB293801EB00DD76B7 /* GenreToggle.swift in Sources */,
 				A7E7C4A2291D3A5200A7815F /* GenreViewModel.swift in Sources */,
+				A70304A5295202E200B57AFB /* DownloaderService.swift in Sources */,
 				A7EBBEE2293CBB2200E4C2FF /* GenreManagedObject+CoreDataClass.swift in Sources */,
 				A7EBBEE6293D515A00E4C2FF /* CoreDataServiceProtocol.swift in Sources */,
 				A7DA2D56291AD2FA002D7EA1 /* Persistence.swift in Sources */,
