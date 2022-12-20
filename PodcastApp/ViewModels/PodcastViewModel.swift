@@ -20,7 +20,7 @@ struct PodcastViewModel: Identifiable, Equatable {
     
     var id: Int
     var title: String
-    var publisher: String = ""
+    var publisher: String
     var imageUrl: String
     var thumbnailUrl: String = ""
     var image = Data()
@@ -55,7 +55,7 @@ struct PodcastViewModel: Identifiable, Equatable {
         
         PodcastViewModel(id: id,
                          title: "Lorem ipsum",
-                         imageUrl: "https://via.placeholder.com/150/2EB9F0/000000?Text=liquidcoder.com",
+                         publisher: "Lorem ipsum", imageUrl: "https://via.placeholder.com/150/2EB9F0/000000?Text=liquidcoder.com",
                          author: "Lorem ipsum",
                          totalEpisodes: 23,
                          explicitContent: "NO",
