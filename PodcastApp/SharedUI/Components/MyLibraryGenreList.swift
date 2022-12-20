@@ -26,7 +26,13 @@ struct MyLibraryGenreList: View {
         .background(Color.backgroundColor)
         .onAppear{
             
-            store.dispatch(.coreData(.fetchGenres))
+            if store.coreDataState.savedGenres.isEmpty {
+                
+                store.dispatch(.coreData(.fetchGenres))
+            }else {
+                
+                genres = store.coreDataState.savedGenres
+            }
             
         }.onChange(of: store.coreDataState.savedGenres) { value in
             
