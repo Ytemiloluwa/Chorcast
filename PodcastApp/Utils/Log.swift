@@ -51,33 +51,51 @@ struct Log {
         
     }
     
-    static func error(_ object: Any...) {
-        
-        message(forEvent: .error, object)
+    // highlight-start
+    static func error(_ object: Any..., filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+        message(forEvent: .error, object,filename: filename,line: line,funcName: funcName)
     }
+    // highlight-end
     
-    static func info(_ object: Any...) {
-        
-        message(forEvent: .info, object)
+    // highlight-start
+    static func info(_ object: Any..., filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+
+        message(forEvent: .info, object,filename: filename,line: line,funcName: funcName)
+
     }
+    // highlight-end
+
     
-    static func warning(_ object: Any...) {
-        
-        message(forEvent: .warning, object)
+    // highlight-start
+    static func warning(_ object: Any..., filename: String = #file,line: Int = #line, column: Int = #column, funcName: String = #function) {
+
+        message(forEvent: .warning, object,filename: filename,line: line,funcName: funcName)
+
     }
-    static func debug(_ object: Any...) {
-        
-        message(forEvent: .debug, object)
-        
-    }
-    static func verbose(_ object: Any...) {
-        
-        message(forEvent: .verbose, object)
-    }
+    // highlight-end
+
     
-    static func severe(_ object: Any...) {
-        
-        message(forEvent: .severe, object)
+    // highlight-start
+    static func debug(_ object: Any..., filename: String = #file, line: Int = #line,column: Int = #column, funcName: String = #function) {
+
+        message(forEvent: .debug, object,filename: filename,line: line,funcName: funcName)
     }
+    // highlight-end
+
+    
+    // highlight-start
+    static func verbose(_ object: Any..., filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+
+        message(forEvent: .verbose, object,filename: filename,line: line,funcName: funcName)
+
+    }
+    // highlight-end
+    
+    // highlight-start
+    static func severe(_ object: Any..., filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+
+        message(forEvent: .severe, object, filename: filename,line: line,funcName: funcName)
+    }
+    // highlight-end
     
 }
