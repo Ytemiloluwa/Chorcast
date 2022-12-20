@@ -40,6 +40,7 @@
 		A793483229515FA900A4DD78 /* EpiosdeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793483129515FA900A4DD78 /* EpiosdeListScreen.swift */; };
 		A79348352951654400A4DD78 /* EpisodeViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79348342951654400A4DD78 /* EpisodeViewHeader.swift */; };
 		A793483729516AB500A4DD78 /* EpisodeViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793483629516AB500A4DD78 /* EpisodeViewBody.swift */; };
+		A79348392951703400A4DD78 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79348382951703400A4DD78 /* EpisodeView.swift */; };
 		A794C8B329378F6100DD76B7 /* ButtonToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */; };
 		A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794C8B429379E9600DD76B7 /* BodyText.swift */; };
 		A794C8B92937A60200DD76B7 /* GetStartedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794C8B82937A60100DD76B7 /* GetStartedButton.swift */; };
@@ -139,6 +140,7 @@
 		A793483129515FA900A4DD78 /* EpiosdeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpiosdeListScreen.swift; sourceTree = "<group>"; };
 		A79348342951654400A4DD78 /* EpisodeViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewHeader.swift; sourceTree = "<group>"; };
 		A793483629516AB500A4DD78 /* EpisodeViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewBody.swift; sourceTree = "<group>"; };
+		A79348382951703400A4DD78 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonToggleStyle.swift; sourceTree = "<group>"; };
 		A794C8B429379E9600DD76B7 /* BodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyText.swift; sourceTree = "<group>"; };
 		A794C8B82937A60100DD76B7 /* GetStartedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedButton.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			children = (
 				A79348342951654400A4DD78 /* EpisodeViewHeader.swift */,
 				A793483629516AB500A4DD78 /* EpisodeViewBody.swift */,
+				A79348382951703400A4DD78 /* EpisodeView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 				A7EC12DD2926235B0084042B /* InternetMonitoring.swift in Sources */,
 				A7ECB7402940D42E00BA2EAD /* HomeGenresCollection.swift in Sources */,
 				A794C8B329378F6100DD76B7 /* ButtonToggleStyle.swift in Sources */,
+				A79348392951703400A4DD78 /* EpisodeView.swift in Sources */,
 				A7E49B6F29505FC900B39CD2 /* PodcastDetailGenreCollection.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
 				A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */,
