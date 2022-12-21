@@ -10,6 +10,10 @@ import CoreData
 
 class CoreDataService: CoreDataserviceProtocol {
     
+    func saveEpisode(_ episode: EpisodeViewModel, audio: Data) -> Bool {
+        return false
+    }
+    
     private var context: NSManagedObjectContext {
         
         return PersistenceController.shared.container.viewContext
