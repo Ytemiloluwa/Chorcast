@@ -11,5 +11,6 @@ protocol CoreDataserviceProtocol {
     
     func saveGenres(_ genres: [GenreViewModel]) -> Bool
     func fetchGenres() -> [GenreViewModel]
+    func saveEpisode(_ episode: EpisodeViewModel, audio: Data) -> Bool
     
 }
