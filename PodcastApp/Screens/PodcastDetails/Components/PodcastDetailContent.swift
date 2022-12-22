@@ -15,6 +15,7 @@ struct PodcastDetailContent: View {
         
         Text(podcast.description)
             .fixedSize(horizontal: false, vertical: true)
+            .padding()
     }
     
     private var allEpiosdeLink: some View {
