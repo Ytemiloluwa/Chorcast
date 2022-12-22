@@ -55,6 +55,22 @@ struct EpisodeViewHeader: View {
             
             createDownloadButton()
         }
+        //Update local state whenever this view appears using the episode view model
+        .onAppear{
+            
+            state = downloadManager.getState(for: episode)
+        }
+        // listen to downloadings changes and update state accordingly
+        onChange(of: downloadManager.downloadings, perform: { downloadings in
+            
+            if let state = downloadings[episode.title] {
+                
+                self.state = state
+            }else {
+                
+                self.state = downloadManager.getState(for: episode)
+            }
+        })
     }
     
     @ViewBuilder
