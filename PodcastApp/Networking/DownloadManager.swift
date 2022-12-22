@@ -69,4 +69,18 @@ class DownloadManager: ObservableObject {
             operations.cancel()
         }
     }
+    
+    func getState(for episode: EpisodeViewModel) -> State {
+        
+        if let state = downloadings[episode.title] {
+            
+            return state
+        }
+        
+        let episode = environment.coredata.fetchEpisode(episode)
+        
+        self.state = .done(success: episode != nil)
+        
+        return .done(success: episode != nil )
+    }
 }
