@@ -35,7 +35,9 @@ struct EpisodeListScreen: View {
         ScrollView {
             
             LazyVGrid(columns: gridItems, alignment: .leading, spacing: 20, content: {section}).padding()
-        }
+            
+        }.navigationBarTitle("\(episodes.count) Episodes",displayMode: .inline)
+        
     }
     
     func createSegmentedPicker() -> some View {
