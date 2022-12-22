@@ -14,9 +14,9 @@ struct PodcastView: View {
         
         VStack(alignment: .leading, spacing: 5){
             Text(podcast.title)
-                .lineLimit(2)
+                .multilineTextAlignment(.leading)
                 .font(.headline)
-                .fixedSize(horizontal: true, vertical: false)
+                .fixedSize(horizontal: false, vertical: true)
                 .foregroundColor(Color.text)
     
             
