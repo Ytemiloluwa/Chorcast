@@ -29,7 +29,7 @@ struct ApiReducer {
             
         case .updatePodcasts(let podcast):
             
-            return update(podcast, environment: environment) { podcast, error in
+            return update(podcast, environment: environment) { (podcast, error) in
                 
                 var copyState = state
                 
