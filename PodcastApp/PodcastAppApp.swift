@@ -12,11 +12,13 @@ struct PodcastAppApp: App {
     let persistenceController = PersistenceController.shared
     
     @ObservedObject private var store = Store()
+    @ObservedObject private var downloadManager = DownloadManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
+                .environmentObject(downloadManager)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
