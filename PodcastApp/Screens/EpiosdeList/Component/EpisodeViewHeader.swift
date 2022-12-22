@@ -9,14 +9,14 @@ import SwiftUI
 
 struct EpisodeViewHeader: View {
     
-    var epiosde: EpisodeViewModel
+    var episode: EpisodeViewModel
     var downloadEpisode = {}
     
     var body: some View {
     
         HStack {
     
-            Text(epiosde.date)
+            Text(episode.date)
             
             Spacer()
             
@@ -40,10 +40,10 @@ struct EpisodeViewHeader: View {
 struct EpisodeViewHeader_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            EpisodeViewHeader(epiosde: EpisodeViewModel.placeholder)
+            EpisodeViewHeader(episode: EpisodeViewModel.placeholder)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
-            EpisodeViewHeader(epiosde: EpisodeViewModel.placeholder)
+            EpisodeViewHeader(episode: EpisodeViewModel.placeholder)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }

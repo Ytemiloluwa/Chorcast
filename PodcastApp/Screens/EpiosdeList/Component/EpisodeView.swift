@@ -15,7 +15,7 @@ struct EpisodeView: View {
         
         VStack(alignment: .leading, spacing: 5) {
             
-            EpisodeViewHeader(epiosde: episode)
+            EpisodeViewHeader(episode: episode)
             EpisodeViewBody(episode: episode, play: play)
         }.padding()
             .background(Color.overlay)
