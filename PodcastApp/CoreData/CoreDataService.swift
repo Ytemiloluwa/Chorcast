@@ -46,7 +46,35 @@ class CoreDataService: CoreDataserviceProtocol {
     }
     
     func saveEpisode(_ episode: EpisodeViewModel, audio: Data) -> Bool {
-        return false
+        
+        do {
+            
+            let managedEpisode = createManagedEpisode(episode, audioData: audio)
+            if let managedPocast = fetchPodcast(episode.podcast.id) {
+                
+                managedPocast.addToEpisodes(managedEpisode)
+            }
+            else {
+                
+                let podcast = episode.podcast
+                let managedPodcast = createManagedPodcast(podcast)
+                
+                if let imgUrl = URL(string: podcast.imageUrl) {
+                    
+                    managedPodcast.image = try Data(contentsOf: imgUrl)
+                }
+                
+                if let thumUrl = URL(string: podcast.thumbnailUrl) {
+                    
+                    managedPodcast.thumbnail = try Data(contentsOf: thumUrl)
+                }
+            }
+        }catch let error {
+            
+            Log.error(error)
+            return false
+        }
+        return saveContext()
     }
     
     func fetchGenres() -> [GenreViewModel] {
