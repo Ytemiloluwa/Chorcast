@@ -18,8 +18,7 @@ struct PodcastDetailsScreen: View {
             switch state {
                 
             case.loading:
-               // ProgressView("Loading...")
-                PodcastDetailContent(podcast: podcast)
+                ProgressView("Loading...")
             case.success(let podcast):
                 PodcastDetailContent(podcast: podcast)
             case.failure:
@@ -36,15 +35,13 @@ struct PodcastDetailsScreen: View {
     
     private func checkState() {
         
-        if case.success(let podcast) = store.apiState.podcast {
+        if case.success(let podcast) = store.apiState.podcast, podcast.title == self.podcast.title {
             
-            if podcast.title == self.podcast.title {
-                
-                state = store.apiState.podcast
-            }else {
-                
-                store.dispatch(.api(.updatePodcasts(podcast)))
-            }
+            state = store.apiState.podcast
+            
+        } else {
+            
+            store.dispatch(.api(.updatePodcasts(podcast)))
         }
     }
 }
