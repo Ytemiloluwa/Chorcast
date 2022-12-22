@@ -34,19 +34,33 @@ class DownloadOperation: BaseOperation {
         
         environment.downloader.download(from: url)
         
-        environment.downloader.didFinish = { data in
+        environment.downloader.didFinish = { [weak self] data in
             
             //save downloaded episode to coredata
+            
+            guard let self = self, let audio = data else { return }
+            
+            if self.environment.coredata.saveEpisode(self.episode, audio: audio) {
+                
+                self.state = .finished(true)
+                
+            }else {
+                
+                self.state = .finished(false)
+            }
         }
         
-        environment.downloader.progress = { value in
+        environment.downloader.progress = { [weak self] value in
             
             // update progress
+            
+            self?.state = .executing(value)
         }
     }
     
     override func cancel() {
         
-        
+        super.cancel()
+        self.environment.downloader.cancel()
     }
 }
