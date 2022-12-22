@@ -67,8 +67,20 @@ class CoreDataService: CoreDataserviceProtocol {
     
     func fetchEpisode(_ episode: EpisodeViewModel) -> EpisodeManagedObject? {
         
-        return nil
+        let request: NSFetchRequest<EpisodeManagedObject> = EpisodeManagedObject.fetchRequest()
+        request.predicate = NSPredicate(format: "title = %@", episode.title)
         
+        do {
+            
+            let results = try context.fetch(request)
+            return results.first
+            
+        }catch let error {
+            
+            print(error)
+        }
+        
+        return nil
         
     }
     
