@@ -16,8 +16,9 @@ struct PodcastView: View {
             Text(podcast.title)
                 .lineLimit(2)
                 .font(.headline)
-                .fixedSize(horizontal: false, vertical: true)
+                .fixedSize(horizontal: true, vertical: false)
                 .foregroundColor(Color.text)
+    
             
             Text(podcast.author)
                 .lineLimit(1)
