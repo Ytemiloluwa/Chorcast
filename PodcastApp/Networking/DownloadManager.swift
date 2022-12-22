@@ -61,4 +61,12 @@ class DownloadManager: ObservableObject {
         
         operationQueue.addOperation(operation)
     }
+    
+    func abort(name: String) {
+        
+        if let operations = operationQueue.operations.first(where: { $0.name == name }) {
+            
+            operations.cancel()
+        }
+    }
 }
