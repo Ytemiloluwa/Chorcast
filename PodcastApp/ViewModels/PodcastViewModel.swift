@@ -148,4 +148,26 @@ struct PodcastViewModel: Identifiable, Equatable {
         
     }
     
+    init(_ managedPodcast: PodcastManagedObject, existingPodcast: PodcastViewModel? = nil) {
+        
+        self.id = Int(managedPodcast.id)
+        self.title = managedPodcast.title ?? ""
+        self.imageUrl = managedPodcast.imageUrl ?? ""
+        self.author = managedPodcast.author ?? ""
+        self.thumbnailUrl = managedPodcast.thumbnailUrl ?? ""
+        self.image = managedPodcast.image ?? Data()
+        self.thumbnail = managedPodcast.thumbnail ?? Data()
+        self.totalEpisodes = managedPodcast.episodes?.count ?? 0
+        self.explicitContent = managedPodcast.explicitContent ?? ""
+        self.description = managedPodcast.descr ?? ""
+        self.language = managedPodcast.langugage ?? ""
+        self.country = managedPodcast.country ?? ""
+        self.publisher = managedPodcast.publisher ?? ""
+        self.genres = managedPodcast.genres?.components(separatedBy: ", ") ?? []
+        self.nextEpisodePubDate = Date()
+        self.feedUrl = managedPodcast.feedUrl ?? ""
+        self.episodes = existingPodcast?.episodes ?? []
+        self.isBookmarked = managedPodcast.isBookmarked
+    }
+    
 }
