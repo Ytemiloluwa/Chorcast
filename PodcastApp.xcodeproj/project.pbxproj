@@ -32,6 +32,10 @@
 		A72B7C9C294B94AE00DD821B /* AllGenreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B7C9B294B94AE00DD821B /* AllGenreScreen.swift */; };
 		A72C684D29544114007AFD6D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72C684C29544114007AFD6D /* DownloadManager.swift */; };
 		A72C684E29544114007AFD6D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72C684C29544114007AFD6D /* DownloadManager.swift */; };
+		A74305BD2955D18800CE9A6C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BC2955D18800CE9A6C /* CircularProgressView.swift */; };
+		A74305BE2955D18800CE9A6C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BC2955D18800CE9A6C /* CircularProgressView.swift */; };
+		A74305C02955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */; };
+		A74305C12955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */; };
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A74EFBAB2947135300A6229C /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EFBAA2947135300A6229C /* FailureView.swift */; };
@@ -140,6 +144,8 @@
 		A728E379294B1E5000EF4553 /* HomeMyLibrarySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMyLibrarySection.swift; sourceTree = "<group>"; };
 		A72B7C9B294B94AE00DD821B /* AllGenreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGenreScreen.swift; sourceTree = "<group>"; };
 		A72C684C29544114007AFD6D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		A74305BC2955D18800CE9A6C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewStyle.swift; sourceTree = "<group>"; };
 		A74EFBAA2947135300A6229C /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
 		A74EFBBF2947D12B00A6229C /* SCImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCImage.swift; sourceTree = "<group>"; };
 		A75297BD293DCE1700CB3B9A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -269,6 +275,7 @@
 				A7ECB73B2940AE3300BA2EAD /* GenreLinkView.swift */,
 				A74EFBBF2947D12B00A6229C /* SCImage.swift */,
 				A7D314292949FFB10019AA58 /* PodcastLinkView.swift */,
+				A74305BC2955D18800CE9A6C /* CircularProgressView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -278,6 +285,7 @@
 			children = (
 				A794C8B229378F6100DD76B7 /* ButtonToggleStyle.swift */,
 				A7B6E42E29360088002F01D9 /* AccentButtonStyle.swift */,
+				A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -758,6 +766,7 @@
 				A7E93994294FEB6A00193683 /* PodcastDetailsElement.swift in Sources */,
 				A7A93D04294846210059460E /* View+.swift in Sources */,
 				A7009DA1293649E600BD329C /* Color+.swift in Sources */,
+				A74305C02955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */,
 				A72B7C9C294B94AE00DD821B /* AllGenreScreen.swift in Sources */,
 				A71CED4A292E9DB60013A999 /* Action.swift in Sources */,
 				A71CED4C292EC2220013A999 /* AppState.swift in Sources */,
@@ -778,6 +787,7 @@
 				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
 				A7635D582938D055005A0278 /* GenreSelectionScreen.swift in Sources */,
 				A7DA2D5B291AD2FA002D7EA1 /* ContentView.swift in Sources */,
+				A74305BD2955D18800CE9A6C /* CircularProgressView.swift in Sources */,
 				A7FA8CB02943129300D2226A /* ImageCache.swift in Sources */,
 				A703CF852946A80A00177512 /* previewCoreDataService.swift in Sources */,
 				A7008B732928119900779CB6 /* ApiService.swift in Sources */,
@@ -847,6 +857,8 @@
 				A7A93D05294846990059460E /* View+.swift in Sources */,
 				A72C684E29544114007AFD6D /* DownloadManager.swift in Sources */,
 				A7FF1CAD293F6ECB00E08793 /* Color+.swift in Sources */,
+				A74305C12955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */,
+				A74305BE2955D18800CE9A6C /* CircularProgressView.swift in Sources */,
 				A70304A8295248B500B57AFB /* BaseOperation.swift in Sources */,
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
 				A7A4822E295316C20080ABFA /* DownloadOperation.swift in Sources */,
