@@ -36,6 +36,14 @@
 		A74305BE2955D18800CE9A6C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BC2955D18800CE9A6C /* CircularProgressView.swift */; };
 		A74305C02955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */; };
 		A74305C12955D2F400CE9A6C /* CircularProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */; };
+		A74305C92955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305C82955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift */; };
+		A74305CA2955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305C82955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift */; };
+		A74305CC2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305CB2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift */; };
+		A74305CD2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305CB2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift */; };
+		A74305CF2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305CE2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift */; };
+		A74305D02955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305CE2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift */; };
+		A74305D22955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305D12955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift */; };
+		A74305D32955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74305D12955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift */; };
 		A74A304D291CA7E6002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304C291CA7E6002204B1 /* FeedKit */; };
 		A74A3050291CA8C7002204B1 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = A74A304F291CA8C7002204B1 /* FeedKit */; };
 		A74EFBAB2947135300A6229C /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EFBAA2947135300A6229C /* FailureView.swift */; };
@@ -146,6 +154,10 @@
 		A72C684C29544114007AFD6D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		A74305BC2955D18800CE9A6C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		A74305BF2955D2F400CE9A6C /* CircularProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewStyle.swift; sourceTree = "<group>"; };
+		A74305C82955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EpisodeManagedObject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A74305CB2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EpisodeManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A74305CE2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PodcastManagedObject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A74305D12955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PodcastManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A74EFBAA2947135300A6229C /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
 		A74EFBBF2947D12B00A6229C /* SCImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCImage.swift; sourceTree = "<group>"; };
 		A75297BD293DCE1700CB3B9A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -468,7 +480,6 @@
 				A7DA2D5A291AD2FA002D7EA1 /* ContentView.swift */,
 				A7DA2D5C291AD2FB002D7EA1 /* Assets.xcassets */,
 				A7DA2D5E291AD2FB002D7EA1 /* PodcastApp.entitlements */,
-				A7DA2D57291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld */,
 				A7DA2D5F291AD2FB002D7EA1 /* Preview Content */,
 			);
 			path = PodcastApp;
@@ -549,6 +560,11 @@
 				A7DA2D55291AD2FA002D7EA1 /* Persistence.swift */,
 				A75297BD293DCE1700CB3B9A /* CoreDataService.swift */,
 				A703CF842946A80A00177512 /* previewCoreDataService.swift */,
+				A74305C82955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift */,
+				A74305CB2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift */,
+				A74305CE2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift */,
+				A74305D12955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift */,
+				A7DA2D57291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -773,6 +789,7 @@
 				A74EFBAB2947135300A6229C /* FailureView.swift in Sources */,
 				A700A65D293021AB00C40B1F /* ApiReducer.swift in Sources */,
 				A7FF1CBB293FF6DA00E08793 /* SeeAllLink.swift in Sources */,
+				A74305D22955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift in Sources */,
 				A7D5B330291EBF9700526AE5 /* PodcastViewModel.swift in Sources */,
 				A7D3142C294A78B30019AA58 /* PodcastListContent.swift in Sources */,
 				A71194F72942872200AD0B97 /* Cache.swift in Sources */,
@@ -782,6 +799,7 @@
 				A79348392951703400A4DD78 /* EpisodeView.swift in Sources */,
 				A7E49B6F29505FC900B39CD2 /* PodcastDetailGenreCollection.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
+				A74305CC2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift in Sources */,
 				A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
@@ -793,6 +811,7 @@
 				A7008B732928119900779CB6 /* ApiService.swift in Sources */,
 				A703CF772945ABCA00177512 /* RemoteImage.swift in Sources */,
 				A793483729516AB500A4DD78 /* EpisodeViewBody.swift in Sources */,
+				A74305C92955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift in Sources */,
 				A7E7C49B291D2AC400A7815F /* Genre.swift in Sources */,
 				A7ECB7422940DFE600BA2EAD /* HomeGenresContent.swift in Sources */,
 				A75297BE293DCE1700CB3B9A /* CoreDataService.swift in Sources */,
@@ -831,6 +850,7 @@
 				A7EBBEE3293CBB2200E4C2FF /* GenreManagedObject+CoreDataProperties.swift in Sources */,
 				A7ECB7442940EC1400BA2EAD /* HomeScreen.swift in Sources */,
 				A728E37A294B1E5000EF4553 /* HomeMyLibrarySection.swift in Sources */,
+				A74305CF2955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift in Sources */,
 				A7E49B6D2950517900B39CD2 /* PodcastDetailHeaderComponent.swift in Sources */,
 				A7AFA1D6291D0261007A1393 /* Podcast.swift in Sources */,
 				A76FF6F9294CB29C00E56D5C /* PodcastListScreen.swift in Sources */,
@@ -850,7 +870,10 @@
 				A7FA8CB12943145A00D2226A /* ImageCache.swift in Sources */,
 				A7FF1CAC293F46E300E08793 /* Persistence.swift in Sources */,
 				A7D32662294D3942005983CB /* RssService.swift in Sources */,
+				A74305CD2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift in Sources */,
+				A74305D32955F0F700CE9A6C /* PodcastManagedObject+CoreDataProperties.swift in Sources */,
 				A7FA8CB42943204900D2226A /* ImageDownloader.swift in Sources */,
+				A74305CA2955F08D00CE9A6C /* EpisodeManagedObject+CoreDataClass.swift in Sources */,
 				A703CF862946A8A600177512 /* previewCoreDataService.swift in Sources */,
 				A71194F8294288D000AD0B97 /* Cache.swift in Sources */,
 				A7A93D08294859700059460E /* PodcastView.swift in Sources */,
@@ -862,6 +885,7 @@
 				A70304A8295248B500B57AFB /* BaseOperation.swift in Sources */,
 				A7DA2D70291AD44D002D7EA1 /* ContentView.swift in Sources */,
 				A7A4822E295316C20080ABFA /* DownloadOperation.swift in Sources */,
+				A74305D02955F0CE00CE9A6C /* PodcastManagedObject+CoreDataClass.swift in Sources */,
 				A7DA2D6E291AD44D002D7EA1 /* watchOSApp.swift in Sources */,
 				A703CF7C2945B47E00177512 /* RemoteImage.swift in Sources */,
 				A7D3265F294D33CC005983CB /* RssServiceProtocol.swift in Sources */,
