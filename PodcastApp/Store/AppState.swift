@@ -53,6 +53,7 @@ enum AppState {
     struct CoreData {
         
         var savedGenres: [GenreViewModel] = []
+        var savedPodcast: Result<PodcastViewModel> = .loading
     }
     
 }
