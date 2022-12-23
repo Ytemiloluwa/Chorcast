@@ -24,20 +24,23 @@ struct EpisodeViewHeader: View {
                 .scaledToFit()
                 .frame(width: 20, height: 20)
                 .foregroundColor(.border)
-        }).buttonStyle(BorderlessButtonStyle())
+        })
+        .buttonStyle(BorderlessButtonStyle())
     }
     
     private var pendingView: some View {
         
-        Text("Pending...")
-            .font(.callout)
-            .foregroundColor(.gray)
+        Image(systemName: "clock.fill")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 20, height: 20)
+            .foregroundColor(.border)
         
     }
     
     private var savedImage: some View {
         
-        Image(systemName: "clock.fill")
+        Image(systemName: "icloud.fill")
             .resizable()
             .scaledToFit()
             .frame(width: 20, height: 20)
@@ -49,7 +52,7 @@ struct EpisodeViewHeader: View {
         
         HStack {
             
-            Text(episode.date)
+            Text(episode.date.uppercased())
             
             Spacer()
             
@@ -61,7 +64,7 @@ struct EpisodeViewHeader: View {
             state = downloadManager.getState(for: episode)
         }
         // listen to downloadings changes and update state accordingly
-        onChange(of: downloadManager.downloadings, perform: { downloadings in
+        .onChange(of: downloadManager.downloadings, perform: { downloadings in
             
             if let state = downloadings[episode.title] {
                 
@@ -106,7 +109,18 @@ struct EpisodeViewHeader: View {
         
         Button(action: abort, label: {
             
-            Text("\(progress)")
+           
+            ZStack {
+                
+                CircularProgressView(progress: progress, total: 1, width: 3)
+                    .frame(width: 20, height: 20)
+                
+                Image(systemName: "stop.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 8, height: 8)
+                    .foregroundColor(.accentColor)
+            }
         })
     }
     
@@ -130,7 +144,7 @@ struct EpisodeViewHeader_Previews: PreviewProvider {
             EpisodeViewHeader(episode: EpisodeViewModel.placeholder)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
-        }
+        }.environmentObject(DownloadManager())
         
     }
 }
