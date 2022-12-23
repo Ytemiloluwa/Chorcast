@@ -30,6 +30,9 @@ struct PodcastDetailsScreen: View {
         }.onChange(of: store.apiState.podcast) { _ in
             
             checkState()
+        }.onChange(of: store.coreDataState.savedPodcast) { _ in
+            
+            checkState()
         }
     }
     
@@ -37,11 +40,26 @@ struct PodcastDetailsScreen: View {
         
         if case.success(let podcast) = store.apiState.podcast, podcast.title == self.podcast.title {
             
-            state = store.apiState.podcast
+          //  state = store.apiState.podcast
+            checkCoreDataState(for: podcast)
             
         } else {
             
             store.dispatch(.api(.updatePodcasts(podcast)))
+            Log.info("Dispathcing update podcast")
+        }
+    }
+    
+    private func checkCoreDataState(for podcast : PodcastViewModel) {
+        
+        switch store.coreDataState.savedPodcast {
+            
+        case.loading:
+            store.dispatch(.coreData(.fetchPodcasts(podcast)))
+        case .success(_):
+            break
+        case.failure:
+            state = store.apiState.podcast
         }
     }
 }
