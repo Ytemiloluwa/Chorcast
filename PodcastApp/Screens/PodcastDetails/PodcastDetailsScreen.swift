@@ -46,7 +46,7 @@ struct PodcastDetailsScreen: View {
         } else {
             
             store.dispatch(.api(.updatePodcasts(podcast)))
-            Log.info("Dispathcing update podcast")
+            Log.info("Dispatching podcast update")
         }
     }
     
