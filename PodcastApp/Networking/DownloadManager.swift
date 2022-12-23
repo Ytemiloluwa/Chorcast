@@ -29,7 +29,7 @@ class DownloadManager: ObservableObject {
     
     init(environment: AppEnvironment = AppEnvironment()) {
         
-        operationQueue.maxConcurrentOperationCount = 1
+        operationQueue.maxConcurrentOperationCount = 3
         operationQueue.qualityOfService = .background
         self.environment = environment
         

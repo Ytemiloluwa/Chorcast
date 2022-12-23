@@ -71,7 +71,7 @@ class BaseOperation: Operation {
        return false
     }
     
-    override var isConcurrent: Bool {
+    override var isAsynchronous: Bool {
         
         return true
     }

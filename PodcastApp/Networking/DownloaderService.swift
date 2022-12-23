@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class DownloaderService: NSObject, DownloadServiceProtocol {
-
+    
     var progress: ((CGFloat) -> Void) = { _ in }
     
     var didFinish: ((Data?) -> Void) = { _ in }
@@ -29,22 +29,33 @@ class DownloaderService: NSObject, DownloadServiceProtocol {
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         
-       
-        if totalBytesExpectedToWrite < 0 {
-            
-            progress(0)
-            
-            return
-        }
+         Log.info("Bytes written: \(totalBytesWritten), Total bytes: \(totalBytesExpectedToWrite)")
         
-        let percentage = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
+//        if totalBytesExpectedToWrite < 0 {
+//            progress(0)
+//            return
+//        }
+//
+//        let percentage = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
+//        progress(percentage)
     }
     
     func cancel() {
         
+        session.invalidateAndCancel()
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        
+        do {
+            
+            let data = try Data(contentsOf: location)
+            didFinish(data)
+        }catch let err {
+            
+            didFinish(nil)
+            Log.error(err)
+        }
         
     }
 }
