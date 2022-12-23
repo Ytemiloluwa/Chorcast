@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
-    <entity name="EpisodeManagedObject" representedClassName="EpisodeManagedObject" syncable="YES" codeGenerationType="class">
+    <entity name="EpisodeManagedObject" representedClassName=".EpisodeManagedObject" syncable="YES">
         <attribute name="audio" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="descr" optional="YES" attributeType="String"/>
@@ -8,7 +8,7 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="size" optional="YES" attributeType="String"/>
-        <attribute name="soundAudioUrl" optional="YES" attributeType="String"/>
+        <attribute name="sourceAudioUrl" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="podcast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PodcastManagedObject" inverseName="episodes" inverseEntity="PodcastManagedObject"/>
     </entity>
@@ -16,7 +16,7 @@
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="PodcastManagedObject" representedClassName="PodcastManagedObject" syncable="YES" codeGenerationType="class">
+    <entity name="PodcastManagedObject" representedClassName=".PodcastManagedObject" syncable="YES">
         <attribute name="author" optional="YES" attributeType="String"/>
         <attribute name="country" optional="YES" attributeType="String"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -28,7 +28,7 @@
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="imageUrl" optional="YES" attributeType="String"/>
         <attribute name="isBookmarked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="langauge" optional="YES" attributeType="String"/>
+        <attribute name="languauge" optional="YES" attributeType="String"/>
         <attribute name="publisher" optional="YES" attributeType="String"/>
         <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="thumbnail" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>

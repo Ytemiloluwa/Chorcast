@@ -128,7 +128,7 @@ class CoreDataService: CoreDataserviceProtocol {
         managedEpisode.duration = episode.audioLength
         managedEpisode.releaseDate = episode.date.toDate()
         managedEpisode.size = episode.audioSize
-        managedEpisode.soundAudioUrl = episode.audioUrl
+        managedEpisode.sourceAudioUrl = episode.audioUrl
         managedEpisode.audio = audioData
         return managedEpisode
         
@@ -145,7 +145,7 @@ class CoreDataService: CoreDataserviceProtocol {
         managedPodcast.explicitContent = podcast.explicitContent
         managedPodcast.feedUrl = podcast.feedUrl
         managedPodcast.releaseDate = podcast.date.toDate()
-        managedPodcast.langauge = podcast.language
+        managedPodcast.langugage = podcast.language
         managedPodcast.publisher = podcast.publisher
         managedPodcast.id = Int64(podcast.id)
         managedPodcast.imageUrl = podcast.imageUrl

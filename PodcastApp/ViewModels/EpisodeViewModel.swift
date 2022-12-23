@@ -10,7 +10,7 @@ import FeedKit
 
 struct EpisodeViewModel: Identifiable {
     
-    let id = UUID()
+    var id = UUID()
     var title, description: String
     var date: String
     var audioUrl: String
@@ -47,6 +47,19 @@ struct EpisodeViewModel: Identifiable {
         self.audioLength = audioLength
         self.podcast = podcast
 
+    }
+    
+    init(downloaded: EpisodeManagedObject, podcast: PodcastViewModel) {
+        
+        self.id = downloaded.id ?? UUID()
+        self.title = downloaded.title ?? ""
+        self.description = downloaded.descr ?? ""
+        self.date = downloaded.releaseDate?.format() ?? ""
+        self.audioUrl = downloaded.sourceAudioUrl ?? ""
+        self.audioLength = downloaded.duration
+        self.audioSize = downloaded.size ?? ""
+        self.audio = downloaded.audio
+        self.podcast = podcast
     }
 
     init(feedItem: RSSFeedItem, podcast: PodcastViewModel) {
