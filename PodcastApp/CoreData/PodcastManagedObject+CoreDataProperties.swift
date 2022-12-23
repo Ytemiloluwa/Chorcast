@@ -26,7 +26,7 @@ extension PodcastManagedObject {
     @NSManaged public var image: Data?
     @NSManaged public var imageUrl: String?
     @NSManaged public var isBookmarked: Bool
-    @NSManaged public var langugage: String?
+    @NSManaged public var language: String?
     @NSManaged public var publisher: String?
     @NSManaged public var releaseDate: Date?
     @NSManaged public var thumbnail: Data?

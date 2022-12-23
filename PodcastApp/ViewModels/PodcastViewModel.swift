@@ -160,7 +160,7 @@ struct PodcastViewModel: Identifiable, Equatable {
         self.totalEpisodes = managedPodcast.episodes?.count ?? 0
         self.explicitContent = managedPodcast.explicitContent ?? ""
         self.description = managedPodcast.descr ?? ""
-        self.language = managedPodcast.langugage ?? ""
+        self.language = managedPodcast.language ?? ""
         self.country = managedPodcast.country ?? ""
         self.publisher = managedPodcast.publisher ?? ""
         self.genres = managedPodcast.genres?.components(separatedBy: ", ") ?? []
