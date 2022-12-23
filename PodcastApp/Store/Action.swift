@@ -20,6 +20,7 @@ enum Action {
         
         case fetchGenres
         case saveGenres(_ genres: [GenreViewModel])
+        case fetchPodcasts(_ podcast: PodcastViewModel)
     }
     
     case api(_ action: Api)
