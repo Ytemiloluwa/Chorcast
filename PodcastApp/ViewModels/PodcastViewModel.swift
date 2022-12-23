@@ -166,7 +166,17 @@ struct PodcastViewModel: Identifiable, Equatable {
         self.genres = managedPodcast.genres?.components(separatedBy: ", ") ?? []
         self.nextEpisodePubDate = Date()
         self.feedUrl = managedPodcast.feedUrl ?? ""
-        self.episodes = existingPodcast?.episodes ?? []
+        self.episodes = existingPodcast?.episodes.map({  episode in
+            
+            if let managedEpisode = managedPodcast.episodesArray.first(where: {$0.title == episode.title}) {
+                
+                return EpisodeViewModel(downloaded: managedEpisode, podcast: self)
+            }else {
+                
+                return episode
+            }
+            
+        }) ?? []
         self.isBookmarked = managedPodcast.isBookmarked
     }
     
