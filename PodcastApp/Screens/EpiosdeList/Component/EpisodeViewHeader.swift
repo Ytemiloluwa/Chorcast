@@ -25,7 +25,7 @@ struct EpisodeViewHeader: View {
                 .frame(width: 20, height: 20)
                 .foregroundColor(.border)
         })
-        .buttonStyle(BorderlessButtonStyle())
+       // .buttonStyle(BorderlessButtonStyle())
     }
     
     private var pendingView: some View {
@@ -44,7 +44,7 @@ struct EpisodeViewHeader: View {
             .resizable()
             .scaledToFit()
             .frame(width: 20, height: 20)
-            .foregroundColor(.border)
+            .foregroundColor(.accentColor)
     }
     
     
@@ -52,7 +52,7 @@ struct EpisodeViewHeader: View {
         
         HStack {
             
-            Text(episode.date.uppercased())
+            Text(episode.date)
             
             Spacer()
             
