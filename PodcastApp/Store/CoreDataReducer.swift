@@ -19,14 +19,13 @@ struct CoreDataReducer {
             _ = environment.coredata.saveGenres(genres)
         
         case .fetchPodcasts(let podcast):
-            _ = environment.coredata.fetchPodcast(podcast.id)
-//            if let managedPodcast = environment.coredata.fetchPodcast(podcast.id) {
-//
-//                let podcast = PodcastViewModel(managedPodcast, existingPodcast: podcast)
-//                state.savedPodcast = .success(podcast)
-//            }else {
-//                state.savedPodcast = .failure
-//            }
+            if let managedPodcast = environment.coredata.fetchPodcast(podcast.id) {
+
+                let podcast = PodcastViewModel(managedPodcast, existingPodcast: podcast)
+                state.savedPodcast = .success(podcast)
+            }else {
+                state.savedPodcast = .failure
+            }
         }
     }
 }
