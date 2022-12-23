@@ -145,7 +145,7 @@ class CoreDataService: CoreDataserviceProtocol {
         managedPodcast.explicitContent = podcast.explicitContent
         managedPodcast.feedUrl = podcast.feedUrl
         managedPodcast.releaseDate = podcast.date.toDate()
-        managedPodcast.langugage = podcast.language
+        managedPodcast.language = podcast.language
         managedPodcast.publisher = podcast.publisher
         managedPodcast.id = Int64(podcast.id)
         managedPodcast.imageUrl = podcast.imageUrl
