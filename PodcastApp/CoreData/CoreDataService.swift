@@ -10,6 +10,28 @@ import CoreData
 
 class CoreDataService: CoreDataServiceProtocol {
     
+    func fetchAllManagedPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel] {
+        
+        let request: NSFetchRequest<PodcastManagedObject> = PodcastManagedObject.fetchRequest()
+        
+        if bookmarkedOnly {
+            
+            request.predicate = NSPredicate(format: "isBookmarked = %@", "1")
+        }
+        
+        do {
+            let results = try context.fetch(request)
+            return results.map { PodcastViewModel($0)}
+            
+        }catch let error {
+            
+            Log.error(error)
+        }
+        
+        return []
+    }
+    
+    
     func bookmarkPodcast(_ podcast: PodcastViewModel) -> PodcastManagedObject? {
         
         
