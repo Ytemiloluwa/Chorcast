@@ -15,7 +15,8 @@ struct PodcastViewModel: Identifiable, Equatable {
         lhs.language == rhs.language &&
         lhs.episodes.count == rhs.episodes.count &&
         lhs.image.count == rhs.image.count &&
-        lhs.thumbnail.count == rhs.thumbnail.count
+        lhs.thumbnail.count == rhs.thumbnail.count &&
+        lhs.isBookmarked == rhs.isBookmarked
     }
     
     var id: Int
