@@ -11,6 +11,28 @@ struct PodcastDetailContent: View {
     
     var podcast: PodcastViewModel
     
+    @EnvironmentObject private var store: Store
+    
+    private var bookmarkButton: some View {
+        
+        Button(action: {
+            
+            if podcast.isBookmarked {
+                
+                store.dispatch(.coreData(.deleteBookmark(podcast)))
+            }else {
+                
+                store.dispatch(.coreData(.bookmark(podcast)))
+            }
+            
+        }, label: {
+            
+            Image(systemName: podcast.isBookmarked ? "bookmark.fill" : "bookmark")
+            
+        })
+
+    }
+    
     private var description: some View {
         
         Text(podcast.description)
@@ -44,6 +66,7 @@ struct PodcastDetailContent: View {
                     }
                 }
             }).navigationBarTitle("", displayMode: .inline)
+                .navigationBarItems(trailing: bookmarkButton)
         }
     }
     
