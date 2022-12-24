@@ -32,6 +32,10 @@ struct CoreDataReducer {
             let managedPodcast = environment.coredata.deleteBookmark(podcast.id)
                 
             updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
+            
+        case.fetchBookmarkedPodcasts:
+            let podcasts = environment.coredata.fetchAllManagedPodcast(bookmarkedOnly: true)
+            state.bookmarkedPodcasts = .success(podcasts)
     
         }
     }
