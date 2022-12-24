@@ -10,6 +10,12 @@ import CoreData
 
 class PreviewCoreDataService: CoreDataServiceProtocol {
     
+    func fetchAllManagedPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel] {
+        
+        return PodcastViewModel.listPlaceholder
+    }
+    
+    
     func bookmarkPodcast(_ podcast: PodcastViewModel) -> PodcastManagedObject? {
         
        return nil
