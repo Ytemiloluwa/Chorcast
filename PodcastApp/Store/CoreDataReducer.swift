@@ -19,13 +19,35 @@ struct CoreDataReducer {
             _ = environment.coredata.saveGenres(genres)
         
         case .fetchPodcasts(let podcast):
-            if let managedPodcast = environment.coredata.fetchPodcast(podcast.id) {
-
-                let podcast = PodcastViewModel(managedPodcast, existingPodcast: podcast)
-                state.savedPodcast = .success(podcast)
-            }else {
-                state.savedPodcast = .failure
+             let managedPodcast = environment.coredata.fetchPodcast(podcast.id)
+            updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
+        
+        case .bookmark(let podcast):
+            
+            if let managedPodcast = environment.coredata.bookmarkPodcast(podcast){
+                updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
+                
             }
+        case.deleteBookmark(let podcast):
+            let managedPodcast = environment.coredata.deleteBookmark(podcast.id)
+                
+            updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
+    
         }
     }
+    
+    private static func updateState(_ state: inout AppState.CoreData, savedPodcast: PodcastManagedObject?, existingPodcast: PodcastViewModel) {
+        
+        if let managedPodcast = savedPodcast {
+            
+            let podcast = PodcastViewModel(managedPodcast, existingPodcast: existingPodcast)
+            state.savedPodcast = .success(podcast)
+            
+        }else {
+            
+            state.savedPodcast = .failure
+        }
+        
+    }
+    
 }
