@@ -11,11 +11,11 @@ struct AppEnvironment {
     
     let decoder: JSONDecoder
     let api: ApiServiceProtocol
-    let coredata: CoreDataserviceProtocol
+    let coredata: CoreDataServiceProtocol
     let rss: RssServiceProtocol
     let downloader: DownloadServiceProtocol
     
-    init(decoder: JSONDecoder = .init(), api: ApiServiceProtocol = APIService(), coredata: CoreDataserviceProtocol = CoreDataService(), rss: RssServiceProtocol = RssService(), downloader: DownloadServiceProtocol = DownloaderService()) {
+    init(decoder: JSONDecoder = .init(), api: ApiServiceProtocol = APIService(), coredata: CoreDataServiceProtocol = CoreDataService(), rss: RssServiceProtocol = RssService(), downloader: DownloadServiceProtocol = DownloaderService()) {
         
         self.api = api
         self.decoder = decoder
