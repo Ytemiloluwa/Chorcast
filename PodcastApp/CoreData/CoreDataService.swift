@@ -8,7 +8,55 @@
 import Foundation
 import CoreData
 
-class CoreDataService: CoreDataserviceProtocol {
+class CoreDataService: CoreDataServiceProtocol {
+    
+    func bookmarkPodcast(_ podcast: PodcastViewModel) -> PodcastManagedObject? {
+        
+        
+        var managedPodcast: PodcastManagedObject?
+        
+        if let existingPodcast = fetchPodcast(podcast.id) {
+            
+            existingPodcast.isBookmarked = true
+            managedPodcast = existingPodcast
+            
+        }else {
+            
+            let newPodcast = createManagedPodcast(podcast)
+            newPodcast.isBookmarked = true
+            managedPodcast = newPodcast
+        }
+        
+        if saveContext() {
+            
+            return managedPodcast
+        }
+            
+        return nil
+    }
+    
+    func deleteBookmark(_ id: Int) -> PodcastManagedObject? {
+    
+        guard let managedPodcast = fetchPodcast(id) else {
+            
+            return nil
+        }
+        
+        if managedPodcast.episodesArray.isEmpty {
+            
+            context.delete(managedPodcast)
+            
+            if saveContext() {
+                
+                return nil
+            }
+        }
+        
+        managedPodcast.isBookmarked = false
+        _ = saveContext()
+        
+        return managedPodcast
+    }
     
     private var context: NSManagedObjectContext {
         

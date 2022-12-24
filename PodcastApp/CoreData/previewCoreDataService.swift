@@ -8,7 +8,18 @@
 import Foundation
 import CoreData
 
-class PreviewCoreDataService: CoreDataserviceProtocol {
+class PreviewCoreDataService: CoreDataServiceProtocol {
+    
+    func bookmarkPodcast(_ podcast: PodcastViewModel) -> PodcastManagedObject? {
+        
+       return nil
+    }
+    
+    func deleteBookmark(_ id: Int) -> PodcastManagedObject? {
+        
+        return nil
+    }
+    
     func fetchEpisode(_ episode: EpisodeViewModel) -> EpisodeManagedObject? {
         return nil
     }
