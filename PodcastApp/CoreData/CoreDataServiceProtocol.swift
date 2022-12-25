@@ -16,5 +16,5 @@ protocol CoreDataServiceProtocol {
     func fetchPodcast(_ id: Int) -> PodcastManagedObject?
     func bookmarkPodcast(_ podcast: PodcastViewModel) -> PodcastManagedObject?
     func deleteBookmark(_ id: Int) -> PodcastManagedObject?
-    func fetchAllManagedPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel]
+    func fetchAllPodcast(bookmarkedOnly: Bool, OnlyContainingEpisodes: Bool) -> [PodcastViewModel]
 }
