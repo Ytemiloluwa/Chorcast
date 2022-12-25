@@ -13,19 +13,20 @@ struct BookmarkedScreen: View {
     
     private let gridItems: [GridItem] = Array(repeating: .init(.adaptive(minimum: 350), spacing: 20), count: 1)
     
+    private var grid: some View {
+        
+        LazyVGrid(columns: gridItems, alignment: .leading, spacing: 10, content: {
+            
+            PodcastListContent(state: store.coreDataState.bookmarkedPodcasts, fetchPodcasts: fetchPodcasts)
+        })
+    }
+    
     var body: some View {
         
         ScrollView {
             
-            switch store.coreDataState.bookmarkedPodcasts {
-                
-            case.loading:
-                RedactedListView(viewType: .podcast)
-            case.success(let podcast):
-                createGrid(podcasts: podcast)
-            case.failure:
-                FailureView(message: "Unable to fetch podcasts", retryAction: fetchPodcasts)
-            }
+            grid
+            
         }.navigationTitle("Bookmark")
     }
     
