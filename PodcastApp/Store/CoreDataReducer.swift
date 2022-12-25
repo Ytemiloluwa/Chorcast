@@ -34,9 +34,12 @@ struct CoreDataReducer {
             updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
             
         case.fetchBookmarkedPodcasts:
-            let podcasts = environment.coredata.fetchAllManagedPodcast(bookmarkedOnly: true)
+            let podcasts = environment.coredata.fetchAllPodcast(bookmarkedOnly: true, OnlyContainingEpisodes: false)
             state.bookmarkedPodcasts = .success(podcasts)
-    
+            
+        case .fetchPodcastWithEpisodes:
+            let podcast = environment.coredata.fetchAllPodcast(bookmarkedOnly: false, OnlyContainingEpisodes: true)
+            state.podcastsWithEpisodes = .success(podcast)
         }
     }
     
