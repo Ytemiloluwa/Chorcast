@@ -53,7 +53,7 @@ struct FailureView: View {
                     .offset(x: 0, y: -50)
                 Spacer()
                 createBackgroundOverlay(mask: "EmptyScreenOverlay2")
-            }.frame(maxHeight: .infinity)
+            }.frame(height: showIcon ? UIScreen.main.bounds.height : 200)
                 .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 40) {
@@ -75,6 +75,7 @@ struct FailureView: View {
             .foregroundColor(Color.overlay)
             .frame(height: 300)
             .mask(Image(mask).resizable().frame(height: 300))
+            .offset(x: 0, y: 50)
         
     }
 }
