@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct HomeMyLibrarySection: View {
+    
+    @EnvironmentObject private var store: Store
+    
     @State private var selectedGenre = ""
     
     private var section : some View {
         
         Section(header: HomeMyLibrarySectionHeader(selected: $selectedGenre)) {
             
-            PodcastListContent(genre: selectedGenre)
+            PodcastListContent(state: getState(for: selectedGenre), fetchPodcasts: fetchPodcasts)
         }
     }
     var body: some View {
@@ -24,6 +27,23 @@ struct HomeMyLibrarySection: View {
         
         
     }
+    
+    
+    private func fetchPodcasts() {
+
+        store.dispatch(.api(.fetchPodcasts(selectedGenre, limit: 10)))
+    }
+    
+    private func getState(for term: String) -> AppState.Result<[PodcastViewModel]>{
+        
+        if let state = store.apiState.preferredPodcasts[term] {
+            
+            return state
+        }
+        
+        return .loading
+    }
+
 }
 
 struct HomeMyLibrarySection_Previews: PreviewProvider {
