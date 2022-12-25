@@ -55,6 +55,7 @@ enum AppState {
         var savedGenres: [GenreViewModel] = []
         var savedPodcast: Result<PodcastViewModel> = .loading
         var bookmarkedPodcasts: Result<[PodcastViewModel]> = .loading
+        var podcastsWithEpisodes: Result<[PodcastViewModel]> = .loading
     }
     
 }
