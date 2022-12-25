@@ -24,8 +24,10 @@ struct EpisodeView: View {
 }
 
 struct EpisodeView_Previews: PreviewProvider {
+    
     static var previews: some View {
         Group {
+            
             EpisodeView(episode: EpisodeViewModel.placeholder)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
@@ -33,6 +35,7 @@ struct EpisodeView_Previews: PreviewProvider {
             EpisodeView(episode: EpisodeViewModel.placeholder)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
-        }
+            
+        }.environmentObject(DownloadManager())
     }
 }
