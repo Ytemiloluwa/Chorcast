@@ -9,8 +9,13 @@ import Foundation
 import CoreData
 
 class PreviewCoreDataService: CoreDataServiceProtocol {
+    func fetchAllPodcast(bookmarkedOnly: Bool, OnlyContainingEpisodes flag: Bool) -> [PodcastViewModel] {
+        
+        return PodcastViewModel.listPlaceholder
+    }
     
-    func fetchAllManagedPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel] {
+    
+    func fetchAllPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel] {
         
         return PodcastViewModel.listPlaceholder
     }
