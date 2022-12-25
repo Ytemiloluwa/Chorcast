@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct PodcastListContent: View {
-    var genre: String
-    var limit: Int = 10
+ 
+    var state: AppState.Result<[PodcastViewModel]> = .loading
+    
+    var fetchPodcasts: (() -> Void)
     
     @EnvironmentObject private var store: Store
     
     var body: some View {
         
-        switch getState(for: genre) {
+        switch state {
+            
         case.loading:
             RedactedListView(viewType: .podcast)
                .onAppear(perform: fetchPodcasts)
@@ -23,7 +26,7 @@ struct PodcastListContent: View {
         case.success(let podcasts):
             successContent(podcasts: podcasts)
         case .failure:
-            FailureView(message:"Unable to fetch podcasts for \(Text(genre).bold())", retryAction: fetchPodcasts)
+            FailureView(message:"Unable to fetch podcasts", retryAction: fetchPodcasts)
         }
         
     }
@@ -35,22 +38,8 @@ struct PodcastListContent: View {
             
         }.padding(.horizontal)
     }
-    
-    private func fetchPodcasts() {
-        
-        store.dispatch(.api(.fetchPodcasts(genre, limit: limit)))
-    }
-    
-    
-    private func getState(for term: String) -> AppState.Result<[PodcastViewModel]>{
-        
-        if let state = store.apiState.preferredPodcasts[term] {
-            
-            return state
-        }
-        
-        return .loading
-    }
+
+
 }
 struct PodcastListContent_Previews: PreviewProvider {
     
@@ -61,14 +50,14 @@ struct PodcastListContent_Previews: PreviewProvider {
             
             VStack {
                 
-                PodcastListContent(genre: "technology")
+                PodcastListContent(state: .loading, fetchPodcasts: {})
                     .preferredColorScheme(.dark)
                 .previewLayout(.fixed(width: 350.0, height: 400.0))
             }
             
             VStack {
                 
-                PodcastListContent(genre: "technology")
+                PodcastListContent(state: .loading, fetchPodcasts: {})
                     .preferredColorScheme(.light)
                 .previewLayout(.fixed(width: 350.0, height: 400.0))
             }
