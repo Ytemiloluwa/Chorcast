@@ -25,6 +25,7 @@ enum Action {
         case bookmark(_ podcast: PodcastViewModel)
         case deleteBookmark(_ Podcast: PodcastViewModel)
         case fetchBookmarkedPodcasts
+        case fetchPodcastWithEpisodes
     }
     
     case api(_ action: Api)
