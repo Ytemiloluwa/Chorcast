@@ -9,8 +9,8 @@ import Foundation
 import CoreData
 
 class CoreDataService: CoreDataServiceProtocol {
-    
-    func fetchAllManagedPodcast(bookmarkedOnly: Bool) -> [PodcastViewModel] {
+
+    func fetchAllPodcast(bookmarkedOnly: Bool, OnlyContainingEpisodes flag: Bool) -> [PodcastViewModel] {
         
         let request: NSFetchRequest<PodcastManagedObject> = PodcastManagedObject.fetchRequest()
         
@@ -21,7 +21,17 @@ class CoreDataService: CoreDataServiceProtocol {
         
         do {
             let results = try context.fetch(request)
-            return results.map { PodcastViewModel($0)}
+            
+            if flag {
+                
+                return results
+                    .filter{ !$0.episodesArray.isEmpty }
+                    .map { PodcastViewModel($0)}
+            }
+            return results.map {
+                
+                PodcastViewModel($0)
+            }
             
         }catch let error {
             
