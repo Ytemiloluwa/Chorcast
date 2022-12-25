@@ -307,7 +307,6 @@
 		A703CF7A2945AD3900177512 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				A7A93D03294846210059460E /* View+.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -439,6 +438,7 @@
 		A7B6E42D2935EFCA002F01D9 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				A7A93D03294846210059460E /* View+.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
