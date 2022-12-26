@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct HomeScreen: View {
+#if os(iOS)
+    @Environment(\.horizontalSizeClass) private var hSizeClass: UserInterfaceSizeClass?
+#endif
+    
     var body: some View {
         
         ScrollView {
             
-            VStack(spacing: 20) {
+            LazyVStack(spacing: 20) {
                 
-                HomeMenuList()
+                if hSizeClass == .compact {
+                    
+                    HomeMenuList()
+                    
+                }
                 HomeGenresContent()
                 HomeMyLibrarySection()
                 
             }
-        }
+        }.navigationTitle("Home")
     }
 }
 struct HomeScreen_Previews: PreviewProvider {
@@ -30,10 +38,13 @@ struct HomeScreen_Previews: PreviewProvider {
         Group {
             
             HomeScreen()
-               
-              
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+        
             HomeScreen()
-             
+                .preferredColorScheme(.light)
+                .previewLayout(.sizeThatFits)
+            
         }.environmentObject(store)
         
     }
