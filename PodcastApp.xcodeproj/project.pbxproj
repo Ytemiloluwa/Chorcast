@@ -59,6 +59,7 @@
 		A7635D582938D055005A0278 /* GenreSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7635D572938D055005A0278 /* GenreSelectionScreen.swift */; };
 		A76FF6F9294CB29C00E56D5C /* PodcastListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76FF6F8294CB29C00E56D5C /* PodcastListScreen.swift */; };
 		A787EEF329598F27002DBBA3 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787EEF229598F27002DBBA3 /* SearchScreen.swift */; };
+		A787EEF62959B372002DBBA3 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787EEF52959B372002DBBA3 /* MainScreen.swift */; };
 		A793483229515FA900A4DD78 /* EpisodeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793483129515FA900A4DD78 /* EpisodeListScreen.swift */; };
 		A79348352951654400A4DD78 /* EpisodeViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79348342951654400A4DD78 /* EpisodeViewHeader.swift */; };
 		A793483729516AB500A4DD78 /* EpisodeViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793483629516AB500A4DD78 /* EpisodeViewBody.swift */; };
@@ -175,6 +176,7 @@
 		A7635D572938D055005A0278 /* GenreSelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionScreen.swift; sourceTree = "<group>"; };
 		A76FF6F8294CB29C00E56D5C /* PodcastListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListScreen.swift; sourceTree = "<group>"; };
 		A787EEF229598F27002DBBA3 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		A787EEF52959B372002DBBA3 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		A793483129515FA900A4DD78 /* EpisodeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListScreen.swift; sourceTree = "<group>"; };
 		A79348342951654400A4DD78 /* EpisodeViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewHeader.swift; sourceTree = "<group>"; };
 		A793483629516AB500A4DD78 /* EpisodeViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewBody.swift; sourceTree = "<group>"; };
@@ -386,6 +388,14 @@
 			path = PodcastList;
 			sourceTree = "<group>";
 		};
+		A787EEF42959B359002DBBA3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A787EEF52959B372002DBBA3 /* MainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A793483029515F5D00A4DD78 /* EpiosdeList */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +418,7 @@
 		A794C8B62937A27500DD76B7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A787EEF42959B359002DBBA3 /* Main */,
 				A707BED629590E8C0040E448 /* Search */,
 				A707BED32958C73A0040E448 /* Downloaded */,
 				A73417872957C6B20085AFDD /* Bookmarked */,
@@ -875,6 +886,7 @@
 				A7A93D0A2948BDC20059460E /* MyLibraryGenreList.swift in Sources */,
 				A7D314282949F36E0019AA58 /* RedactedListView.swift in Sources */,
 				A7D314262949ED530019AA58 /* HomeMyLibrarySectionHeader.swift in Sources */,
+				A787EEF62959B372002DBBA3 /* MainScreen.swift in Sources */,
 				A794C8B529379E9600DD76B7 /* BodyText.swift in Sources */,
 				A70304A72952485F00B57AFB /* BaseOperation.swift in Sources */,
 				A794C8B92937A60200DD76B7 /* GetStartedButton.swift in Sources */,
