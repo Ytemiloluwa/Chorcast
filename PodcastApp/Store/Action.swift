@@ -11,7 +11,7 @@ enum Action {
     
     enum Api {
         
-        case fetchPodcasts(_ term: String, limit: Int = 10)
+        case fetchPodcasts(_ term: String, limit: Int = 100)
         case fetchGenres(_filename : String)
         case updatePodcasts(_ podcast: PodcastViewModel)
     }
