@@ -13,14 +13,12 @@ struct HomeMenuList: View {
             
             HStack(spacing: 15) {
                 
-                ForEach(MenuItem.all) { menu in
+                ForEach(MenuItem.all.dropFirst()) { menu in
                     
-                    Button(action: {}) {
-                        MenuLink(menu: menu, destination: {
-                            
-                            Text("Hello World")
-                        })
-                    }
+                    MenuLink(menu: menu, destination: {
+                        
+                        menu.screen
+                    })
                 }
             }
         }.padding(.horizontal)
