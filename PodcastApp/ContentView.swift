@@ -17,12 +17,10 @@ struct ContentView: View {
         if genres.isEmpty {
             
             GenreSelectionScreen()
+            
         }else {
             
-            NavigationView {
-                
-                HomeScreen().navigationTitle("Home")
-            }
+            MainScreen()
         }
 
     }
