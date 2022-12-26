@@ -67,7 +67,7 @@ class CoreDataService: CoreDataServiceProtocol {
         return nil
     }
     
-    func deleteBookmark(_ id: Int) -> PodcastManagedObject? {
+    func unbookmarkedPodcast(_ id: Int) -> PodcastManagedObject? {
     
         guard let managedPodcast = fetchPodcast(id) else {
             

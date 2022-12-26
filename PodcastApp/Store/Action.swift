@@ -23,7 +23,7 @@ enum Action {
         case saveGenres(_ genres: [GenreViewModel])
         case fetchPodcasts(_ podcast: PodcastViewModel)
         case bookmark(_ podcast: PodcastViewModel)
-        case deleteBookmark(_ Podcast: PodcastViewModel)
+        case unbookmarked(_ Podcast: PodcastViewModel)
         case fetchBookmarkedPodcasts
         case fetchPodcastWithEpisodes
     }

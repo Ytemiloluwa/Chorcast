@@ -26,7 +26,7 @@ class PreviewCoreDataService: CoreDataServiceProtocol {
        return nil
     }
     
-    func deleteBookmark(_ id: Int) -> PodcastManagedObject? {
+    func unbookmarkedPodcast(_ id: Int) -> PodcastManagedObject? {
         
         return nil
     }
