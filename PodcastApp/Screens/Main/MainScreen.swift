@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MainScreen: View {
     
-    #if os(iOS)
+#if os(iOS)
     
     @Environment(\.horizontalSizeClass) private var hSizeClass: UserInterfaceSizeClass?
     
-    #endif
+#endif
     
     var body: some View {
         
@@ -21,7 +21,7 @@ struct MainScreen: View {
             
             if hSizeClass == .regular {
                 
-                Text("Sizebar menus")
+                SideBar()
                 
             } else {
                 
@@ -45,7 +45,6 @@ struct MainScreen_Previews: PreviewProvider {
             MainScreen()
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
-            
         }.environmentObject(store)
     }
 }
