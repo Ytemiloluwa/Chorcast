@@ -16,10 +16,16 @@ struct SearchFieldView: View {
         
         HStack {
             
-            Button(action: {}, label: {
+            Button(action: {
+                
+                if isSearching {
+                    
+                    searchTerm = ""
+                }
+            }, label: {
                 
                 
-                Image(systemName: "magnifyingglass")
+                Image(systemName: isSearching ? "multiply": "magnifyingglass")
                     .foregroundColor(.gray)
             })
             
@@ -28,6 +34,7 @@ struct SearchFieldView: View {
             .padding(.horizontal)
             .background(Color.overlay)
             .cornerRadius(40)
+            .animation(.easeIn, value: isSearching)
     }
 }
 
