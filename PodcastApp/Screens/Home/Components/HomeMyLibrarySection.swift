@@ -11,7 +11,7 @@ struct HomeMyLibrarySection: View {
     
     @EnvironmentObject private var store: Store
     
-    @State private var selectedGenre = ""
+    @SceneStorage("selectedGenre") private var selectedGenre = ""
     
     private var section : some View {
         
@@ -31,7 +31,7 @@ struct HomeMyLibrarySection: View {
     
     private func fetchPodcasts() {
 
-        store.dispatch(.api(.fetchPodcasts(selectedGenre, limit: 10)))
+        store.dispatch(.api(.fetchPodcasts(selectedGenre, limit: 100)))
     }
     
     private func getState(for term: String) -> AppState.Result<[PodcastViewModel]>{
