@@ -34,7 +34,7 @@ struct PodcastListScreen: View {
     
     private func fetchPodcasts() {
         
-        store.dispatch(.api(.fetchPodcasts(genre, limit: 10)))
+        store.dispatch(.api(.fetchPodcasts(genre, limit: 100)))
     }
     
     private func getState(for term: String) -> AppState.Result<[PodcastViewModel]> {
