@@ -21,7 +21,7 @@ enum Action {
         // dipatching related actions in coreData
         case fetchGenres
         case saveGenres(_ genres: [GenreViewModel])
-        case fetchPodcasts(_ podcast: PodcastViewModel)
+        case fetchPodcast(_ podcast: PodcastViewModel)
         case bookmark(_ podcast: PodcastViewModel)
         case unbookmarked(_ Podcast: PodcastViewModel)
         case fetchBookmarkedPodcasts

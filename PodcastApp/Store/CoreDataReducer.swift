@@ -18,7 +18,7 @@ struct CoreDataReducer {
         case.saveGenres(let genres):
             _ = environment.coredata.saveGenres(genres)
         
-        case .fetchPodcasts(let podcast):
+        case .fetchPodcast(let podcast):
              let managedPodcast = environment.coredata.fetchPodcast(podcast.id)
             updateState(&state, savedPodcast: managedPodcast, existingPodcast: podcast)
         
