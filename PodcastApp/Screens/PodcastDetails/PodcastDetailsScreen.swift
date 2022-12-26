@@ -46,7 +46,7 @@ struct PodcastDetailsScreen: View {
         } else {
             
             store.dispatch(.api(.updatePodcasts(podcast)))
-            Log.info("Dispatching podcast update")
+           // Log.info("Dispatching podcast update")
         }
     }
     
@@ -55,9 +55,16 @@ struct PodcastDetailsScreen: View {
         switch store.coreDataState.savedPodcast {
             
         case.loading:
-            store.dispatch(.coreData(.fetchPodcasts(podcast)))
-        case .success(_):
-            break
+            store.dispatch(.coreData(.fetchPodcast(podcast)))
+        case .success(let savedPodcast):
+            
+            if savedPodcast.title == self.podcast.title {
+                
+                state = store.coreDataState.savedPodcast
+            }else {
+                
+                store.dispatch(.coreData(.fetchPodcast(podcast)))
+            }
         case.failure:
             state = store.apiState.podcast
         }
