@@ -22,6 +22,7 @@ struct MainScreen: View {
             if hSizeClass == .regular {
                 
                 SideBar()
+                HomeScreen()
                 
             } else {
                 
