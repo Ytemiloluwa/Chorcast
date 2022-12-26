@@ -29,15 +29,15 @@ class DownloaderService: NSObject, DownloadServiceProtocol {
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         
-         Log.info("Bytes written: \(totalBytesWritten), Total bytes: \(totalBytesExpectedToWrite)")
+       //  Log.info("Bytes written: \(totalBytesWritten), Total bytes: \(totalBytesExpectedToWrite)")
         
-//        if totalBytesExpectedToWrite < 0 {
-//            progress(0)
-//            return
-//        }
-//
-//        let percentage = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
-//        progress(percentage)
+        if totalBytesExpectedToWrite < 0 {
+            progress(0)
+            return
+        }
+
+        let percentage = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
+        progress(percentage)
     }
     
     func cancel() {
