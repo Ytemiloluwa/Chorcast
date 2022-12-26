@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct MenuItem: Identifiable, Equatable {
+
+struct MenuItem: Identifiable, Equatable, Hashable {
     
     var id: String { name }
     var name = ""
@@ -19,6 +21,34 @@ struct MenuItem: Identifiable, Equatable {
     }
     static var all: [MenuItem] {
         
-        [MenuItem(name: "Profile", icon: "person.crop.circle.fill"), MenuItem(name: "Search", icon: "magnifyingglass.circle.fill"), MenuItem(name: "Downloaded", icon: "square.and.arrow.down.fill"), MenuItem(name: "Bookmarked", icon: "bookmark.fill")]
+        [MenuItem(name: "Home", icon: "house.fill"),
+         MenuItem(name: "Search", icon: "magnifyingglass.circle.fill"),
+         MenuItem(name: "Downloaded", icon: "square.and.arrow.down.fill"),
+         MenuItem(name: "Bookmarked", icon: "bookmark.fill")]
+    }
+    
+    @ViewBuilder
+
+    var screen: some View {
+        
+        if self.name == "Home" {
+            
+            HomeScreen()
+        }
+        if self.name == "Search" {
+            
+            SearchScreen()
+        }
+        if self.name == "Downloaded" {
+            
+            DownloadedScreen()
+        }
+        
+        if self.name == "Bookmarked" {
+            
+            BookmarkedScreen()
+        }
     }
 }
+
+
