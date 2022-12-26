@@ -194,6 +194,18 @@ class CoreDataService: CoreDataServiceProtocol {
     
     func fetchPodcast(_ id: Int) -> PodcastManagedObject? {
         
+        let request: NSFetchRequest<PodcastManagedObject> = PodcastManagedObject.fetchRequest()
+        request.predicate = NSPredicate(format: "id = %@", String(id))
+        
+        do {
+            let results = try context.fetch(request)
+            return results.first
+        }
+        catch let error {
+            
+            print(error)
+        }
+        
         return nil
     }
     
