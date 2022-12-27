@@ -74,7 +74,17 @@ class PodcastPlayer: NSObject {
     
     private func setUpObservers() {
         
+        let interval = CMTime(value: 1, timescale: 1)
+        timeObserverToken = player.addPeriodicTimeObserver(forInterval: interval, queue: .main) { [unowned self] time in
+            
+
+            // update progress
+        }
         
+        playerItemStatusObserver = player.observe(\AVPlayer.currentItem?.status, options: [.new, .initial]) { [unowned self] _, _ in
+            
+            
+        }
     }
     
     private func prepareAsset(_ asset: AVAsset) {
