@@ -41,8 +41,34 @@ class PodcastPlayer: NSObject {
     
     
     
-    private func validatesValues(for keys: [String], asset: AVAsset) -> Bool {
+    private func validatesValues(for Keys: [String], asset: AVAsset) -> Bool {
         
+        for key in Keys {
+            
+            var error: NSError?
+            
+            if asset.statusOfValue(forKey: key, error: &error) == .failed {
+                
+                self.onFailure("The media failed to load key: \(key)")
+            }
+        }
+        
+        #if os(watchOS)
+        
+        if !asset.isPlayable {
+            
+            self.onFailure("Sorry, the media is not playable.")
+            
+            return false
+        }
+        
+        #else
+        
+        if !asset.isPlayable || asset.hasProtectedContent {
+            
+            self.onFailure("Sorry, the media is not playable.")
+        }
+        #endif
         return true
     }
     
