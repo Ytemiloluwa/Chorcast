@@ -49,6 +49,19 @@ class PodcastPlayer: NSObject {
             return
         }
     }
+    
+    
+    func fastBackward() {
+          
+          var time: TimeInterval = player.currentTime().seconds
+          
+          time -= 15.0 // Go back by 15 seconds
+          
+          if player.currentItem?.currentTime() == .zero {
+              
+              return
+          }
+      }
 
     
     private func validatesValues(for Keys: [String], asset: AVAsset) -> Bool {
