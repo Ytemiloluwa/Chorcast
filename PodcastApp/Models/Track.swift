@@ -12,7 +12,8 @@ struct Track: Equatable {
     var title, imageUrl, podcastName, description, audioUrl, releaseDate: String
     var duration: Double
     var image: Data?
-    var otherEpisodes: [EpisodeViewModel] = []
+    var audio: Data? = nil
+    var nextEpisodes: [EpisodeViewModel] = []
     
     static var placeholder = Track(title: "#1538 - Douglas Murray",
                                    imageUrl: "https://via.placeholder.com/150/2EB9F0/000000?Text=liquidcoder.com",
@@ -33,7 +34,7 @@ struct Track: Equatable {
     }
     
     
-    init(_ episode: EpisodeViewModel, otherEpisodes: [EpisodeViewModel]) {
+    init(_ episode: EpisodeViewModel, nextEpisodes: [EpisodeViewModel]) {
         
         self.title = episode.title
         self.imageUrl = episode.podcast.imageUrl
@@ -43,7 +44,8 @@ struct Track: Equatable {
         self.audioUrl = episode.audioUrl
         self.releaseDate = episode.date
         self.duration = episode.audioLength
-        self.otherEpisodes = otherEpisodes
+        self.audio = episode.audio
+        self.nextEpisodes = nextEpisodes
     }
     
     static func ==(lhs: Track, rhs: Track) -> Bool {
