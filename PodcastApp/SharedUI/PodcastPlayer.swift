@@ -72,6 +72,12 @@ class PodcastPlayer: NSObject {
         return true
     }
     
+    private func updateProgress(with time: CMTime) {
+        
+        self.onTimeChange(time.seconds)
+    }
+    
+    
     private func setUpObservers() {
         
         let interval = CMTime(value: 1, timescale: 1)
