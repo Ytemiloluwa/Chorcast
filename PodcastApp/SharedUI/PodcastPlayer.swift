@@ -39,6 +39,23 @@ class PodcastPlayer: NSObject {
         prepareAsset(asset)
     }
     
+    func togglePlay() {
+        
+        
+        switch self.player.timeControlStatus {
+            
+        case.paused, .waitingToPlayAtSpecifiedRate:
+            player.play()
+        onTogglePlay(true)
+        case.playing:
+            player.pause()
+            onTogglePlay(false)
+        default:
+            player.pause()
+            onTogglePlay(false)
+        }
+    }
+    
     func seek(to value: Double) {
         
         let time = CMTime(seconds: value, preferredTimescale: 1000)
