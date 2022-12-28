@@ -174,4 +174,21 @@ class PodcastPlayer: NSObject {
             }
         }
     }
+    
+  
+    private func removePeriodicTimeObserver() {
+        
+        if let timeObserverToken = timeObserverToken {
+            
+            player.removeTimeObserver(timeObserverToken)
+            self.timeObserverToken = nil
+            
+        }
+    }
+    
+    // remove the observers when the class is reinitialised
+    deinit {
+        
+        removePeriodicTimeObserver()
+    }
 }
