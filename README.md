@@ -1,4 +1,4 @@
-# PodcastApp (iOS, iPadOS, macOS & watchOS)
+# Chorcast (iOS, iPadOS, macOS & watchOS)
 ### PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in Development)
 
 
