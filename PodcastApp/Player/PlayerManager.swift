@@ -76,6 +76,13 @@ class PlayerManager: ObservableObject {
         }
     }
     
+    func play(_ track: Track) {
+        
+        guard let url = getAudioUrl(from: track) else { return }
+        
+        // start playing
+    }
+    
     // writing audio url to a file
     
     private func getAudioUrl(from track: Track) -> URL? {
