@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerButton: View {
     var action = {}
-    var play = ""
+    var icon = ""
     var isBig = false
     
     var body: some View {
@@ -18,7 +18,7 @@ struct PlayerButton: View {
         
         return Button(action: action, label: {
             
-            Image(systemName: play)
+            Image(systemName: icon)
                 .resizable()
                 .font(.system(size: size, weight: .light, design: .rounded))
                 .scaledToFit()
