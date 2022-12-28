@@ -39,6 +39,12 @@ class PodcastPlayer: NSObject {
         prepareAsset(asset)
     }
     
+    func seek(to value: Double) {
+        
+        let time = CMTime(seconds: value, preferredTimescale: 1000)
+        player.seek(to: time)
+    }
+    
     func fastForward() {
         
         var time: TimeInterval = player.currentTime().seconds
