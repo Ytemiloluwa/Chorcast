@@ -81,6 +81,13 @@ class PlayerManager: ObservableObject {
         guard let url = getAudioUrl(from: track) else { return }
         
         // start playing
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) { [weak self] in
+            
+            self?.state = .loading
+            self?.player.play(url: url)
+            self?.currentTrack = track
+        }
     }
     
     // writing audio url to a file
