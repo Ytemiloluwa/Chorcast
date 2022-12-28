@@ -27,6 +27,37 @@ class PlayerManager: ObservableObject {
     
     private var player = PodcastPlayer()
     
+    
+    init() {
+        
+        setUpPlayersObservers()
+    }
+    
+
+    private func setUpPlayersObservers() {
+        
+        // setting all closures in the PodcastPlayer to start listening to changes
+        
+        player.onTimeChange = { [weak self] currentTime in
+            
+            
+        }
+        
+        player.onTogglePlay = { [weak self]  isPlaying in
+            
+            
+        }
+        
+        player.onPlayerStart = { [weak self] duration in
+            
+            
+        }
+        
+        player.onFailure = { [weak self] message in
+            
+            
+        }
+    }
 }
  
 
