@@ -11,7 +11,7 @@ extension Data {
     
     // Save Downloaded episode audio data to a temporary file in order to play it using its location url
     
-    func write(to filename: String) -> URL {
+    func writeData(to filename: String) -> URL {
         
         
         var dir = NSURL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
