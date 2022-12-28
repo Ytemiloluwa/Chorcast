@@ -2,7 +2,7 @@
 ### PodcastApp with SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in Development)
 
 
-## Latest Development of PodcastApp as of 15/12/2022
+## Latest Development of Chorcast as of 15/12/2022
 
 ## iOS ( Dark Mode )
 
