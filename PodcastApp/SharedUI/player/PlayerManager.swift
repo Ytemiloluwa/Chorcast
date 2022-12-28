@@ -40,22 +40,39 @@ class PlayerManager: ObservableObject {
         
         player.onTimeChange = { [weak self] currentTime in
             
+            // Update the currenttime everytime there is a change
             
+            self?.currentTime = currentTime
         }
         
         player.onTogglePlay = { [weak self]  isPlaying in
             
+            //isplaying will be toggled on or false
+            self?.isPlaying = isPlaying
             
         }
         
         player.onPlayerStart = { [weak self] duration in
+             
+            guard let self = self else { return }
             
-            
+            DispatchQueue.main.async {
+                // setting the duration of the item
+                self.duration = duration
+                
+                // updating the state to isplaying
+                self.state = State.playing
+            }
         }
         
         player.onFailure = { [weak self] message in
             
-            
+            DispatchQueue.main.async {
+                
+                // update state when there is a failure event
+                
+                self?.state = .failed(message)
+            }
         }
     }
 }
