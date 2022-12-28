@@ -273,11 +273,11 @@
 		A703CF742945ABA400177512 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
+				A70BAB92295CA7D50031C6BD /* player */,
 				A703CF7A2945AD3900177512 /* Modifiers */,
 				A703CF792945AD2300177512 /* Styles */,
 				A703CF782945AD1500177512 /* Elements */,
 				A703CF752945ABB100177512 /* Components */,
-				A70BAB8C295B018A0031C6BD /* PodcastPlayer.swift */,
 			);
 			path = SharedUI;
 			sourceTree = "<group>";
@@ -348,6 +348,21 @@
 				A707BED829590EC90040E448 /* SearchFieldView.swift */,
 			);
 			path = Element;
+			sourceTree = "<group>";
+		};
+		A70BAB91295CA7C80031C6BD /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A70BAB8C295B018A0031C6BD /* PodcastPlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A70BAB92295CA7D50031C6BD /* player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = player;
 			sourceTree = "<group>";
 		};
 		A71CED48292E9D990013A999 /* Store */ = {
@@ -534,6 +549,7 @@
 		A7DA2D52291AD2FA002D7EA1 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A70BAB91295CA7C80031C6BD /* Player */,
 				A703CF742945ABA400177512 /* SharedUI */,
 				A7EBBEE4293CE2FC00E4C2FF /* CoreData */,
 				A794C8B62937A27500DD76B7 /* Screens */,
