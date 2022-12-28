@@ -77,6 +77,21 @@ class PodcastPlayer: NSObject {
         self.onTimeChange(time.seconds)
     }
     
+    private func updatePlayerStatus() {
+        
+        guard let currentItem = player.currentItem else { return }
+        
+        switch currentItem.status {
+            
+        case.readyToPlay:
+            break
+        case.failed:
+            break
+        default:
+            break
+        }
+    }
+    
     
     private func setUpObservers() {
         
