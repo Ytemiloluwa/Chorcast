@@ -90,6 +90,33 @@ class PlayerManager: ObservableObject {
         }
     }
     
+    // implementing control functions that calls PodcastPlayer functions
+    
+    func playPause() {
+        
+        player.togglePlay()
+    }
+    
+    func skip(percent: Double) {
+        
+        let time = duration * percent
+        
+        player.seek(to: time)
+    }
+    
+    func fastForward() {
+        
+        player.fastForward()
+    }
+    
+    
+    func fastBackward() {
+        
+        player.fastBackward()
+    }
+    
+    
+    
     // writing audio url to a file
     
     private func getAudioUrl(from track: Track) -> URL? {
