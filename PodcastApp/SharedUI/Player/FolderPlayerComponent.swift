@@ -11,6 +11,9 @@ struct FolderPlayerComponent: View {
     
     var track: Track
     
+    @Binding var isExpanded: Bool
+    @Binding var offsetY: CGFloat
+    
     var body: some View {
         
         HStack(spacing: 10) {
@@ -36,6 +39,10 @@ struct FolderPlayerComponent: View {
                 .frame(maxHeight: .infinity)
         }.padding(.horizontal)
             .padding(.vertical, 10)
+            .onTapGesture {
+                self.isExpanded = true
+                self.offsetY = 0
+            }
     }
 }
 
@@ -44,11 +51,11 @@ struct FolderPlayerComponent_Previews: PreviewProvider {
         
         Group {
             
-            FolderPlayerComponent(track: Track.placeholder)
+            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
             
-            FolderPlayerComponent(track: Track.placeholder)
+            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
         }
