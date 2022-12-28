@@ -69,6 +69,8 @@ class PodcastPlayer: NSObject {
               
               return
           }
+        
+        seek(to: time)
       }
 
     
