@@ -14,7 +14,7 @@ extension Data {
     func writeData(to filename: String) -> URL {
         
         
-        var dir = NSURL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
+        let dir = NSURL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
         
         let location = dir.appendingPathComponent(filename + ".mp3")
         
