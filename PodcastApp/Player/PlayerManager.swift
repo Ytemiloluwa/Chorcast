@@ -75,6 +75,25 @@ class PlayerManager: ObservableObject {
             }
         }
     }
+    
+    // writing audio url to a file
+    
+    private func getAudioUrl(from track: Track) -> URL? {
+        
+        if let url = track.audio?.writeData(to: UUID().uuidString) {
+            
+            return url
+            
+        }
+        
+        if let url = URL(string: track.audioUrl) {
+            
+            return url 
+        }
+        
+        return nil
+    }
+
 }
  
 
