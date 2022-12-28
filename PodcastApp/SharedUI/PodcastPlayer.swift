@@ -84,11 +84,13 @@ class PodcastPlayer: NSObject {
         switch currentItem.status {
             
         case.readyToPlay:
-            break
+            self.player.play()
+            self.onTogglePlay(true)
+            self.onPlayerStart(currentItem.asset.duration.seconds)
         case.failed:
-            break
+            self.onFailure("Sorry the media is not playable.")
         default:
-            break
+            Log.info("Unknown status")
         }
     }
     
