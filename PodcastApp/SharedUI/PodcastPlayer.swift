@@ -39,7 +39,17 @@ class PodcastPlayer: NSObject {
         prepareAsset(asset)
     }
     
-    
+    func fastForward() {
+        
+        var time: TimeInterval = player.currentTime().seconds
+        time += 15.0 // fastforward 15 seconds
+        
+        if player.currentItem?.currentTime() == player.currentItem?.duration {
+            
+            return
+        }
+    }
+
     
     private func validatesValues(for Keys: [String], asset: AVAsset) -> Bool {
         
