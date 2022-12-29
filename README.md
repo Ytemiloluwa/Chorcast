@@ -1,4 +1,4 @@
-# Chorcast (iOS, iPadOS, macOS & watchOS)
+# Chorcast (iOS & iPadOS)
 ### SwiftUI, Combine, Redux, CoreData (Currently in Development)
 
 
