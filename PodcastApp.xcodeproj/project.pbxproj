@@ -134,6 +134,7 @@
 		A7ECB7442940EC1400BA2EAD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */; };
 		A7F0B43B295D9BB400A55763 /* ScrollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0B43A295D9BB400A55763 /* ScrollBar.swift */; };
 		A7F0B43D295DC91000A55763 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0B43C295DC91000A55763 /* Double+.swift */; };
+		A7F0B43F295DEA0F00A55763 /* PlayerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0B43E295DEA0F00A55763 /* PlayerProgressView.swift */; };
 		A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */; };
 		A7FA8CB02943129300D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
 		A7FA8CB12943145A00D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
@@ -256,6 +257,7 @@
 		A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A7F0B43A295D9BB400A55763 /* ScrollBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBar.swift; sourceTree = "<group>"; };
 		A7F0B43C295DC91000A55763 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		A7F0B43E295DEA0F00A55763 /* PlayerProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgressView.swift; sourceTree = "<group>"; };
 		A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailsScreen.swift; sourceTree = "<group>"; };
 		A7FA8CAF2943129300D2226A /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A7FA8CB22943201100D2226A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				A70BAB9E295D057C0031C6BD /* PlayerButton.swift */,
 				A70BABA0295D0B6B0031C6BD /* FolderPlayerComponent.swift */,
 				A7F0B43A295D9BB400A55763 /* ScrollBar.swift */,
+				A7F0B43E295DEA0F00A55763 /* PlayerProgressView.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -938,6 +941,7 @@
 				A7ECB7422940DFE600BA2EAD /* HomeGenresContent.swift in Sources */,
 				A75297BE293DCE1700CB3B9A /* CoreDataService.swift in Sources */,
 				A74EFBC02947D12B00A6229C /* SCImage.swift in Sources */,
+				A7F0B43F295DEA0F00A55763 /* PlayerProgressView.swift in Sources */,
 				A70BAB9F295D057C0031C6BD /* PlayerButton.swift in Sources */,
 				A7CF4600292AED1900A31DDE /* Log.swift in Sources */,
 				A7D3142A2949FFB10019AA58 /* PodcastLinkView.swift in Sources */,
