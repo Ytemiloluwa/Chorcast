@@ -132,6 +132,7 @@
 		A7ECB7402940D42E00BA2EAD /* HomeGenresCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB73F2940D42E00BA2EAD /* HomeGenresCollection.swift */; };
 		A7ECB7422940DFE600BA2EAD /* HomeGenresContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB7412940DFE600BA2EAD /* HomeGenresContent.swift */; };
 		A7ECB7442940EC1400BA2EAD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */; };
+		A7F0B43B295D9BB400A55763 /* ScrollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0B43A295D9BB400A55763 /* ScrollBar.swift */; };
 		A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */; };
 		A7FA8CB02943129300D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
 		A7FA8CB12943145A00D2226A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA8CAF2943129300D2226A /* ImageCache.swift */; };
@@ -252,6 +253,7 @@
 		A7ECB73F2940D42E00BA2EAD /* HomeGenresCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGenresCollection.swift; sourceTree = "<group>"; };
 		A7ECB7412940DFE600BA2EAD /* HomeGenresContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGenresContent.swift; sourceTree = "<group>"; };
 		A7ECB7432940EC1400BA2EAD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A7F0B43A295D9BB400A55763 /* ScrollBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBar.swift; sourceTree = "<group>"; };
 		A7F19A1C294EF2890086159D /* PodcastDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailsScreen.swift; sourceTree = "<group>"; };
 		A7FA8CAF2943129300D2226A /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A7FA8CB22943201100D2226A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				A70BAB9C295CFDA30031C6BD /* TrackImageView.swift */,
 				A70BAB9E295D057C0031C6BD /* PlayerButton.swift */,
 				A70BABA0295D0B6B0031C6BD /* FolderPlayerComponent.swift */,
+				A7F0B43A295D9BB400A55763 /* ScrollBar.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -914,6 +917,7 @@
 				A7E49B6F29505FC900B39CD2 /* PodcastDetailGenreCollection.swift in Sources */,
 				A7008B712928088300779CB6 /* APIServiceProtocol.swift in Sources */,
 				A74305CC2955F0AD00CE9A6C /* EpisodeManagedObject+CoreDataProperties.swift in Sources */,
+				A7F0B43B295D9BB400A55763 /* ScrollBar.swift in Sources */,
 				A7F19A1D294EF2890086159D /* PodcastDetailsScreen.swift in Sources */,
 				A7DA2D59291AD2FA002D7EA1 /* PodcastApp.xcdatamodeld in Sources */,
 				A7B6E42F29360088002F01D9 /* AccentButtonStyle.swift in Sources */,
