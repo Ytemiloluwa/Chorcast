@@ -1,5 +1,5 @@
-# Chorcast (iOS, iPadOS, macOS & watchOS)
-### SwiftUI, Combine, Redux, CoreData &amp; CloudKit (Currently in Development)
+# Chorcast (iOS & iPadOS)
+### SwiftUI, Combine, Redux, CoreData (Currently in Development)
 
 
 ## Latest Development of Chorcast as of 15/12/2022
