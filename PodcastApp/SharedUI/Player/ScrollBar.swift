@@ -15,7 +15,7 @@ struct ScrollBar: View {
     
     @State private var offsetX: CGFloat = 0.0
     @State private var percent: CGFloat = 0.0
-    @State private var timeIndicators: CGFloat = 0
+    @State private var timeIndicatorOffsetX: CGFloat = 0
     @State private var isChanging: Bool = false
     
     var body: some View {
@@ -32,18 +32,52 @@ struct ScrollBar: View {
                     .foregroundColor(Color.accentColor)
                     .frame(width: offsetX, height: geometry.size.height, alignment: .center)
                 
-            }.gesture(
+                if isChanging {
+                    
+                    Text((Double(percent) * totalTime)
+                        .asString(style: .positional))
+                    .font(.caption)
+                    .offset(x: timeIndicatorOffsetX, y: -geometry.size.height)
+                }
+                 
+            }.frame(height: geometry.size.height + 10, alignment: .center)
+            .gesture(
             
             DragGesture()
                 .onChanged({ drag in
                     
                     self.offsetX = min(max(drag.location.x, 0), geometry.size.width)
                     self.percent = self.offsetX / (geometry.size.width)
+                    updateIndicatorOffset()
                 }).onEnded({ drag  in
                     
                     self.offsetX = min(max(drag.location.x, 0), geometry.size.width)
+                    finish(Double(offsetX / (geometry.size.width)))
+                    self.isChanging = false
                 })
-            )
+            
+              
+            ).onChange(of: currentTime, perform: { value in
+                
+                self.percent = CGFloat(value / totalTime)
+                self.offsetX = percent * geometry.size.width
+            })
+        }
+    }
+    
+    private func updateIndicatorOffset() {
+        
+        if percent >= 0.8 {
+            
+            timeIndicatorOffsetX = offsetX - 40
+            
+        }else if percent < 0.2 {
+            
+            timeIndicatorOffsetX = offsetX
+            
+        }else {
+            
+            timeIndicatorOffsetX = offsetX - 20
         }
     }
 }
