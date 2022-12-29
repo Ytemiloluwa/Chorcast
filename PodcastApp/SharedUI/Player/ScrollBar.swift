@@ -49,6 +49,7 @@ struct ScrollBar: View {
                     self.offsetX = min(max(drag.location.x, 0), geometry.size.width)
                     self.percent = self.offsetX / (geometry.size.width)
                     updateIndicatorOffset()
+                    if !self.isChanging { self.isChanging .toggle()}
                 }).onEnded({ drag  in
                     
                     self.offsetX = min(max(drag.location.x, 0), geometry.size.width)
