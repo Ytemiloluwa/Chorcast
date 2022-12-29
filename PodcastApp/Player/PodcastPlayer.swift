@@ -152,11 +152,16 @@ class PodcastPlayer: NSObject {
             
 
             // update progress
+            
+            self.updateProgress(with: interval)
         }
         
         playerItemStatusObserver = player.observe(\AVPlayer.currentItem?.status, options: [.new, .initial]) { [unowned self] _, _ in
             
-            
+            DispatchQueue.main.async {
+                
+                self.updatePlayerStatus()
+            }
         }
     }
     
