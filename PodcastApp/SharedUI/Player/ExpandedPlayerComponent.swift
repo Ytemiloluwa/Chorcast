@@ -31,8 +31,34 @@ struct ExpandedPlayerComponent: View {
             
             PlayerProgressView(currentTime: 200, totalTime: 300)
                 .frame(maxWidth: 300, alignment: .center)
-        }
+            
+            createButtonRow()
+        }.padding(40)
         
+    }
+    
+    private func createButtonRow() -> some View {
+        
+        HStack(spacing: 50) {
+            
+            
+            PlayerButton(action: {
+                
+                
+            }, icon: "gobackward.15", isBig: true)
+            
+            
+            PlayerButton(action: {
+                
+                
+            }, icon: "play.fill", isBig: true)
+            
+            
+            PlayerButton(action: {
+                
+                
+            }, icon: "goforward.15", isBig: true)
+        }
     }
     
 }
