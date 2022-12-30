@@ -38,6 +38,22 @@ struct ExpandedPlayerComponent: View {
             createButtonRow()
         }.padding(40)
         
+            .offset(x: 0, y: self.offsetY)
+            .gesture(
+            
+                DragGesture().onChanged({ value in
+                    self.offsetY = value.translation.height > 0 ? value.translation.height / 2 : 0
+                    
+                    
+                }).onEnded({ value  in
+                    
+                    if value.translation.height > self.threshold {
+                        
+                        isExpanded = false
+                    }
+                })
+            )
+        
     }
     
     private func createButtonRow() -> some View {
