@@ -10,6 +10,9 @@ import SwiftUI
 struct ExpandedPlayerComponent: View {
     
     var track: Track
+    @Binding var isExpanded: Bool
+    @Binding var offsetY: CGFloat
+    var threshold: CGFloat = 100
     
     var body: some View {
         
@@ -68,11 +71,11 @@ struct ExpandedPlayerComponent_Previews: PreviewProvider {
         
         Group {
             
-            ExpandedPlayerComponent(track: Track.placeholder)
+            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
             
-            ExpandedPlayerComponent(track: Track.placeholder)
+            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }
