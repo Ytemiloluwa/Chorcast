@@ -28,6 +28,11 @@
 
 ![EpisodeBlack](https://user-images.githubusercontent.com/91268094/210139052-baa94a94-5e38-4e99-8adf-be2d4795ea12.png)
 
+![IpadBookmarkBlack](https://user-images.githubusercontent.com/91268094/210139312-987f9818-d57d-4845-bc4e-7632c2a814b2.png)
+
+
+
+
 ## iPadOS ( Light Mode )
 
 ![ipadwhite1](https://user-images.githubusercontent.com/91268094/210138472-eb12f3c7-426e-46ee-900d-486c3983ef92.png)
@@ -36,7 +41,7 @@
 
 ![EpisodeWhite](https://user-images.githubusercontent.com/91268094/210139048-b3dec9c8-8e1d-4357-9606-8d6b66bef522.png)
 
-
+![IpadBookMarkwhite](https://user-images.githubusercontent.com/91268094/210139315-ba765b56-e943-4015-aab2-c5959b5527ae.png)
 
 
 
