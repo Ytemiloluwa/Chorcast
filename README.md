@@ -24,6 +24,11 @@
 
 ![ipadblack1](https://user-images.githubusercontent.com/91268094/210138401-035f45e6-8cac-468e-b3d0-d522765728ff.png)
 
+![ipadSearchBlack](https://user-images.githubusercontent.com/91268094/210138691-b9a098f5-274e-499e-8492-009e3d1768ed.png)
+
+
 ## iPadOS ( Light Mode )
 
 ![ipadwhite1](https://user-images.githubusercontent.com/91268094/210138472-eb12f3c7-426e-46ee-900d-486c3983ef92.png)
+
+![ipadSearchWhite](https://user-images.githubusercontent.com/91268094/210138698-6b348f5b-9749-434e-8aba-5522d451cc57.png)
