@@ -1,6 +1,6 @@
-# Chorcast (iOS & iPadOS, macOS, watchOS)
+# Chorcast (iOS & iPadOS)
 
-### SwiftUI, UIKit, Combine, Redux, CoreData, AVPlayer, MediaPlayer
+### SwiftUI, UIKit, Combine, Redux, CoreData 
 
 
 ## iOS ( Dark Mode )
