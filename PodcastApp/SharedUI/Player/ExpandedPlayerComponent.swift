@@ -21,8 +21,10 @@ struct ExpandedPlayerComponent: View {
         VStack(spacing: 40) {
         
             TrackImageView(track: track)
-                .frame(width: 200, height: 200, alignment: .center)
                 .cornerRadius(15)
+                .matchedGeometryEffect(id: "\(track.title)-image", in: namespace)
+                .frame(width: 200, height: 200, alignment: .center)
+               
             
             VStack {
                 Text(track.title)
@@ -32,7 +34,7 @@ struct ExpandedPlayerComponent: View {
                 Text(track.podcastName)
                     .lineLimit(2)
                     .foregroundColor(.gray)
-            }
+            }.matchedGeometryEffect(id: "\(track.title)-titles", in: namespace)
             
             PlayerProgressView(currentTime: 200, totalTime: 300)
                 .frame(maxWidth: 300, alignment: .center)
@@ -67,18 +69,25 @@ struct ExpandedPlayerComponent: View {
                 
                 
             }, icon: "gobackward.15", isBig: true)
+            .cornerRadius(4)
+            .matchedGeometryEffect(id: "\(track.title)-backward", in: namespace)
+            
             
             
             PlayerButton(action: {
                 
                 
             }, icon: "play.fill", isBig: true)
+            .cornerRadius(4)
+            .matchedGeometryEffect(id: "\(track.title)-play", in: namespace)
             
             
             PlayerButton(action: {
                 
                 
             }, icon: "goforward.15", isBig: true)
+            .cornerRadius(4)
+            .matchedGeometryEffect(id: "\(track.title)-forward", in: namespace)
         }
     }
     
