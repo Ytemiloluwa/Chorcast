@@ -18,7 +18,21 @@ struct PlayerView: View {
     @Namespace private var animation
     
     var body: some View {
-        Text("Hello, World!")
+     
+        switch playerManager.state {
+            
+        case .idle:
+            createContent(track: playerManager.currentTrack)
+                .redacted(reason: .placeholder)
+        case.loading:
+            ProgressView("Loading...")
+                .padding()
+        case.playing:
+            createContent(track: playerManager.currentTrack)
+        case.failed(let message):
+            Text(message)
+            
+        }
     }
     
     func createContent(track: Track) -> some View {
@@ -33,6 +47,7 @@ struct PlayerView: View {
           .roundedBorder(radius: 20, color: Color.border)
           .padding()
           .padding(.bottom, 10)
+          .animation(.spring(response: 0.55, dampingFraction: 0.9, blendDuration: 0), value: self.isExpanded)
       }
 }
 
