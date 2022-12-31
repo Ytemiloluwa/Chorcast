@@ -23,21 +23,29 @@ struct FolderPlayerComponent: View {
             TrackImageView(track: track)
                 .frame(width: 70, height: 70)
                 .cornerRadius(10)
-                .zIndex(1.0)
+                .matchedGeometryEffect(id: "\(track.title)-image", in: namespace)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
                 
                 Text(track.title)
                     .font(.callout)
-                    .lineLimit(2)
+                    .lineLimit(1)
+                    .matchedGeometryEffect(id: "\(track.title)-progressView" ,
+                                           in: namespace)
                 Text(track.podcastName)
                     .font(.footnote)
                     .lineLimit(1)
                     .foregroundColor(.gray)
+                    .matchedGeometryEffect(id: "\(track.title)-titles" ,
+                                           in: namespace)
                 
             }
             
             PlayerButton(action: {}, icon: "play.fill", isBig: false)
+            
+                .matchedGeometryEffect(id: "\(track.title)-play", in: namespace)
+                .matchedGeometryEffect(id: "\(track.title)-backward" , in: namespace)
+                .matchedGeometryEffect(id: "\(track.title)-forward" , in: namespace)
                 .frame(maxHeight: .infinity)
         }.padding(.horizontal)
             .padding(.vertical, 10)
