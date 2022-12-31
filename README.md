@@ -30,7 +30,7 @@
 
 ![IpadBookmarkBlack](https://user-images.githubusercontent.com/91268094/210139312-987f9818-d57d-4845-bc4e-7632c2a814b2.png)
 
-
+![IpadDownloadedblack](https://user-images.githubusercontent.com/91268094/210139448-fd34cf4b-f613-4d46-a88c-16c9d16c6dc9.png)
 
 
 ## iPadOS ( Light Mode )
@@ -43,8 +43,7 @@
 
 ![IpadBookMarkwhite](https://user-images.githubusercontent.com/91268094/210139315-ba765b56-e943-4015-aab2-c5959b5527ae.png)
 
-
-
+![IpadDownloadedWhite](https://user-images.githubusercontent.com/91268094/210139450-627a54b0-5d7a-4208-8fd2-88dca675b760.png)
 
 
 
