@@ -17,3 +17,13 @@
 ![white1](https://user-images.githubusercontent.com/91268094/210135912-5b4d82b9-621b-4309-ac0c-d0b6f351b1a4.png)
 
 ![white2](https://user-images.githubusercontent.com/91268094/210135914-d521fe73-33c8-4224-82a6-fcef9d5b57ab.png)
+
+
+## iPadOS ( Dark Mode )
+
+
+![ipadblack1](https://user-images.githubusercontent.com/91268094/210138401-035f45e6-8cac-468e-b3d0-d522765728ff.png)
+
+## iPadOS ( Light Mode )
+
+![ipadwhite1](https://user-images.githubusercontent.com/91268094/210138472-eb12f3c7-426e-46ee-900d-486c3983ef92.png)
