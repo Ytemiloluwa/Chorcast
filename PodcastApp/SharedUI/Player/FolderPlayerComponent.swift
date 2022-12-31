@@ -14,6 +14,8 @@ struct FolderPlayerComponent: View {
     @Binding var isExpanded: Bool
     @Binding var offsetY: CGFloat
     
+    var namespace: Namespace.ID
+    
     var body: some View {
         
         HStack(spacing: 10) {
@@ -47,15 +49,18 @@ struct FolderPlayerComponent: View {
 }
 
 struct FolderPlayerComponent_Previews: PreviewProvider {
+    
+    @Namespace private static var namespace
+    
     static var previews: some View {
         
         Group {
             
-            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
+            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0), namespace: namespace)
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
             
-            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
+            FolderPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0), namespace: namespace)
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
         }
