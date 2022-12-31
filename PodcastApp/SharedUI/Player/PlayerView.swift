@@ -20,6 +20,20 @@ struct PlayerView: View {
     var body: some View {
         Text("Hello, World!")
     }
+    
+    func createContent(track: Track) -> some View {
+          ZStack(alignment: .bottom, content: {
+              if isExpanded {
+                  ExpandedPlayerComponent(track: track, isExpanded: $isExpanded, offsetY: $offsetY, namespace: animation)
+              } else {
+                  FolderPlayerComponent(track: track, isExpanded: $isExpanded, offsetY: $offsetY, namespace: animation)
+              }
+          }).background(BlurView())
+          .cornerRadius(20)
+          .roundedBorder(radius: 20, color: Color.border)
+          .padding()
+          .padding(.bottom, 10)
+      }
 }
 
 struct PlayerView_Previews: PreviewProvider {
