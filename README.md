@@ -10,6 +10,8 @@
 
 ![black2](https://user-images.githubusercontent.com/91268094/210135910-6638800d-bb0f-44ee-8f95-2a8c08d3f88d.png)
 
+![LastScreenBlack](https://user-images.githubusercontent.com/91268094/210140263-f9b0b11a-43c4-4b22-b2d3-240b787cd5c9.png)
+
 
 ## iOS ( Light Mode )
 
@@ -17,6 +19,9 @@
 ![white1](https://user-images.githubusercontent.com/91268094/210135912-5b4d82b9-621b-4309-ac0c-d0b6f351b1a4.png)
 
 ![white2](https://user-images.githubusercontent.com/91268094/210135914-d521fe73-33c8-4224-82a6-fcef9d5b57ab.png)
+
+![LastScreenWhite](https://user-images.githubusercontent.com/91268094/210140260-88aefe74-5bbc-40bb-b99c-8543e5953ed0.png)
+
 
 
 ## iPadOS ( Dark Mode )
