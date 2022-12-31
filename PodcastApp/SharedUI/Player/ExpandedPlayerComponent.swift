@@ -14,6 +14,8 @@ struct ExpandedPlayerComponent: View {
     @Binding var offsetY: CGFloat
     var threshold: CGFloat = 100
     
+    var namespace: Namespace.ID
+    
     var body: some View {
         
         VStack(spacing: 40) {
@@ -83,15 +85,18 @@ struct ExpandedPlayerComponent: View {
 }
 
 struct ExpandedPlayerComponent_Previews: PreviewProvider {
+    
+    @Namespace private static var animation
+    
     static var previews: some View {
         
         Group {
             
-            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
+            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0), namespace: animation)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
             
-            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0))
+            ExpandedPlayerComponent(track: Track.placeholder, isExpanded: .constant(false), offsetY: .constant(0), namespace: animation)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }
