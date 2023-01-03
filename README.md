@@ -1,6 +1,6 @@
 # Chorcast (iOS & iPadOS)
 
-### SwiftUI, UIKit, Combine, Redux, CoreData 
+### SwiftUI, UIKit, Combine, CoreData & TCA Acrhitecture.
 
 
 ## iOS ( Dark Mode )
