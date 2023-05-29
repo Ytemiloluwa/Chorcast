@@ -17,17 +17,36 @@ struct MainScreen: View {
     
     var body: some View {
         
-        NavigationView {
-            
-            if hSizeClass == .regular {
+        ZStack(alignment: alignment()){
+            NavigationView {
                 
-                SideBar()
-                HomeScreen()
-                
-            } else {
-                
-                HomeScreen()
+                if hSizeClass == .regular {
+                    
+                    SideBar()
+                    HomeScreen()
+                    
+                } else {
+                    
+                    HomeScreen()
+                }
             }
+            
+            //PlayerView()
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    func alignment() -> Alignment {
+        
+        switch hSizeClass {
+            
+        case.regular:
+            return .bottomTrailing
+        case.compact:
+            return.bottom
+        default:
+            return.bottom
+            
         }
     }
 }
@@ -35,6 +54,9 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     
     static let store = Store(enviroment: AppEnvironment(api: previewApiService(), coredata: PreviewCoreDataService()))
+    
+    static let playerManager = PlayerManager()
+    static let downloadManager = DownloadManager()
     
     static var previews: some View {
         Group {
@@ -47,5 +69,8 @@ struct MainScreen_Previews: PreviewProvider {
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
         }.environmentObject(store)
+            .environmentObject(playerManager)
+            .environmentObject(downloadManager)
     }
 }
+
