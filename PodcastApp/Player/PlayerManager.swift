@@ -9,17 +9,14 @@ import Foundation
 
 class PlayerManager: ObservableObject {
     
-    
     enum State {
-        
         case idle
         case loading
         case playing
         case failed(_ message: String)
-        
     }
     
-    @Published var state: State = State.idle
+    @Published var state: State = .idle
     @Published var currentTrack = Track.placeholder
     @Published var isPlaying: Bool = false
     @Published var currentTime: Double = 0
@@ -27,114 +24,78 @@ class PlayerManager: ObservableObject {
     
     private var player = PodcastPlayer()
     
-    
     init() {
-        
         setUpPlayersObservers()
     }
     
-
     private func setUpPlayersObservers() {
-        
-        // setting all closures in the PodcastPlayer to start listening to changes
-        
         player.onTimeChange = { [weak self] currentTime in
-            
-            // Update the currenttime everytime there is a change
-            
-            self?.currentTime = currentTime
+            DispatchQueue.main.async {
+                self?.currentTime = currentTime
+            }
         }
         
-        player.onTogglePlay = { [weak self]  isPlaying in
-            
-            //isplaying will be toggled on or false
-            self?.isPlaying = isPlaying
-            
+        player.onTogglePlay = { [weak self] isPlaying in
+            DispatchQueue.main.async {
+                self?.isPlaying = isPlaying
+            }
         }
         
         player.onPlayerStart = { [weak self] duration in
-             
             guard let self = self else { return }
-            
             DispatchQueue.main.async {
-                // setting the duration of the item
                 self.duration = duration
-                
-                // updating the state to isplaying
-                self.state = State.playing
+                self.state = .playing
             }
         }
         
         player.onFailure = { [weak self] message in
-            
             DispatchQueue.main.async {
-                
-                // update state when there is a failure event
-                
                 self?.state = .failed(message)
             }
         }
     }
     
     func play(_ track: Track) {
-        
         guard let url = getAudioUrl(from: track) else { return }
         
-        // start playing
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) { [weak self] in
-            
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.state = .loading
             self?.player.play(url: url)
             self?.currentTrack = track
         }
     }
     
-    // implementing control functions that calls PodcastPlayer functions
-    
     func playPause() {
-        
         player.togglePlay()
     }
     
     func skip(percent: Double) {
-        
         let time = duration * percent
-        
         player.seek(to: time)
     }
     
     func fastForward() {
-        
         player.fastForward()
     }
     
-    
     func fastBackward() {
-        
         player.fastBackward()
     }
     
+    func stop() {
+        player.stop()
+      
+    }
     
-    
-    // writing audio url to a file
     
     private func getAudioUrl(from track: Track) -> URL? {
-        
-        if let url = track.audio?.writeData(to: UUID().uuidString) {
-            
-            return url
-            
+        if let audioData = track.audio {
+            return audioData.writeData(to: UUID().uuidString)
         }
-        
         if let url = URL(string: track.audioUrl) {
-            
-            return url 
+            return url
         }
-        
         return nil
     }
-
 }
- 
-

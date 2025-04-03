@@ -28,6 +28,7 @@ struct BookmarkedScreen: View {
             grid
             
         }.navigationTitle("Bookmark")
+        .onAppear(perform: fetchPodcasts)
     }
     
     private func fetchPodcasts() {

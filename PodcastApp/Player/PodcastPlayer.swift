@@ -77,19 +77,25 @@ class PodcastPlayer: NSObject {
     
     
     func fastBackward() {
-          
-          var time: TimeInterval = player.currentTime().seconds
-          
-          time -= 15.0 // Go back by 15 seconds
-          
-          if player.currentItem?.currentTime() == .zero {
-              
-              return
-          }
+        
+        var time: TimeInterval = player.currentTime().seconds
+        
+        time -= 15.0 // Go back by 15 seconds
+        
+        if player.currentItem?.currentTime() == .zero {
+            
+            return
+        }
         
         seek(to: time)
-      }
-
+    }
+    
+    func stop() {
+        player.pause()
+        player.seek(to: CMTime.zero)
+        onTogglePlay(false)
+    }
+    
     
     private func validatesValues(for Keys: [String], asset: AVAsset) -> Bool {
         
@@ -103,7 +109,7 @@ class PodcastPlayer: NSObject {
             }
         }
         
-        #if os(watchOS)
+#if os(watchOS)
         
         if !asset.isPlayable {
             
@@ -112,13 +118,13 @@ class PodcastPlayer: NSObject {
             return false
         }
         
-        #else
+#else
         
         if !asset.isPlayable || asset.hasProtectedContent {
             
             self.onFailure("Sorry, the media is not playable.")
         }
-        #endif
+#endif
         return true
     }
     
@@ -153,7 +159,7 @@ class PodcastPlayer: NSObject {
 
             // update progress
             
-            self.updateProgress(with: interval)
+            self.updateProgress(with: time)
         }
         
         playerItemStatusObserver = player.observe(\AVPlayer.currentItem?.status, options: [.new, .initial]) { [unowned self] _, _ in
@@ -180,7 +186,6 @@ class PodcastPlayer: NSObject {
         }
     }
     
-  
     private func removePeriodicTimeObserver() {
         
         if let timeObserverToken = timeObserverToken {
@@ -193,7 +198,8 @@ class PodcastPlayer: NSObject {
     
     // remove the observers when the class is reinitialised
     deinit {
-        
+        stop()
         removePeriodicTimeObserver()
+    
     }
 }

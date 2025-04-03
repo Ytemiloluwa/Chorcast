@@ -28,8 +28,9 @@ struct DownloadedScreen: View {
         ScrollView {
             
             grid
-            
-        }.navigationTitle("Downloaded")
+        }
+        .navigationTitle("Downloaded")
+        .onAppear(perform: fetchpodcasts)
     }
     
     private func fetchpodcasts() {
@@ -45,7 +46,6 @@ struct DownloadedScreen_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            
             DownloadedScreen()
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)

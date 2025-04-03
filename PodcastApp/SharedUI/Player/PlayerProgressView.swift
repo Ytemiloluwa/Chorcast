@@ -9,46 +9,38 @@ import SwiftUI
 
 struct PlayerProgressView: View {
     
-    var currentTime: Double
+    @Binding var currentTime: Double
     var totalTime: Double
     var onFinishSeeking: ((Double) -> Void) = { _ in }
     
     var body: some View {
-        
-        
         VStack {
-            
-            ScrollBar(currentTime: .constant(currentTime), totalTime: totalTime, finish: { value in
-                
-                
+            ScrollBar(currentTime: $currentTime, totalTime: totalTime, finish: { value in
                 onFinishSeeking(totalTime * value)
-                
-            }).frame(height: 15, alignment: .center)
+            })
+            .frame(height: 15, alignment: .center)
             
             HStack {
-                
                 Text("\(currentTime.asString(style: .positional))")
                     .font(.caption)
                 Spacer()
-                
                 Text("\(totalTime.asString(style: .positional))")
                     .font(.caption)
             }
-        }.frame(height: 40, alignment: .center)
+        }
+        .frame(height: 40, alignment: .center)
     }
+      
 }
+
 struct PlayerProgressView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            
-            PlayerProgressView(currentTime: 2000, totalTime: 3000)
-
+            PlayerProgressView(currentTime: .constant(2000), totalTime: 3000)
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
-                
             
-            PlayerProgressView(currentTime: 2000, totalTime: 3000)
-            
+            PlayerProgressView(currentTime: .constant(2000), totalTime: 3000)
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.light)
         }

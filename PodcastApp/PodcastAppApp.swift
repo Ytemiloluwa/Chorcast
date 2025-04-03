@@ -13,12 +13,14 @@ struct PodcastAppApp: App {
     
     @ObservedObject private var store = Store()
     @ObservedObject private var downloadManager = DownloadManager()
+    @ObservedObject private var playerManager = PlayerManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
                 .environmentObject(downloadManager)
+                .environmentObject(playerManager)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
